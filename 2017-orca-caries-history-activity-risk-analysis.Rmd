@@ -1,7 +1,141 @@
 ---
-title: "Risk factors for caries activity and history"
+title: "Risk factors for early childhood caries activity and history"
 author: Sergio Uribe
 output: html_notebook
 ---
 
 
+# Packages
+```{r eval=FALSE}
+library(tidyverse) # for data wrangling, graphs, etc
+library(nnet) # for ordinal log reg
+```
+
+# Dataset
+```{r dataframe}
+df <- read_csv("dataset/historiaactividad.csv")
+```
+Select only the variables for this analysis
+```{r}
+df <- df %>% 
+  select(-starts_with("Lesiones")) %>% 
+  select(-starts_with("Actividad")) # Por alguna razón no puedo ocupar -col:col
+```
+
+```{r check structure}
+glimpse(df)
+dim(df)
+```
+
+Check history of caries
+```{r Table Hist}
+options(digits = 2)
+table(df$binHistoria)
+```
+Check activity of caries
+```{r table Act}
+table(df$binActividad)
+
+```
+Table History x activity in %
+```{r table hist x act}
+addmargins(prop.table(table(df$binHistoria, df$binActividad))*100)
+
+```
+
+Prepare everything for the regression
+Relevel
+```{r}
+class(df$HistoriaActividad)
+df$HistoriaActividad <-  as.factor(df$HistoriaActividad)
+df$HistoriaActividad2 <- relevel(df$HistoriaActividad, ref = "NoNo")
+levels(df$HistoriaActividad2)
+```
+Change all to Fct
+
+```{r}
+df[] <- lapply( df, factor)
+
+```
+
+
+# MLR
+```{r}
+test <- multinom( HistoriaActividad2 ~ 
+                    `[Placa dental]`+ 
+                    `[Cepillado]`+ 
+                    `[Pasta dental fluorada]`	+
+                    `[Uso de mamadera DIURNA con azúcar]`	+
+                    `[Uso de mamadera NOCTURNA con azúcar]`	+
+                    `[Ingesta de bebidas carbonatadas con azúcar]`	+
+                    `[Ingesta Jugos naturales]`	+	
+                    `[Ha asistido a control odg?]`	+
+                    `[Ha asistido a control niño sano médico?]`	+
+                    `[Huerta con alimentos en casa?]`	+
+                    `[Agua potable en casa]`		+
+                    `[Luz eléctrica en casa]`		+
+                    `[Grupo familiar se reconoce mapuche]`	+
+                    `[Vive en campo?]` ,
+                  data = df)
+```
+View summary of the model
+```{r}
+summary(test)
+```
+
+
+Check
+## Prediction
+```{r prediction}
+head(predict(test, df, type = "prob"))
+```
+
+## z values
+
+
+```{r}
+z <- summary(test)$coefficients/summary(test)$standard.errors
+z
+```
+## 2 tailed p values
+```{r}
+p <- (1 - pnorm(abs(z), 0, 1))*2
+p
+```
+
+```{r}
+head(fitted(test))
+```
+
+
+```{r}
+df$predict <- predict(test, df)
+addmargins(table(df$predict, df$HistoriaActividad2))
+```
+```{r}
+chisq.test(table(df$predict, df$HistoriaActividad2))
+```
+
+
+## Odds ratios
+```{r odds ratios}
+
+model <- glm(HistoriaActividad2 ~ 
+                    `[Placa dental]`+ 
+                    `[Cepillado]`+ 
+                    `[Pasta dental fluorada]`	+
+                    `[Uso de mamadera DIURNA con azúcar]`	+
+                    `[Uso de mamadera NOCTURNA con azúcar]`	+
+                    `[Ingesta de bebidas carbonatadas con azúcar]`	+
+                    `[Ingesta Jugos naturales]`	+	
+                    `[Ha asistido a control odg?]`	+
+                    `[Ha asistido a control niño sano médico?]`	+
+                    `[Huerta con alimentos en casa?]`	+
+                    `[Agua potable en casa]`		+
+                    `[Luz eléctrica en casa]`		+
+                    `[Grupo familiar se reconoce mapuche]`	+
+                    `[Vive en campo?]` ,
+                  data = df, family=binomial("logit"))
+oddrat <- exp(coef(model))
+oddrat
+```
