@@ -9,7 +9,10 @@ output: html_notebook
 ```{r eval=FALSE}
 library(tidyverse) # for data wrangling, graphs, etc
 library(nnet) # for ordinal log reg
+<<<<<<< HEAD
 library("stargazer") # for tables
+=======
+>>>>>>> 3b1924cefa313f7d96f61566c37446c391af9b75
 ```
 
 # Dataset
@@ -24,8 +27,8 @@ df <- df %>%
 ```
 
 ```{r check structure}
-glimpse(df)
 dim(df)
+summary(df)
 ```
 
 Check history of caries
@@ -74,7 +77,6 @@ test <- multinom( HistoriaActividad2 ~
                     `[Ha asistido a control niño sano médico?]`	+
                     `[Huerta con alimentos en casa?]`	+
                     `[Agua potable en casa]`		+
-                    `[Luz eléctrica en casa]`		+
                     `[Grupo familiar se reconoce mapuche]`	+
                     `[Vive en campo?]` ,
                   data = df)
@@ -82,7 +84,34 @@ test <- multinom( HistoriaActividad2 ~
 View summary of the model
 ```{r}
 summary(test)
+
+
+
+
+
+
 ```
+Nice table
+```{r}
+stargazer(test,
+          type = "html",
+          title = "Multinomial logistic regression model of rick factors for history and activity of Early Childhood Caries.", 
+          # dep.var.caption  = "Reference level: no history and no activity. OR (95% IC)",
+          # column.labels = c("Good", "Better"),
+          dep.var.labels = c("Only activity","Only history", "History and activity"),
+          ci = TRUE,
+          apply.coef = exp,
+          apply.se   = exp, 
+          # keep.stat = "wald", 
+          out = "outputs/models-yes-ci.html")
+
+```
+See
+
+coef.vector <- exp(model$coef)
+
+stargazer(model,coef=list(coef.vector))
+
 
 
 Check
@@ -97,7 +126,6 @@ head(predict(test, df, type = "prob"))
 ```{r}
 z <- summary(test)$coefficients/summary(test)$standard.errors
 z
-
 ```
 ## 2 tailed p values
 ```{r}
@@ -123,9 +151,30 @@ chisq.test(table(df$predict, df$HistoriaActividad2))
 
 ## Odds ratios
 
+
 ```{r}
 OR <- exp(cbind(Odds_and_OR=coef(test), confint(test)))
-stargazer(OR, type = "text", title="Odds ratio", digits=1, out="outputs/oddsratio.txt")
+stargazer(OR, type = "text", title="Odds ratio", digits=1, out="outputs/oddsratio.txt", flip=TRUE)
 rm(OR)
 ```
 
+```{r odds ratios}
+
+model <- glm(HistoriaActividad2 ~ 
+                    `[Placa dental]`+ 
+                    `[Cepillado]`+ 
+                    `[Pasta dental fluorada]`	+
+                    `[Uso de mamadera DIURNA con azúcar]`	+
+                    `[Uso de mamadera NOCTURNA con azúcar]`	+
+                    `[Ingesta de bebidas carbonatadas con azúcar]`	+
+                    `[Ingesta Jugos naturales]`	+	
+                    `[Ha asistido a control odg?]`	+
+                    `[Ha asistido a control niño sano médico?]`	+
+                    `[Huerta con alimentos en casa?]`	+
+                    `[Agua potable en casa]`		+
+                    `[Grupo familiar se reconoce mapuche]`	+
+                    `[Vive en campo?]` ,
+                  data = df, family=binomial("logit"))
+oddrat <- exp(coef(model))
+rm(oddrat)
+```

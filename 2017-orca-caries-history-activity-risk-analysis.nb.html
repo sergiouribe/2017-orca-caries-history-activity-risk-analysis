@@ -178,10 +178,13 @@ $(document).ready(function () {
 <h1>Packages</h1>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjpbImxpYnJhcnkodGlkeXZlcnNlKSAjIGZvciBkYXRhIHdyYW5nbGluZywgZ3JhcGhzLCBldGMiLCJsaWJyYXJ5KG5uZXQpICMgZm9yIG9yZGluYWwgbG9nIHJlZyIsImxpYnJhcnkoXCJzdGFyZ2F6ZXJcIikgIyBmb3IgdGFibGVzIl19 -->
+<!-- rnb-source-begin eyJkYXRhIjpbImxpYnJhcnkodGlkeXZlcnNlKSAjIGZvciBkYXRhIHdyYW5nbGluZywgZ3JhcGhzLCBldGMiLCJsaWJyYXJ5KG5uZXQpICMgZm9yIG9yZGluYWwgbG9nIHJlZyIsIjw8PDw8PDwgSEVBRCIsImxpYnJhcnkoXCJzdGFyZ2F6ZXJcIikgIyBmb3IgdGFibGVzIiwiPT09PT09PSIsIj4+Pj4+Pj4gM2IxOTI0Y2VmYTMxM2Y3ZDk2ZjYxNTY2YzM3NDQ2YzM5MWFmOWI3NSJdfQ== -->
 <pre class="r"><code>library(tidyverse) # for data wrangling, graphs, etc
 library(nnet) # for ordinal log reg
-library(&quot;stargazer&quot;) # for tables</code></pre>
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+library(&quot;stargazer&quot;) # for tables
+=======
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 3b1924cefa313f7d96f61566c37446c391af9b75</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
@@ -193,34 +196,6 @@ library(&quot;stargazer&quot;) # for tables</code></pre>
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGYgPC0gcmVhZF9jc3YoXCJkYXRhc2V0L2hpc3RvcmlhYWN0aXZpZGFkLmNzdlwiKVxuYGBgIn0= -->
 <pre class="r"><code>df &lt;- read_csv(&quot;dataset/historiaactividad.csv&quot;)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiUGFyc2VkIHdpdGggY29sdW1uIHNwZWNpZmljYXRpb246XG5jb2xzKFxuICAuZGVmYXVsdCA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgSUQgPSBjb2xfaW50ZWdlcigpLFxuICBgRXRuaWNpZGFkP2AgPSBjb2xfaW50ZWdlcigpLFxuICBgQXBlbGxpZG9zIG1hcHVjaGVzP2AgPSBjb2xfaW50ZWdlcigpLFxuICBgTGVzaW9uZXMgZGUgY2FyaWVzIFs1LjVdYCA9IGNvbF9pbnRlZ2VyKCksXG4gIGBMZXNpb25lcyBkZSBjYXJpZXMgWzUuNF1gID0gY29sX2ludGVnZXIoKSxcbiAgYExlc2lvbmVzIGRlIGNhcmllcyBbNS4zXWAgPSBjb2xfaW50ZWdlcigpLFxuICBgTGVzaW9uZXMgZGUgY2FyaWVzIFs1LjJdYCA9IGNvbF9pbnRlZ2VyKCksXG4gIGBMZXNpb25lcyBkZSBjYXJpZXMgWzUuMV1gID0gY29sX2ludGVnZXIoKSxcbiAgYExlc2lvbmVzIGRlIGNhcmllcyBbNi4xXWAgPSBjb2xfaW50ZWdlcigpLFxuICBgTGVzaW9uZXMgZGUgY2FyaWVzIFs2LjJdYCA9IGNvbF9pbnRlZ2VyKCksXG4gIGBMZXNpb25lcyBkZSBjYXJpZXMgWzYuM11gID0gY29sX2ludGVnZXIoKSxcbiAgYExlc2lvbmVzIGRlIGNhcmllcyBbNi40XWAgPSBjb2xfaW50ZWdlcigpLFxuICBgTGVzaW9uZXMgZGUgY2FyaWVzIFs2LjVdYCA9IGNvbF9pbnRlZ2VyKCksXG4gIGBMZXNpb25lcyBkZSBjYXJpZXMgWzcuNV1gID0gY29sX2ludGVnZXIoKSxcbiAgYExlc2lvbmVzIGRlIGNhcmllcyBbNy40XWAgPSBjb2xfaW50ZWdlcigpLFxuICBgTGVzaW9uZXMgZGUgY2FyaWVzIFs3LjNdYCA9IGNvbF9pbnRlZ2VyKCksXG4gIGBMZXNpb25lcyBkZSBjYXJpZXMgWzcuMl1gID0gY29sX2ludGVnZXIoKSxcbiAgYExlc2lvbmVzIGRlIGNhcmllcyBbNy4xXWAgPSBjb2xfaW50ZWdlcigpLFxuICBgTGVzaW9uZXMgZGUgY2FyaWVzIFs4LjFdYCA9IGNvbF9pbnRlZ2VyKCksXG4gIGBMZXNpb25lcyBkZSBjYXJpZXMgWzguMl1gID0gY29sX2ludGVnZXIoKVxuICAjIC4uLiB3aXRoIDI2IG1vcmUgY29sdW1uc1xuKVxuU2VlIHNwZWMoLi4uKSBmb3IgZnVsbCBjb2x1bW4gc3BlY2lmaWNhdGlvbnMuXG4ifQ== -->
-<pre><code>Parsed with column specification:
-cols(
-  .default = col_character(),
-  ID = col_integer(),
-  `Etnicidad?` = col_integer(),
-  `Apellidos mapuches?` = col_integer(),
-  `Lesiones de caries [5.5]` = col_integer(),
-  `Lesiones de caries [5.4]` = col_integer(),
-  `Lesiones de caries [5.3]` = col_integer(),
-  `Lesiones de caries [5.2]` = col_integer(),
-  `Lesiones de caries [5.1]` = col_integer(),
-  `Lesiones de caries [6.1]` = col_integer(),
-  `Lesiones de caries [6.2]` = col_integer(),
-  `Lesiones de caries [6.3]` = col_integer(),
-  `Lesiones de caries [6.4]` = col_integer(),
-  `Lesiones de caries [6.5]` = col_integer(),
-  `Lesiones de caries [7.5]` = col_integer(),
-  `Lesiones de caries [7.4]` = col_integer(),
-  `Lesiones de caries [7.3]` = col_integer(),
-  `Lesiones de caries [7.2]` = col_integer(),
-  `Lesiones de caries [7.1]` = col_integer(),
-  `Lesiones de caries [8.1]` = col_integer(),
-  `Lesiones de caries [8.2]` = col_integer()
-  # ... with 26 more columns
-)
-See spec(...) for full column specifications.</code></pre>
-<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>Select only the variables for this analysis</p>
@@ -235,80 +210,220 @@ See spec(...) for full column specifications.</code></pre>
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZ2xpbXBzZShkZilcbmBgYCJ9 -->
-<pre class="r"><code>glimpse(df)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3VtbWFyeShkZilcblxuYGBgIn0= -->
+<pre class="r"><code>summary(df)
+</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiT2JzZXJ2YXRpb25zOiAyOTJcblZhcmlhYmxlczogNTNcbiQgSUQgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8aW50PiAuLi5cbiQgQXBlbGxpZG8gZXhhbWluYWRvci9hICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Y2hyPiAuLi5cbiQgc2V4byAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Y2hyPiAuLi5cbiQgTHVnYXIgZGUgZXhhbWVuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Y2hyPiAuLi5cbiQgRXRuaWNpZGFkPyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8aW50PiAuLi5cbiQgQXBlbGxpZG9zIG1hcHVjaGVzPyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8aW50PiAuLi5cbiQgRHRlcyBwcmVzZW50ZXMgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8aW50PiAuLi5cbiQgQ2FzbyBvIGNvbnRyb2wgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Y2hyPiAuLi5cbiQgY29udGFySGlzdG9yaWEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8aW50PiAuLi5cbiQgY29udGFyQWN0aXZpZGFkICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8aW50PiAuLi5cbiQgYmluSGlzdG9yaWEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Y2hyPiAuLi5cbiQgYmluQWN0aXZpZGFkICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Y2hyPiAuLi5cbiQgSGlzdG9yaWFBY3RpdmlkYWQgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Y2hyPiAuLi5cbiQgUGFyZW50ZXNjbyBkZS9sYSBhcG9kZXJhZG8vYSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Y2hyPiAuLi5cbiQgRmVjaGEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Y2hyPiAuLi5cbiQgW1BsYWNhIGRlbnRhbF0gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Y2hyPiAuLi5cbiQgW0NlcGlsbGFkb10gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Y2hyPiAuLi5cbiQgW1Bhc3RhIGRlbnRhbCBmbHVvcmFkYV0gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Y2hyPiAuLi5cbiQgW1VzbyBkZSBtYW1hZGVyYSBESVVSTkEgY29uIGF6w7pjYXJdICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGNocj4gLi4uXG4kIFtVc28gZGUgbWFtYWRlcmEgTk9DVFVSTkEgY29uIGF6w7pjYXJdICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxjaHI+IC4uLlxuJCBbSW5nZXN0YSBkZSBiZWJpZGFzIGNhcmJvbmF0YWRhcyBjb24gYXrDumNhcl0gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Y2hyPiAuLi5cbiQgW0luZ2VzdGEgSnVnb3MgbmF0dXJhbGVzXSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Y2hyPiAuLi5cbiQgW0hhIGFzaXN0aWRvIGEgY29udHJvbCBvZGc/XSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Y2hyPiAuLi5cbiQgW0hhIGFzaXN0aWRvIGEgY29udHJvbCBuacOxbyBzYW5vIG3DqWRpY28/XSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxjaHI+IC4uLlxuJCBbSHVlcnRhIGNvbiBhbGltZW50b3MgZW4gY2FzYT9dICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxjaHI+IC4uLlxuJCBbQWd1YSBwb3RhYmxlIGVuIGNhc2FdICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxjaHI+IC4uLlxuJCBbTHV6IGVsw6ljdHJpY2EgZW4gY2FzYV0gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Y2hyPiAuLi5cbiQgUHJldmlzacOzbiBzYWx1ZCBmYW1pbGlhciAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGNocj4gLi4uXG4kIFF1w6kgaWRpb21hcyBzZSBoYWJsYW4gZW4gbGEgY2FzYT8gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxjaHI+IC4uLlxuJCBFZGFkIGFwb2RlcmFkbyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxjaHI+IC4uLlxuJCBFZGFkIG1hZHJlIG8gYXBvZGVyYWRhIGZlbWVuaW5hICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxjaHI+IC4uLlxuJCBFdG5pY2lkYWQgcGFkcmUgbyBhcG9kZXJhZG8gbWFzY3VsaW5vICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxjaHI+IC4uLlxuJCBUcmFiYWpvIHBhZHJlIG8gYXBvZGVyYWRvIG1hc2N1bGlubyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxjaHI+IC4uLlxuJCBBdXRvcnJlY29ub2NpbWllbnRvIGV0bmljaWRhZCBwYWRyZXMgbyBhcG9kZXJhZG9zIFtQYWRyZSBvIGFwb2RlcmFkbyBtYXNjdWxpbm9dIDxjaHI+IC4uLlxuJCBBdXRvcnJlY29ub2NpbWllbnRvIGV0bmljaWRhZCBwYWRyZXMgbyBhcG9kZXJhZG9zIFtNYWRyZSBvIGFwb2RlcmFkYSBmZW1lbmluYV0gIDxjaHI+IC4uLlxuJCBFbXBsZW8gcGFkcmVzIG8gYXBvZGVyYWRvcyBbUGFkcmUgbyBhcG9kZXJhZG8gbWFzY3VsaW5vXSAgICAgICAgICAgICAgICAgICAgICAgIDxjaHI+IC4uLlxuJCBFbXBsZW8gcGFkcmVzIG8gYXBvZGVyYWRvcyBbTWFkcmUgbyBhcG9kZXJhZGEgZmVtZW5pbmFdICAgICAgICAgICAgICAgICAgICAgICAgIDxjaHI+IC4uLlxuJCBFZHVjYWNpw7NuIHBhZHJlcyBvIGFwb2RlcmFkb3MgW1BhZHJlIG8gYXBvZGVyYWRvIG1hc2N1bGlub10gICAgICAgICAgICAgICAgICAgICA8Y2hyPiAuLi5cbiQgRWR1Y2FjacOzbiBwYWRyZXMgbyBhcG9kZXJhZG9zIFtNYWRyZSBvIGFwb2RlcmFkYSBmZW1lbmluYV0gICAgICAgICAgICAgICAgICAgICAgPGNocj4gLi4uXG4kIEVtcGxlbyBwYWRyZSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGNocj4gLi4uXG4kIEVtcGxlbyBtYWRyZSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGNocj4gLi4uXG4kIFZpdmllbmRhICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGNocj4gLi4uXG4kIEfDqW5lcm8gYXBvZGVyYWRvICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxjaHI+IC4uLlxuJCBbR3J1cG8gZmFtaWxpYXIgc2UgcmVjb25vY2UgbWFwdWNoZV0gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxjaHI+IC4uLlxuJCBbQXBvZGVyYWRvIChyZXNwb25zYWJsZSBkZWwgbWVub3IpIHNlIHJlY29ub2NlIG1hcHVjaGUpXSAgICAgICAgICAgICAgICAgICAgICAgIDxjaHI+IC4uLlxuJCBbVml2ZSBlbiBjYW1wbz9dICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxjaHI+IC4uLlxuJCBQdW50YWplIGZpY2hhIENBUyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxjaHI+IC4uLlxuJCBjMSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxjaHI+IC4uLlxuJCBlICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxjaHI+IC4uLlxuJCBvICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxjaHI+IC4uLlxuJCBjMyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxjaHI+IC4uLlxuJCBjMWVvICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxjaHI+IC4uLlxuJCBjM2VvICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxjaHI+IC4uLlxuIn0= -->
-<pre><code>Observations: 292
-Variables: 53
-$ ID                                                                              &lt;int&gt; ...
-$ Apellido examinador/a                                                           &lt;chr&gt; ...
-$ sexo                                                                            &lt;chr&gt; ...
-$ Lugar de examen                                                                 &lt;chr&gt; ...
-$ Etnicidad?                                                                      &lt;int&gt; ...
-$ Apellidos mapuches?                                                             &lt;int&gt; ...
-$ Dtes presentes                                                                  &lt;int&gt; ...
-$ Caso o control                                                                  &lt;chr&gt; ...
-$ contarHistoria                                                                  &lt;int&gt; ...
-$ contarActividad                                                                 &lt;int&gt; ...
-$ binHistoria                                                                     &lt;chr&gt; ...
-$ binActividad                                                                    &lt;chr&gt; ...
-$ HistoriaActividad                                                               &lt;chr&gt; ...
-$ Parentesco de/la apoderado/a                                                    &lt;chr&gt; ...
-$ Fecha                                                                           &lt;chr&gt; ...
-$ [Placa dental]                                                                  &lt;chr&gt; ...
-$ [Cepillado]                                                                     &lt;chr&gt; ...
-$ [Pasta dental fluorada]                                                         &lt;chr&gt; ...
-$ [Uso de mamadera DIURNA con azúcar]                                             &lt;chr&gt; ...
-$ [Uso de mamadera NOCTURNA con azúcar]                                           &lt;chr&gt; ...
-$ [Ingesta de bebidas carbonatadas con azúcar]                                    &lt;chr&gt; ...
-$ [Ingesta Jugos naturales]                                                       &lt;chr&gt; ...
-$ [Ha asistido a control odg?]                                                    &lt;chr&gt; ...
-$ [Ha asistido a control niño sano médico?]                                       &lt;chr&gt; ...
-$ [Huerta con alimentos en casa?]                                                 &lt;chr&gt; ...
-$ [Agua potable en casa]                                                          &lt;chr&gt; ...
-$ [Luz eléctrica en casa]                                                         &lt;chr&gt; ...
-$ Previsión salud familiar                                                        &lt;chr&gt; ...
-$ Qué idiomas se hablan en la casa?                                               &lt;chr&gt; ...
-$ Edad apoderado                                                                  &lt;chr&gt; ...
-$ Edad madre o apoderada femenina                                                 &lt;chr&gt; ...
-$ Etnicidad padre o apoderado masculino                                           &lt;chr&gt; ...
-$ Trabajo padre o apoderado masculino                                             &lt;chr&gt; ...
-$ Autorreconocimiento etnicidad padres o apoderados [Padre o apoderado masculino] &lt;chr&gt; ...
-$ Autorreconocimiento etnicidad padres o apoderados [Madre o apoderada femenina]  &lt;chr&gt; ...
-$ Empleo padres o apoderados [Padre o apoderado masculino]                        &lt;chr&gt; ...
-$ Empleo padres o apoderados [Madre o apoderada femenina]                         &lt;chr&gt; ...
-$ Educación padres o apoderados [Padre o apoderado masculino]                     &lt;chr&gt; ...
-$ Educación padres o apoderados [Madre o apoderada femenina]                      &lt;chr&gt; ...
-$ Empleo padre                                                                    &lt;chr&gt; ...
-$ Empleo madre                                                                    &lt;chr&gt; ...
-$ Vivienda                                                                        &lt;chr&gt; ...
-$ Género apoderado                                                                &lt;chr&gt; ...
-$ [Grupo familiar se reconoce mapuche]                                            &lt;chr&gt; ...
-$ [Apoderado (responsable del menor) se reconoce mapuche)]                        &lt;chr&gt; ...
-$ [Vive en campo?]                                                                &lt;chr&gt; ...
-$ Puntaje ficha CAS                                                               &lt;chr&gt; ...
-$ c1                                                                              &lt;chr&gt; ...
-$ e                                                                               &lt;chr&gt; ...
-$ o                                                                               &lt;chr&gt; ...
-$ c3                                                                              &lt;chr&gt; ...
-$ c1eo                                                                            &lt;chr&gt; ...
-$ c3eo                                                                            &lt;chr&gt; ...</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGltKGRmKVxuYGBgIn0= -->
-<pre class="r"><code>dim(df)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDI5MiAgNTNcbiJ9 -->
-<pre><code>[1] 292  53</code></pre>
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgIElEICAgICAgQXBlbGxpZG8gZXhhbWluYWRvci9hICAgICAgICBzZXhvICAgIFxuIDcxMTkgICA6ICAyICAgSkFSQSAgOjEyNyAgICAgICAgICAgIEZlbWVuaW5vIDoxNjMgIFxuIDc0ODIgICA6ICAyICAgUEVJR05BOiA1NyAgICAgICAgICAgIE1hc2N1bGlubzoxMjggIFxuIDg0ODEgICA6ICAyICAgVVJJQkUgOjEwNyAgICAgICAgICAgIE5BJ3MgICAgIDogIDEgIFxuIDg4NjEgICA6ICAyICAgTkEncyAgOiAgMSAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuIDkxMDQgICA6ICAyICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuIDkzMjAgICA6ICAyICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuIChPdGhlcik6MjgwICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEx1Z2FyIGRlIGV4YW1lbiBFdG5pY2lkYWQ/XG4gQ09MRUdJTyBTQU4gU0VCQVNUSUFOICAgICAgICAgICAgICAgICAgICA6MTA3ICAgIDAgICA6MjkxICBcbiBDT0xFR0lPIE1BUklBIEFMVkFSQURPICAgICAgICAgICAgICAgICAgIDogOTEgICAgTkEnczogIDEgIFxuIEpBUkRJTiBJTlRFUkNVTFRVUkFMIE1FVEFUVVdFIERFIEJPQ0FUT01BOiAyNiAgICAgICAgICAgICAgXG4gRVNDVUVMQSBSVVJBTCBIVUVMTEFIVUUgICAgICAgICAgICAgICAgICA6IDI1ICAgICAgICAgICAgICBcbiBFU0NVRUxBIFJVUkFMIFBVTExJTlFVRSAgICAgICAgICAgICAgICAgIDogMTQgICAgICAgICAgICAgIFxuIChPdGhlcikgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgOiAyOCAgICAgICAgICAgICAgXG4gTkEncyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA6ICAxICAgICAgICAgICAgICBcbiBBcGVsbGlkb3MgbWFwdWNoZXM/IER0ZXMgcHJlc2VudGVzIENhc28gbyBjb250cm9sIGNvbnRhckhpc3RvcmlhXG4gMCAgIDoyMDcgICAgICAgICAgICAxNiAgOiAgMiAgICAgICBDYXNvICAgOjE5MiAgICAwICAgICAgOjE5NyAgIFxuIDEgICA6IDU1ICAgICAgICAgICAgMTggIDogIDcgICAgICAgQ29udHJvbDogOTkgICAgMSAgICAgIDogMjMgICBcbiAyICAgOiAyOSAgICAgICAgICAgIDE5ICA6IDE0ICAgICAgIE5BJ3MgICA6ICAxICAgIDIgICAgICA6IDIxICAgXG4gTkEnczogIDEgICAgICAgICAgICAyMCAgOjI2OCAgICAgICAgICAgICAgICAgICAgICAzICAgICAgOiAxNyAgIFxuICAgICAgICAgICAgICAgICAgICAgTkEnczogIDEgICAgICAgICAgICAgICAgICAgICAgNCAgICAgIDogMTEgICBcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIChPdGhlcik6IDIyICAgXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQSdzICAgOiAgMSAgIFxuIGNvbnRhckFjdGl2aWRhZCBiaW5IaXN0b3JpYSBiaW5BY3RpdmlkYWQgSGlzdG9yaWFBY3RpdmlkYWRcbiAwICAgICAgOjEyNCAgICAgTm8gIDoxOTcgICAgTm8gIDoxMjQgICAgIE5vTm86MTAxICAgICAgICAgXG4gMSAgICAgIDogMzIgICAgIFNpICA6IDk0ICAgIFNpICA6MTY3ICAgICBOb1NpOiA5NiAgICAgICAgIFxuIDIgICAgICA6IDI2ICAgICBOQSdzOiAgMSAgICBOQSdzOiAgMSAgICAgU2lObzogMjMgICAgICAgICBcbiAzICAgICAgOiAyMiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFNpU2k6IDcxICAgICAgICAgXG4gNCAgICAgIDogMjIgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOQSdzOiAgMSAgICAgICAgIFxuIChPdGhlcik6IDY1ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiBOQSdzICAgOiAgMSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4gUGFyZW50ZXNjbyBkZS9sYSBhcG9kZXJhZG8vYSAgICAgIEZlY2hhICAgICBbUGxhY2EgZGVudGFsXSBbQ2VwaWxsYWRvXVxuICNOL0QgIDoxMzEgICAgICAgICAgICAgICAgICAgI04vRCAgICA6MTMxICAgI04vRDoxMzEgICAgICAgI04vRDoxMzEgICBcbiBBYnVlbGE6ICA1ICAgICAgICAgICAgICAgICAgIDIwLzA2LzEzOiAyMSAgIE5vICA6IDU5ICAgICAgIE5vICA6IDU0ICAgXG4gTWFkcmUgOjEzOCAgICAgICAgICAgICAgICAgICAyMS8wNi8xMzogMTkgICBTaSAgOjEwMSAgICAgICBTaSAgOjEwNiAgIFxuIFBhZHJlIDogMTcgICAgICAgICAgICAgICAgICAgMTgvMDYvMTM6IDE4ICAgTkEnczogIDEgICAgICAgTkEnczogIDEgICBcbiBOQSdzICA6ICAxICAgICAgICAgICAgICAgICAgIDAzLzA2LzEzOiAxNyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAoT3RoZXIpIDogODUgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEncyAgICA6ICAxICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiBbUGFzdGEgZGVudGFsIGZsdW9yYWRhXSBbVXNvIGRlIG1hbWFkZXJhIERJVVJOQSBjb24gYXrDumNhcl1cbiAjTi9EOjEzMSAgICAgICAgICAgICAgICAjTi9EOjEzMSAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuIE5vICA6IDExICAgICAgICAgICAgICAgIE5vICA6MTMzICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4gU2kgIDoxNDkgICAgICAgICAgICAgICAgU2kgIDogMjcgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiBOQSdzOiAgMSAgICAgICAgICAgICAgICBOQSdzOiAgMSAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuIFtVc28gZGUgbWFtYWRlcmEgTk9DVFVSTkEgY29uIGF6w7pjYXJdXG4gI04vRDoxMzEgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuIE5vICA6MTI5ICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiBTaSAgOiAzMSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4gTkEnczogIDEgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuIFtJbmdlc3RhIGRlIGJlYmlkYXMgY2FyYm9uYXRhZGFzIGNvbiBhesO6Y2FyXSBbSW5nZXN0YSBKdWdvcyBuYXR1cmFsZXNdXG4gI04vRDoxMzEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI04vRDoxMzEgICAgICAgICAgICAgICAgIFxuIE5vICA6IDUyICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5vICA6IDI5ICAgICAgICAgICAgICAgICBcbiBTaSAgOjEwOCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBTaSAgOjEzMSAgICAgICAgICAgICAgICAgXG4gTkEnczogIDEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEnczogIDEgICAgICAgICAgICAgICAgIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuIFtIYSBhc2lzdGlkbyBhIGNvbnRyb2wgb2RnP10gW0hhIGFzaXN0aWRvIGEgY29udHJvbCBuacOxbyBzYW5vIG3DqWRpY28/XVxuICNOL0Q6MTMxICAgICAgICAgICAgICAgICAgICAgI04vRDoxMzEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiBObyAgOiAzNyAgICAgICAgICAgICAgICAgICAgIE5vICA6ICAyICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4gU2kgIDoxMjMgICAgICAgICAgICAgICAgICAgICBTaSAgOjE1OCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuIE5BJ3M6ICAxICAgICAgICAgICAgICAgICAgICAgTkEnczogIDEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiBbSHVlcnRhIGNvbiBhbGltZW50b3MgZW4gY2FzYT9dIFtBZ3VhIHBvdGFibGUgZW4gY2FzYV1cbiAjTi9EOjEzMSAgICAgICAgICAgICAgICAgICAgICAgICNOL0Q6MTMxICAgICAgICAgICAgICBcbiBObyAgOiA5NyAgICAgICAgICAgICAgICAgICAgICAgIE5vICA6IDM2ICAgICAgICAgICAgICBcbiBTaSAgOiA2MyAgICAgICAgICAgICAgICAgICAgICAgIFNpICA6MTI0ICAgICAgICAgICAgICBcbiBOQSdzOiAgMSAgICAgICAgICAgICAgICAgICAgICAgIE5BJ3M6ICAxICAgICAgICAgICAgICBcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiBbTHV6IGVsw6ljdHJpY2EgZW4gY2FzYV0gUHJldmlzacOzbiBzYWx1ZCBmYW1pbGlhclxuICNOL0Q6MTMxICAgICAgICAgICAgICAgICNOL0QgICAgOjEzMSAgICAgICAgICAgIFxuIE5vICA6ICA3ICAgICAgICAgICAgICAgIEZPTkFTQSBBOiA5MSAgICAgICAgICAgIFxuIFNpICA6MTUzICAgICAgICAgICAgICAgIEZPTkFTQSBCOiAzMCAgICAgICAgICAgIFxuIE5BJ3M6ICAxICAgICAgICAgICAgICAgIEZPTkFTQSBDOiAxNiAgICAgICAgICAgIFxuICAgICAgICAgICAgICAgICAgICAgICAgIEZPTkFTQSBEOiAgOCAgICAgICAgICAgIFxuICAgICAgICAgICAgICAgICAgICAgICAgIElTQVBSRSAgOiAxNSAgICAgICAgICAgIFxuICAgICAgICAgICAgICAgICAgICAgICAgIE5BJ3MgICAgOiAgMSAgICAgICAgICAgIFxuICAgUXXDqSBpZGlvbWFzIHNlIGhhYmxhbiBlbiBsYSBjYXNhPyBFZGFkIGFwb2RlcmFkb1xuICNOL0QgICAgICAgICAgICAgICA6MTMxICAgICAgICAgICAgICNOL0QgICA6MTMxICAgXG4gRXNwYcOxb2wgICAgICAgICAgICA6MTQ0ICAgICAgICAgICAgIDIzICAgICA6IDEzICAgXG4gRXNwYcOxb2wsIE1hcHVkdW5ndW46IDE2ICAgICAgICAgICAgIDI5ICAgICA6IDEyICAgXG4gTkEncyAgICAgICAgICAgICAgIDogIDEgICAgICAgICAgICAgMzAgICAgIDogMTEgICBcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAyNSAgICAgOiAxMCAgIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIChPdGhlcik6MTE0ICAgXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEncyAgIDogIDEgICBcbiBFZGFkIG1hZHJlIG8gYXBvZGVyYWRhIGZlbWVuaW5hIEV0bmljaWRhZCBwYWRyZSBvIGFwb2RlcmFkbyBtYXNjdWxpbm9cbiAjTi9EOjEzMSAgICAgICAgICAgICAgICAgICAgICAgICNOL0Q6MTMxICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiAwICAgOjE2MCAgICAgICAgICAgICAgICAgICAgICAgIDAgICA6MTYwICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiBOQSdzOiAgMSAgICAgICAgICAgICAgICAgICAgICAgIE5BJ3M6ICAxICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiBUcmFiYWpvIHBhZHJlIG8gYXBvZGVyYWRvIG1hc2N1bGlub1xuICNOL0Q6MTMxICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4gMCAgIDoxNjAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiBOQSdzOiAgMSAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4gQXV0b3JyZWNvbm9jaW1pZW50byBldG5pY2lkYWQgcGFkcmVzIG8gYXBvZGVyYWRvcyBbUGFkcmUgbyBhcG9kZXJhZG8gbWFzY3VsaW5vXVxuICNOL0QgICAgICAgICAgICA6MTMxICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiA5OSBObyBkaXNwb25pYmxlOiAyMCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4gTWFwdWNoZSAgICAgICAgIDogNDQgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuIE5vIG1hcHVjaGUgICAgICA6IDk2ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiBOQSdzICAgICAgICAgICAgOiAgMSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiBBdXRvcnJlY29ub2NpbWllbnRvIGV0bmljaWRhZCBwYWRyZXMgbyBhcG9kZXJhZG9zIFtNYWRyZSBvIGFwb2RlcmFkYSBmZW1lbmluYV1cbiAjTi9EICAgICAgOjEzMSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiBNYXB1Y2hlICAgOiA3NSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiBObyBtYXB1Y2hlOiA4NSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiBOQSdzICAgICAgOiAgMSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiBFbXBsZW8gcGFkcmVzIG8gYXBvZGVyYWRvcyBbUGFkcmUgbyBhcG9kZXJhZG8gbWFzY3VsaW5vXVxuICNOL0QgICAgICAgICAgICAgICAgICAgOjEzMSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4gMSBTaW4gZW1wbGVvICAgICAgICAgICA6ICA2ICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiAyIEluZGVwZW5kaWVudGUgICAgICAgIDogMzIgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuIDMgZW1wbGVhZG8gc2luIGNvbnRyYXRvOiAxOCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4gNCBlbXBsZWFkbyBjb250cmF0YWRvICA6IDgzICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiA5OSBObyBkaXNwb25pYmxlICAgICAgIDogMjEgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuIE5BJ3MgICAgICAgICAgICAgICAgICAgOiAgMSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4gRW1wbGVvIHBhZHJlcyBvIGFwb2RlcmFkb3MgW01hZHJlIG8gYXBvZGVyYWRhIGZlbWVuaW5hXVxuICNOL0QgICAgICAgICAgICAgICAgICAgOjEzMSAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiAxIFNpbiBlbXBsZW8gICAgICAgICAgIDogNzkgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4gMiBJbmRlcGVuZGllbnRlICAgICAgICA6IDEzICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuIDMgZW1wbGVhZG8gc2luIGNvbnRyYXRvOiAxNSAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiA0IGVtcGxlYWRvIGNvbnRyYXRhZG8gIDogNTMgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4gTkEncyAgICAgICAgICAgICAgICAgICA6ICAxICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiBFZHVjYWNpw7NuIHBhZHJlcyBvIGFwb2RlcmFkb3MgW1BhZHJlIG8gYXBvZGVyYWRvIG1hc2N1bGlub11cbiAjTi9EICAgICAgICAgICAgOjEzMSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuIDMgQsOhc2ljYSAgICAgICAgOiAyNiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuIDQgTWVkaWEgICAgICAgICA6IDgzICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4gNSBTdXBlcmlvciAgICAgIDogMzEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiA5OSBObyBkaXNwb25pYmxlOiAyMCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuIE5BJ3MgICAgICAgICAgICA6ICAxICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiBFZHVjYWNpw7NuIHBhZHJlcyBvIGFwb2RlcmFkb3MgW01hZHJlIG8gYXBvZGVyYWRhIGZlbWVuaW5hXVxuICNOL0QgICAgICA6MTMxICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiAzIELDoXNpY2EgIDogMzQgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuIDQgTWVkaWEgICA6IDg4ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiA1IFN1cGVyaW9yOiAzOCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4gTkEncyAgICAgIDogIDEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4gICAgICAgICAgICAgRW1wbGVvIHBhZHJlICAgICAgICAgICAgRW1wbGVvIG1hZHJlICAgICAgICBWaXZpZW5kYSAgXG4gI04vRCAgICAgICAgICAgICAgOjEzMSAgICNOL0QgICAgICAgICAgICAgOjEzMSAgICNOL0QgICAgICAgOjEzMSAgXG4gMCAgICAgICAgICAgICAgICAgOiAxOSAgIERVRcORQSBERSBDQVNBICAgIDogNzMgICBBbGxlZ2FkbyAgIDogNDkgIFxuIFBTSUNVTFRVUkEgICAgICAgIDogIDcgICBWRU5ERURPUkEgICAgICAgIDogIDggICBBcnJpZW5kYSAgIDogNDMgIFxuIEFHUklDVUxUT1IgICAgICAgIDogIDUgICBBU0VTT1JBIERFTCBIT0dBUjogIDUgICBDYXNhIHByb3BpYTogNjggIFxuIE1BRVNUUk8gQ0FSUElOVEVSTzogIDUgICBDQUpFUkEgICAgICAgICAgIDogIDQgICBOQSdzICAgICAgIDogIDEgIFxuIChPdGhlcikgICAgICAgICAgIDoxMjQgICAoT3RoZXIpICAgICAgICAgIDogNzAgICAgICAgICAgICAgICAgICAgIFxuIE5BJ3MgICAgICAgICAgICAgIDogIDEgICBOQSdzICAgICAgICAgICAgIDogIDEgICAgICAgICAgICAgICAgICAgIFxuICBHw6luZXJvIGFwb2RlcmFkbyBbR3J1cG8gZmFtaWxpYXIgc2UgcmVjb25vY2UgbWFwdWNoZV1cbiAjTi9EICAgICA6MTMxICAgICAjTi9EOjEzMSAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiBGZW1lbmlubyA6MTQzICAgICBObyAgOiA3NSAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiBNYXNjdWxpbm86IDE3ICAgICBTaSAgOiA4NSAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiBOQSdzICAgICA6ICAxICAgICBOQSdzOiAgMSAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiBbQXBvZGVyYWRvIChyZXNwb25zYWJsZSBkZWwgbWVub3IpIHNlIHJlY29ub2NlIG1hcHVjaGUpXSBbVml2ZSBlbiBjYW1wbz9dXG4gI04vRDoxMzEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI04vRDoxMzEgICAgICAgIFxuIE5vICA6IDg3ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE5vICA6IDc3ICAgICAgICBcbiBTaSAgOiA3MyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBTaSAgOiA4MyAgICAgICAgXG4gTkEnczogIDEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTkEnczogIDEgICAgICAgIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuIFB1bnRhamUgZmljaGEgQ0FTICAgIGMxICAgICAgICAgZSAgICAgICAgICBvICAgICAgICAgIGMzICAgICAgICBjMWVvICAgIFxuICNOL0QgICA6MTMxICAgICAgIE5BJ3M6MjkyICAgTkEnczoyOTIgICBOQSdzOjI5MiAgIE5BJ3M6MjkyICAgTkEnczoyOTIgIFxuIDAgICAgICA6IDU5ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuIDI1MDAgICA6ICA1ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuIDM1MDAgICA6ICA1ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuIDQwMDAgICA6ICA1ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuIChPdGhlcik6IDg2ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuIE5BJ3MgICA6ICAxICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuICAgYzNlbyAgICAgSGlzdG9yaWFBY3RpdmlkYWQyIHByZWRpY3QgICBcbiBOQSdzOjI5MiAgIE5vTm86MTAxICAgICAgICAgICBOb05vOiA3OCAgXG4gICAgICAgICAgICBOb1NpOiA5NiAgICAgICAgICAgTm9TaToxNzMgIFxuICAgICAgICAgICAgU2lObzogMjMgICAgICAgICAgIFNpTm86ICAyICBcbiAgICAgICAgICAgIFNpU2k6IDcxICAgICAgICAgICBTaVNpOiAzOCAgXG4gICAgICAgICAgICBOQSdzOiAgMSAgICAgICAgICAgTkEnczogIDEgIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4ifQ== -->
+<pre><code>       ID      Apellido examinador/a        sexo    
+ 7119   :  2   JARA  :127            Femenino :163  
+ 7482   :  2   PEIGNA: 57            Masculino:128  
+ 8481   :  2   URIBE :107            NA's     :  1  
+ 8861   :  2   NA's  :  1                           
+ 9104   :  2                                        
+ 9320   :  2                                        
+ (Other):280                                        
+                                  Lugar de examen Etnicidad?
+ COLEGIO SAN SEBASTIAN                    :107    0   :291  
+ COLEGIO MARIA ALVARADO                   : 91    NA's:  1  
+ JARDIN INTERCULTURAL METATUWE DE BOCATOMA: 26              
+ ESCUELA RURAL HUELLAHUE                  : 25              
+ ESCUELA RURAL PULLINQUE                  : 14              
+ (Other)                                  : 28              
+ NA's                                     :  1              
+ Apellidos mapuches? Dtes presentes Caso o control contarHistoria
+ 0   :207            16  :  2       Caso   :192    0      :197   
+ 1   : 55            18  :  7       Control: 99    1      : 23   
+ 2   : 29            19  : 14       NA's   :  1    2      : 21   
+ NA's:  1            20  :268                      3      : 17   
+                     NA's:  1                      4      : 11   
+                                                   (Other): 22   
+                                                   NA's   :  1   
+ contarActividad binHistoria binActividad HistoriaActividad
+ 0      :124     No  :197    No  :124     NoNo:101         
+ 1      : 32     Si  : 94    Si  :167     NoSi: 96         
+ 2      : 26     NA's:  1    NA's:  1     SiNo: 23         
+ 3      : 22                              SiSi: 71         
+ 4      : 22                              NA's:  1         
+ (Other): 65                                               
+ NA's   :  1                                               
+ Parentesco de/la apoderado/a      Fecha     [Placa dental] [Cepillado]
+ #N/D  :131                   #N/D    :131   #N/D:131       #N/D:131   
+ Abuela:  5                   20/06/13: 21   No  : 59       No  : 54   
+ Madre :138                   21/06/13: 19   Si  :101       Si  :106   
+ Padre : 17                   18/06/13: 18   NA's:  1       NA's:  1   
+ NA's  :  1                   03/06/13: 17                             
+                              (Other) : 85                             
+                              NA's    :  1                             
+ [Pasta dental fluorada] [Uso de mamadera DIURNA con azúcar]
+ #N/D:131                #N/D:131                           
+ No  : 11                No  :133                           
+ Si  :149                Si  : 27                           
+ NA's:  1                NA's:  1                           
+                                                            
+                                                            
+                                                            
+ [Uso de mamadera NOCTURNA con azúcar]
+ #N/D:131                             
+ No  :129                             
+ Si  : 31                             
+ NA's:  1                             
+                                      
+                                      
+                                      
+ [Ingesta de bebidas carbonatadas con azúcar] [Ingesta Jugos naturales]
+ #N/D:131                                     #N/D:131                 
+ No  : 52                                     No  : 29                 
+ Si  :108                                     Si  :131                 
+ NA's:  1                                     NA's:  1                 
+                                                                       
+                                                                       
+                                                                       
+ [Ha asistido a control odg?] [Ha asistido a control niño sano médico?]
+ #N/D:131                     #N/D:131                                 
+ No  : 37                     No  :  2                                 
+ Si  :123                     Si  :158                                 
+ NA's:  1                     NA's:  1                                 
+                                                                       
+                                                                       
+                                                                       
+ [Huerta con alimentos en casa?] [Agua potable en casa]
+ #N/D:131                        #N/D:131              
+ No  : 97                        No  : 36              
+ Si  : 63                        Si  :124              
+ NA's:  1                        NA's:  1              
+                                                       
+                                                       
+                                                       
+ [Luz eléctrica en casa] Previsión salud familiar
+ #N/D:131                #N/D    :131            
+ No  :  7                FONASA A: 91            
+ Si  :153                FONASA B: 30            
+ NA's:  1                FONASA C: 16            
+                         FONASA D:  8            
+                         ISAPRE  : 15            
+                         NA's    :  1            
+   Qué idiomas se hablan en la casa? Edad apoderado
+ #N/D               :131             #N/D   :131   
+ Español            :144             23     : 13   
+ Español, Mapudungun: 16             29     : 12   
+ NA's               :  1             30     : 11   
+                                     25     : 10   
+                                     (Other):114   
+                                     NA's   :  1   
+ Edad madre o apoderada femenina Etnicidad padre o apoderado masculino
+ #N/D:131                        #N/D:131                             
+ 0   :160                        0   :160                             
+ NA's:  1                        NA's:  1                             
+                                                                      
+                                                                      
+                                                                      
+                                                                      
+ Trabajo padre o apoderado masculino
+ #N/D:131                           
+ 0   :160                           
+ NA's:  1                           
+                                    
+                                    
+                                    
+                                    
+ Autorreconocimiento etnicidad padres o apoderados [Padre o apoderado masculino]
+ #N/D            :131                                                           
+ 99 No disponible: 20                                                           
+ Mapuche         : 44                                                           
+ No mapuche      : 96                                                           
+ NA's            :  1                                                           
+                                                                                
+                                                                                
+ Autorreconocimiento etnicidad padres o apoderados [Madre o apoderada femenina]
+ #N/D      :131                                                                
+ Mapuche   : 75                                                                
+ No mapuche: 85                                                                
+ NA's      :  1                                                                
+                                                                               
+                                                                               
+                                                                               
+ Empleo padres o apoderados [Padre o apoderado masculino]
+ #N/D                   :131                             
+ 1 Sin empleo           :  6                             
+ 2 Independiente        : 32                             
+ 3 empleado sin contrato: 18                             
+ 4 empleado contratado  : 83                             
+ 99 No disponible       : 21                             
+ NA's                   :  1                             
+ Empleo padres o apoderados [Madre o apoderada femenina]
+ #N/D                   :131                            
+ 1 Sin empleo           : 79                            
+ 2 Independiente        : 13                            
+ 3 empleado sin contrato: 15                            
+ 4 empleado contratado  : 53                            
+ NA's                   :  1                            
+                                                        
+ Educación padres o apoderados [Padre o apoderado masculino]
+ #N/D            :131                                       
+ 3 Básica        : 26                                       
+ 4 Media         : 83                                       
+ 5 Superior      : 31                                       
+ 99 No disponible: 20                                       
+ NA's            :  1                                       
+                                                            
+ Educación padres o apoderados [Madre o apoderada femenina]
+ #N/D      :131                                            
+ 3 Básica  : 34                                            
+ 4 Media   : 88                                            
+ 5 Superior: 38                                            
+ NA's      :  1                                            
+                                                           
+                                                           
+             Empleo padre            Empleo madre        Vivienda  
+ #N/D              :131   #N/D             :131   #N/D       :131  
+ 0                 : 19   DUEÑA DE CASA    : 73   Allegado   : 49  
+ PSICULTURA        :  7   VENDEDORA        :  8   Arrienda   : 43  
+ AGRICULTOR        :  5   ASESORA DEL HOGAR:  5   Casa propia: 68  
+ MAESTRO CARPINTERO:  5   CAJERA           :  4   NA's       :  1  
+ (Other)           :124   (Other)          : 70                    
+ NA's              :  1   NA's             :  1                    
+  Género apoderado [Grupo familiar se reconoce mapuche]
+ #N/D     :131     #N/D:131                            
+ Femenino :143     No  : 75                            
+ Masculino: 17     Si  : 85                            
+ NA's     :  1     NA's:  1                            
+                                                       
+                                                       
+                                                       
+ [Apoderado (responsable del menor) se reconoce mapuche)] [Vive en campo?]
+ #N/D:131                                                 #N/D:131        
+ No  : 87                                                 No  : 77        
+ Si  : 73                                                 Si  : 83        
+ NA's:  1                                                 NA's:  1        
+                                                                          
+                                                                          
+                                                                          
+ Puntaje ficha CAS    c1         e          o          c3        c1eo    
+ #N/D   :131       NA's:292   NA's:292   NA's:292   NA's:292   NA's:292  
+ 0      : 59                                                             
+ 2500   :  5                                                             
+ 3500   :  5                                                             
+ 4000   :  5                                                             
+ (Other): 86                                                             
+ NA's   :  1                                                             
+   c3eo     HistoriaActividad2 predict   
+ NA's:292   NoNo:101           NoNo: 78  
+            NoSi: 96           NoSi:173  
+            SiNo: 23           SiNo:  2  
+            SiSi: 71           SiSi: 38  
+            NA's:  1           NA's:  1  
+                                         
+                                         </code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>Check history of caries</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxub3B0aW9ucyhkaWdpdHMgPSAyKVxudGFibGUoZGYkYmluSGlzdG9yaWEpXG5gYGAifQ== -->
-<pre class="r"><code>options(digits = 2)
-table(df$binHistoria)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudGFibGUoZGYkYmluSGlzdG9yaWEpXG5cbmBgYCJ9 -->
+<pre class="r"><code>table(df$binHistoria)
+</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-output-begin eyJkYXRhIjoiXG4gTm8gIFNpIFxuMTk3ICA5NCBcbiJ9 -->
 <pre><code>
@@ -320,8 +435,9 @@ table(df$binHistoria)</code></pre>
 <p>Check activity of caries</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudGFibGUoZGYkYmluQWN0aXZpZGFkKVxuYGBgIn0= -->
-<pre class="r"><code>table(df$binActividad)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudGFibGUoZGYkYmluQWN0aXZpZGFkKVxuXG5gYGAifQ== -->
+<pre class="r"><code>table(df$binActividad)
+</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-output-begin eyJkYXRhIjoiXG4gTm8gIFNpIFxuMTI0IDE2NyBcbiJ9 -->
 <pre><code>
@@ -333,8 +449,9 @@ table(df$binHistoria)</code></pre>
 <p>Table History x activity in %</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYWRkbWFyZ2lucyhwcm9wLnRhYmxlKHRhYmxlKGRmJGJpbkhpc3RvcmlhLCBkZiRiaW5BY3RpdmlkYWQpKSoxMDApXG5gYGAifQ== -->
-<pre class="r"><code>addmargins(prop.table(table(df$binHistoria, df$binActividad))*100)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYWRkbWFyZ2lucyhwcm9wLnRhYmxlKHRhYmxlKGRmJGJpbkhpc3RvcmlhLCBkZiRiaW5BY3RpdmlkYWQpKSoxMDApXG5cbmBgYCJ9 -->
+<pre class="r"><code>addmargins(prop.table(table(df$binHistoria, df$binActividad))*100)
+</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-output-begin eyJkYXRhIjoiICAgICBcbiAgICAgICAgIE5vICAgIFNpICAgU3VtXG4gIE5vICAgMzQuNyAgMzMuMCAgNjcuN1xuICBTaSAgICA3LjkgIDI0LjQgIDMyLjNcbiAgU3VtICA0Mi42ICA1Ny40IDEwMC4wXG4ifQ== -->
 <pre><code>     
@@ -348,16 +465,9 @@ table(df$binHistoria)</code></pre>
 <p>Prepare everything for the regression Relevel</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY2xhc3MoZGYkSGlzdG9yaWFBY3RpdmlkYWQpXG5gYGAifQ== -->
-<pre class="r"><code>class(df$HistoriaActividad)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiY2hhcmFjdGVyXCJcbiJ9 -->
-<pre><code>[1] &quot;character&quot;</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGYkSGlzdG9yaWFBY3RpdmlkYWQgPC0gIGFzLmZhY3RvcihkZiRIaXN0b3JpYUFjdGl2aWRhZClcbmRmJEhpc3RvcmlhQWN0aXZpZGFkMiA8LSByZWxldmVsKGRmJEhpc3RvcmlhQWN0aXZpZGFkLCByZWYgPSBcIk5vTm9cIilcbmxldmVscyhkZiRIaXN0b3JpYUFjdGl2aWRhZDIpXG5gYGAifQ== -->
-<pre class="r"><code>df$HistoriaActividad &lt;-  as.factor(df$HistoriaActividad)
-df$HistoriaActividad2 &lt;- relevel(df$HistoriaActividad, ref = &quot;NoNo&quot;)
-levels(df$HistoriaActividad2)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGV2ZWxzKGRmJEhpc3RvcmlhQWN0aXZpZGFkMilcblxuYGBgIn0= -->
+<pre class="r"><code>levels(df$HistoriaActividad2)
+</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiTm9Ob1wiIFwiTm9TaVwiIFwiU2lOb1wiIFwiU2lTaVwiXG4ifQ== -->
 <pre><code>[1] &quot;NoNo&quot; &quot;NoSi&quot; &quot;SiNo&quot; &quot;SiSi&quot;</code></pre>
@@ -377,7 +487,7 @@ levels(df$HistoriaActividad2)</code></pre>
 <h1>MLR</h1>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudGVzdCA8LSBtdWx0aW5vbSggSGlzdG9yaWFBY3RpdmlkYWQyIH4gXG4gICAgICAgICAgICAgICAgICAgIGBbUGxhY2EgZGVudGFsXWArIFxuICAgICAgICAgICAgICAgICAgICBgW0NlcGlsbGFkb11gKyBcbiAgICAgICAgICAgICAgICAgICAgYFtQYXN0YSBkZW50YWwgZmx1b3JhZGFdYFx0K1xuICAgICAgICAgICAgICAgICAgICBgW1VzbyBkZSBtYW1hZGVyYSBESVVSTkEgY29uIGF6w7pjYXJdYFx0K1xuICAgICAgICAgICAgICAgICAgICBgW1VzbyBkZSBtYW1hZGVyYSBOT0NUVVJOQSBjb24gYXrDumNhcl1gXHQrXG4gICAgICAgICAgICAgICAgICAgIGBbSW5nZXN0YSBkZSBiZWJpZGFzIGNhcmJvbmF0YWRhcyBjb24gYXrDumNhcl1gXHQrXG4gICAgICAgICAgICAgICAgICAgIGBbSW5nZXN0YSBKdWdvcyBuYXR1cmFsZXNdYFx0K1x0XG4gICAgICAgICAgICAgICAgICAgIGBbSGEgYXNpc3RpZG8gYSBjb250cm9sIG9kZz9dYFx0K1xuICAgICAgICAgICAgICAgICAgICBgW0hhIGFzaXN0aWRvIGEgY29udHJvbCBuacOxbyBzYW5vIG3DqWRpY28/XWBcdCtcbiAgICAgICAgICAgICAgICAgICAgYFtIdWVydGEgY29uIGFsaW1lbnRvcyBlbiBjYXNhP11gXHQrXG4gICAgICAgICAgICAgICAgICAgIGBbQWd1YSBwb3RhYmxlIGVuIGNhc2FdYFx0XHQrXG4gICAgICAgICAgICAgICAgICAgIGBbTHV6IGVsw6ljdHJpY2EgZW4gY2FzYV1gXHRcdCtcbiAgICAgICAgICAgICAgICAgICAgYFtHcnVwbyBmYW1pbGlhciBzZSByZWNvbm9jZSBtYXB1Y2hlXWBcdCtcbiAgICAgICAgICAgICAgICAgICAgYFtWaXZlIGVuIGNhbXBvP11gICxcbiAgICAgICAgICAgICAgICAgIGRhdGEgPSBkZilcbmBgYCJ9 -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudGVzdCA8LSBtdWx0aW5vbSggSGlzdG9yaWFBY3RpdmlkYWQyIH4gXG4gICAgICAgICAgICAgICAgICAgIGBbUGxhY2EgZGVudGFsXWArIFxuICAgICAgICAgICAgICAgICAgICBgW0NlcGlsbGFkb11gKyBcbiAgICAgICAgICAgICAgICAgICAgYFtQYXN0YSBkZW50YWwgZmx1b3JhZGFdYFx0K1xuICAgICAgICAgICAgICAgICAgICBgW1VzbyBkZSBtYW1hZGVyYSBESVVSTkEgY29uIGF6w7pjYXJdYFx0K1xuICAgICAgICAgICAgICAgICAgICBgW1VzbyBkZSBtYW1hZGVyYSBOT0NUVVJOQSBjb24gYXrDumNhcl1gXHQrXG4gICAgICAgICAgICAgICAgICAgIGBbSW5nZXN0YSBkZSBiZWJpZGFzIGNhcmJvbmF0YWRhcyBjb24gYXrDumNhcl1gXHQrXG4gICAgICAgICAgICAgICAgICAgIGBbSW5nZXN0YSBKdWdvcyBuYXR1cmFsZXNdYFx0K1x0XG4gICAgICAgICAgICAgICAgICAgIGBbSGEgYXNpc3RpZG8gYSBjb250cm9sIG9kZz9dYFx0K1xuICAgICAgICAgICAgICAgICAgICBgW0hhIGFzaXN0aWRvIGEgY29udHJvbCBuacOxbyBzYW5vIG3DqWRpY28/XWBcdCtcbiAgICAgICAgICAgICAgICAgICAgYFtIdWVydGEgY29uIGFsaW1lbnRvcyBlbiBjYXNhP11gXHQrXG4gICAgICAgICAgICAgICAgICAgIGBbQWd1YSBwb3RhYmxlIGVuIGNhc2FdYFx0XHQrXG4gICAgICAgICAgICAgICAgICAgIGBbR3J1cG8gZmFtaWxpYXIgc2UgcmVjb25vY2UgbWFwdWNoZV1gXHQrXG4gICAgICAgICAgICAgICAgICAgIGBbVml2ZSBlbiBjYW1wbz9dYCAsXG4gICAgICAgICAgICAgICAgICBkYXRhID0gZGYpXG5cbmBgYCJ9 -->
 <pre class="r"><code>test &lt;- multinom( HistoriaActividad2 ~ 
                     `[Placa dental]`+ 
                     `[Cepillado]`+ 
@@ -390,20 +500,20 @@ levels(df$HistoriaActividad2)</code></pre>
                     `[Ha asistido a control niño sano médico?]` +
                     `[Huerta con alimentos en casa?]`   +
                     `[Agua potable en casa]`        +
-                    `[Luz eléctrica en casa]`       +
                     `[Grupo familiar se reconoce mapuche]`  +
                     `[Vive en campo?]` ,
-                  data = df)</code></pre>
+                  data = df)
+</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiIyB3ZWlnaHRzOiAgMTIwICg4NyB2YXJpYWJsZSlcbmluaXRpYWwgIHZhbHVlIDQwMy40MTE2NTkgXG5pdGVyICAxMCB2YWx1ZSAzMzguNjQ5Mjk1XG5pdGVyICAyMCB2YWx1ZSAzMzQuNzAzODEwXG5pdGVyICAzMCB2YWx1ZSAzMzQuMjg5ODY0XG5pdGVyICA0MCB2YWx1ZSAzMzQuMTcwMTgxXG5pdGVyICA1MCB2YWx1ZSAzMzQuMTYwMDkzXG5maW5hbCAgdmFsdWUgMzM0LjE1OTUxMyBcbmNvbnZlcmdlZFxuIn0= -->
-<pre><code># weights:  120 (87 variable)
+<!-- rnb-output-begin eyJkYXRhIjoiIyB3ZWlnaHRzOiAgMTEyICg4MSB2YXJpYWJsZSlcbmluaXRpYWwgIHZhbHVlIDQwMy40MTE2NTkgXG5pdGVyICAxMCB2YWx1ZSAzNDAuODY4MDc3XG5pdGVyICAyMCB2YWx1ZSAzMzcuNTU4OTk1XG5pdGVyICAzMCB2YWx1ZSAzMzcuNDU2MDEyXG5pdGVyICA0MCB2YWx1ZSAzMzcuNDEzNjAxXG5pdGVyICA1MCB2YWx1ZSAzMzcuNDA2ODUwXG5maW5hbCAgdmFsdWUgMzM3LjQwNjU2NiBcbmNvbnZlcmdlZFxuIn0= -->
+<pre><code># weights:  112 (81 variable)
 initial  value 403.411659 
-iter  10 value 338.649295
-iter  20 value 334.703810
-iter  30 value 334.289864
-iter  40 value 334.170181
-iter  50 value 334.160093
-final  value 334.159513 
+iter  10 value 340.868077
+iter  20 value 337.558995
+iter  30 value 337.456012
+iter  40 value 337.413601
+iter  50 value 337.406850
+final  value 337.406566 
 converged</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
@@ -411,186 +521,246 @@ converged</code></pre>
 <p>View summary of the model</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3VtbWFyeSh0ZXN0KVxuYGBgIn0= -->
-<pre class="r"><code>summary(test)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3RhcmdhemVyKHRlc3QsXG4gICAgICAgICAgdHlwZSA9IFwiaHRtbFwiLFxuICAgICAgICAgIHRpdGxlID0gXCJNdWx0aW5vbWlhbCBsb2dpc3RpYyByZWdyZXNzaW9uIG1vZGVsIG9mIHJpY2sgZmFjdG9ycyBmb3IgaGlzdG9yeSBhbmQgYWN0aXZpdHkgb2YgRWFybHkgQ2hpbGRob29kIENhcmllcy4gUmVmZXJlbmNlIGxldmVsOiBubyBoaXN0b3J5IGFuZCBubyBhY3Rpdml0eVwiLCBcbiAgICAgICAgICBkZXAudmFyLmxhYmVscyA9IGMoXCJPbmx5IGFjdGl2aXR5XCIsXCJPbmx5IGhpc3RvcnlcIiwgXCJIaXN0b3J5IGFuZCBhY3Rpdml0eVwiKSxcbiAgICAgICAgICAjY2kgPSBUUlVFLFxuICAgICAgICAgIGFwcGx5LmNvZWYgPSBleHAsXG4gICAgICAgICAgYXBwbHkuc2UgICA9IGV4cCwgXG4gICAgICAgICAgIyBrZWVwLnN0YXQgPSBcIndhbGRcIiwgXG4gICAgICAgICAgb3V0ID0gXCJvdXRwdXRzL21vZGVscy15ZXMtY2kuaHRtbFwiKVxuXG5gYGAifQ== -->
+<pre class="r"><code>stargazer(test,
+          type = &quot;html&quot;,
+          title = &quot;Multinomial logistic regression model of rick factors for history and activity of Early Childhood Caries. Reference level: no history and no activity&quot;, 
+          dep.var.labels = c(&quot;Only activity&quot;,&quot;Only history&quot;, &quot;History and activity&quot;),
+          #ci = TRUE,
+          apply.coef = exp,
+          apply.se   = exp, 
+          # keep.stat = &quot;wald&quot;, 
+          out = &quot;outputs/models-yes-ci.html&quot;)
+</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiQ2FsbDpcbm11bHRpbm9tKGZvcm11bGEgPSBIaXN0b3JpYUFjdGl2aWRhZDIgfiBgW1BsYWNhIGRlbnRhbF1gICsgYFtDZXBpbGxhZG9dYCArIFxuICAgIGBbUGFzdGEgZGVudGFsIGZsdW9yYWRhXWAgKyBgW1VzbyBkZSBtYW1hZGVyYSBESVVSTkEgY29uIGF6w7pjYXJdYCArIFxuICAgIGBbVXNvIGRlIG1hbWFkZXJhIE5PQ1RVUk5BIGNvbiBhesO6Y2FyXWAgKyBgW0luZ2VzdGEgZGUgYmViaWRhcyBjYXJib25hdGFkYXMgY29uIGF6w7pjYXJdYCArIFxuICAgIGBbSW5nZXN0YSBKdWdvcyBuYXR1cmFsZXNdYCArIGBbSGEgYXNpc3RpZG8gYSBjb250cm9sIG9kZz9dYCArIFxuICAgIGBbSGEgYXNpc3RpZG8gYSBjb250cm9sIG5pw7FvIHNhbm8gbcOpZGljbz9dYCArIGBbSHVlcnRhIGNvbiBhbGltZW50b3MgZW4gY2FzYT9dYCArIFxuICAgIGBbQWd1YSBwb3RhYmxlIGVuIGNhc2FdYCArIGBbTHV6IGVsw6ljdHJpY2EgZW4gY2FzYV1gICsgYFtHcnVwbyBmYW1pbGlhciBzZSByZWNvbm9jZSBtYXB1Y2hlXWAgKyBcbiAgICBgW1ZpdmUgZW4gY2FtcG8/XWAsIGRhdGEgPSBkZilcblxuQ29lZmZpY2llbnRzOlxuICAgICAoSW50ZXJjZXB0KSBgW1BsYWNhIGRlbnRhbF1gTm8gYFtQbGFjYSBkZW50YWxdYFNpIGBbQ2VwaWxsYWRvXWBOb1xuTm9TaSAgICAgICAgMC4xNyAgICAgICAgICAgICAtMC4wMTQgICAgICAgICAgICAgIDAuOTc1ICAgICAgICAgICAgMC41MFxuU2lObyAgICAgICAtMS4zNiAgICAgICAgICAgICAtMC45NTAgICAgICAgICAgICAgLTAuMjcyICAgICAgICAgICAtMC43NlxuU2lTaSAgICAgICAtMC4wOCAgICAgICAgICAgICAgMC4wMzcgICAgICAgICAgICAgLTAuMDUxICAgICAgICAgICAtMC4yNlxuICAgICBgW0NlcGlsbGFkb11gU2kgYFtQYXN0YSBkZW50YWwgZmx1b3JhZGFdYE5vIGBbUGFzdGEgZGVudGFsIGZsdW9yYWRhXWBTaVxuTm9TaSAgICAgICAgICAgIDAuNDYgICAgICAgICAgICAgICAgICAgICAgICAwLjU5ICAgICAgICAgICAgICAgICAgICAgICAgMC4zN1xuU2lObyAgICAgICAgICAgLTAuNDYgICAgICAgICAgICAgICAgICAgICAgICAwLjEwICAgICAgICAgICAgICAgICAgICAgICAtMS4zMlxuU2lTaSAgICAgICAgICAgIDAuMjQgICAgICAgICAgICAgICAgICAgICAgICAwLjE5ICAgICAgICAgICAgICAgICAgICAgICAtMC4yMVxuICAgICBgW1VzbyBkZSBtYW1hZGVyYSBESVVSTkEgY29uIGF6w7pjYXJdYE5vXG5Ob1NpICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjA4N1xuU2lObyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAtMC40ODRcblNpU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLTAuMjc4XG4gICAgIGBbVXNvIGRlIG1hbWFkZXJhIERJVVJOQSBjb24gYXrDumNhcl1gU2lcbk5vU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjg3XG5TaU5vICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAtMC43NFxuU2lTaSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuMjZcbiAgICAgYFtVc28gZGUgbWFtYWRlcmEgTk9DVFVSTkEgY29uIGF6w7pjYXJdYE5vXG5Ob1NpICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjc3XG5TaU5vICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC0wLjMxXG5TaVNpICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAxLjAyXG4gICAgIGBbVXNvIGRlIG1hbWFkZXJhIE5PQ1RVUk5BIGNvbiBhesO6Y2FyXWBTaVxuTm9TaSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC4xOVxuU2lObyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAtMC45MVxuU2lTaSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAtMS4wM1xuICAgICBgW0luZ2VzdGEgZGUgYmViaWRhcyBjYXJib25hdGFkYXMgY29uIGF6w7pjYXJdYE5vXG5Ob1NpICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC4yM1xuU2lObyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLTAuNzRcblNpU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC0wLjgxXG4gICAgIGBbSW5nZXN0YSBkZSBiZWJpZGFzIGNhcmJvbmF0YWRhcyBjb24gYXrDumNhcl1gU2lcbk5vU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjczXG5TaU5vICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAtMC40OVxuU2lTaSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuODBcbiAgICAgYFtJbmdlc3RhIEp1Z29zIG5hdHVyYWxlc11gTm8gYFtJbmdlc3RhIEp1Z29zIG5hdHVyYWxlc11gU2lcbk5vU2kgICAgICAgICAgICAgICAgICAgICAgICAgMC42MTAgICAgICAgICAgICAgICAgICAgICAgICAgMC4zNTBcblNpTm8gICAgICAgICAgICAgICAgICAgICAgICAtMC40NzggICAgICAgICAgICAgICAgICAgICAgICAtMC43NDRcblNpU2kgICAgICAgICAgICAgICAgICAgICAgICAtMC4wMzggICAgICAgICAgICAgICAgICAgICAgICAgMC4wMjRcbiAgICAgYFtIYSBhc2lzdGlkbyBhIGNvbnRyb2wgb2RnP11gTm8gYFtIYSBhc2lzdGlkbyBhIGNvbnRyb2wgb2RnP11gU2lcbk5vU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuNTUgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuNDFcblNpTm8gICAgICAgICAgICAgICAgICAgICAgICAgICAgLTEuMDIgICAgICAgICAgICAgICAgICAgICAgICAgICAgLTAuMjBcblNpU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgLTEuMTkgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDEuMTdcbiAgICAgYFtIYSBhc2lzdGlkbyBhIGNvbnRyb2wgbmnDsW8gc2FubyBtw6lkaWNvP11gTm9cbk5vU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAtNy43XG5TaU5vICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLTcuOVxuU2lTaSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLTEzLjFcbiAgICAgYFtIYSBhc2lzdGlkbyBhIGNvbnRyb2wgbmnDsW8gc2FubyBtw6lkaWNvP11gU2lcbk5vU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgOC43XG5TaU5vICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDYuNlxuU2lTaSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDEzLjBcbiAgICAgYFtIdWVydGEgY29uIGFsaW1lbnRvcyBlbiBjYXNhP11gTm8gYFtIdWVydGEgY29uIGFsaW1lbnRvcyBlbiBjYXNhP11gU2lcbk5vU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuMTQgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuODJcblNpTm8gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLTAuOTggICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLTAuMjRcblNpU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLTAuNTMgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuNTJcbiAgICAgYFtBZ3VhIHBvdGFibGUgZW4gY2FzYV1gTm8gYFtBZ3VhIHBvdGFibGUgZW4gY2FzYV1gU2lcbk5vU2kgICAgICAgICAgICAgICAgICAgICAgMC43OTggICAgICAgICAgICAgICAgICAgICAgMC4xNjNcblNpTm8gICAgICAgICAgICAgICAgICAgICAtMS4yODIgICAgICAgICAgICAgICAgICAgICAgMC4wNjBcblNpU2kgICAgICAgICAgICAgICAgICAgICAtMC4wNDcgICAgICAgICAgICAgICAgICAgICAgMC4wMzNcbiAgICAgYFtMdXogZWzDqWN0cmljYSBlbiBjYXNhXWBObyBgW0x1eiBlbMOpY3RyaWNhIGVuIGNhc2FdYFNpXG5Ob1NpICAgICAgICAgICAgICAgICAgICAgICAgMTUuNSAgICAgICAgICAgICAgICAgICAgIC0xNC40OTJcblNpTm8gICAgICAgICAgICAgICAgICAgICAgICAtMS4zICAgICAgICAgICAgICAgICAgICAgICAwLjA5OFxuU2lTaSAgICAgICAgICAgICAgICAgICAgICAgIDE1LjIgICAgICAgICAgICAgICAgICAgICAtMTUuMjM5XG4gICAgIGBbR3J1cG8gZmFtaWxpYXIgc2UgcmVjb25vY2UgbWFwdWNoZV1gTm9cbk5vU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC4yOFxuU2lObyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC0wLjc3XG5TaVNpICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLTAuMjNcbiAgICAgYFtHcnVwbyBmYW1pbGlhciBzZSByZWNvbm9jZSBtYXB1Y2hlXWBTaSBgW1ZpdmUgZW4gY2FtcG8/XWBOb1xuTm9TaSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjY4ICAgICAgICAgICAgICAgICAwLjc3XG5TaU5vICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLTAuNDUgICAgICAgICAgICAgICAgLTAuOTJcblNpU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC4yMSAgICAgICAgICAgICAgICAtMC4xNlxuICAgICBgW1ZpdmUgZW4gY2FtcG8/XWBTaVxuTm9TaSAgICAgICAgICAgICAgICAgMC4xOVxuU2lObyAgICAgICAgICAgICAgICAtMC4zMFxuU2lTaSAgICAgICAgICAgICAgICAgMC4xNFxuXG5TdGQuIEVycm9yczpcbiAgICAgKEludGVyY2VwdCkgYFtQbGFjYSBkZW50YWxdYE5vIGBbUGxhY2EgZGVudGFsXWBTaSBgW0NlcGlsbGFkb11gTm9cbk5vU2kgICAgICAgIDAuMjIgICAgICAgICAgICAgIDE2LjUxICAgICAgICAgICAgICAxNi41MSAgICAgICAgICAgMTYuNTFcblNpTm8gICAgICAgIDAuMzUgICAgICAgICAgICAgICAwLjM2ICAgICAgICAgICAgICAgMC4zNSAgICAgICAgICAgIDAuMzdcblNpU2kgICAgICAgIDAuMjMgICAgICAgICAgICAgICA2LjA4ICAgICAgICAgICAgICAgNi4wOCAgICAgICAgICAgIDYuMDhcbiAgICAgYFtDZXBpbGxhZG9dYFNpIGBbUGFzdGEgZGVudGFsIGZsdW9yYWRhXWBObyBgW1Bhc3RhIGRlbnRhbCBmbHVvcmFkYV1gU2lcbk5vU2kgICAgICAgICAgIDE2LjUxICAgICAgICAgICAgICAgICAgICAgICAxNi41MSAgICAgICAgICAgICAgICAgICAgICAgMTYuNTFcblNpTm8gICAgICAgICAgICAwLjM2ICAgICAgICAgICAgICAgICAgICAgICAgMC41NiAgICAgICAgICAgICAgICAgICAgICAgIDAuNTJcblNpU2kgICAgICAgICAgICA2LjA4ICAgICAgICAgICAgICAgICAgICAgICAgNi4xMCAgICAgICAgICAgICAgICAgICAgICAgIDYuMTBcbiAgICAgYFtVc28gZGUgbWFtYWRlcmEgRElVUk5BIGNvbiBhesO6Y2FyXWBOb1xuTm9TaSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMTYuNTFcblNpTm8gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjYyXG5TaVNpICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgNi4wOVxuICAgICBgW1VzbyBkZSBtYW1hZGVyYSBESVVSTkEgY29uIGF6w7pjYXJdYFNpXG5Ob1NpICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAxNi41MVxuU2lObyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuNjdcblNpU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA2LjA5XG4gICAgIGBbVXNvIGRlIG1hbWFkZXJhIE5PQ1RVUk5BIGNvbiBhesO6Y2FyXWBOb1xuTm9TaSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAxNi41MVxuU2lObyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC40OVxuU2lTaSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgNi4wOVxuICAgICBgW1VzbyBkZSBtYW1hZGVyYSBOT0NUVVJOQSBjb24gYXrDumNhcl1gU2lcbk5vU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDE2LjVcblNpTm8gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjVcblNpU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA2LjFcbiAgICAgYFtJbmdlc3RhIGRlIGJlYmlkYXMgY2FyYm9uYXRhZGFzIGNvbiBhesO6Y2FyXWBOb1xuTm9TaSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMTYuNTFcblNpTm8gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjM2XG5TaVNpICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgNi4wOFxuICAgICBgW0luZ2VzdGEgZGUgYmViaWRhcyBjYXJib25hdGFkYXMgY29uIGF6w7pjYXJdYFNpXG5Ob1NpICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAxNi41MVxuU2lObyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuMzRcblNpU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA2LjA4XG4gICAgIGBbSW5nZXN0YSBKdWdvcyBuYXR1cmFsZXNdYE5vIGBbSW5nZXN0YSBKdWdvcyBuYXR1cmFsZXNdYFNpXG5Ob1NpICAgICAgICAgICAgICAgICAgICAgICAgIDE2LjUxICAgICAgICAgICAgICAgICAgICAgICAgIDE2LjUxXG5TaU5vICAgICAgICAgICAgICAgICAgICAgICAgICAwLjQzICAgICAgICAgICAgICAgICAgICAgICAgICAwLjM5XG5TaVNpICAgICAgICAgICAgICAgICAgICAgICAgICA2LjA5ICAgICAgICAgICAgICAgICAgICAgICAgICA2LjA4XG4gICAgIGBbSGEgYXNpc3RpZG8gYSBjb250cm9sIG9kZz9dYE5vIGBbSGEgYXNpc3RpZG8gYSBjb250cm9sIG9kZz9dYFNpXG5Ob1NpICAgICAgICAgICAgICAgICAgICAgICAgICAgIDE2LjUxICAgICAgICAgICAgICAgICAgICAgICAgICAgIDE2LjUxXG5TaU5vICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjQ3ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjQ1XG5TaVNpICAgICAgICAgICAgICAgICAgICAgICAgICAgICA2LjEwICAgICAgICAgICAgICAgICAgICAgICAgICAgICA2LjEwXG4gICAgIGBbSGEgYXNpc3RpZG8gYSBjb250cm9sIG5pw7FvIHNhbm8gbcOpZGljbz9dYE5vXG5Ob1NpICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMi4xZSswMlxuU2lObyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDEuMWUtMDZcblNpU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAxLjNlKzAyXG4gICAgIGBbSGEgYXNpc3RpZG8gYSBjb250cm9sIG5pw7FvIHNhbm8gbcOpZGljbz9dYFNpXG5Ob1NpICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDE3OC42MFxuU2lObyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuMTNcblNpU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMTE0Ljk1XG4gICAgIGBbSHVlcnRhIGNvbiBhbGltZW50b3MgZW4gY2FzYT9dYE5vIGBbSHVlcnRhIGNvbiBhbGltZW50b3MgZW4gY2FzYT9dYFNpXG5Ob1NpICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDE2LjUxICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDE2LjUxXG5TaU5vICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjQxICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjQxXG5TaVNpICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA2LjA4ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA2LjA4XG4gICAgIGBbQWd1YSBwb3RhYmxlIGVuIGNhc2FdYE5vIGBbQWd1YSBwb3RhYmxlIGVuIGNhc2FdYFNpXG5Ob1NpICAgICAgICAgICAgICAgICAgICAgIDE2LjUxICAgICAgICAgICAgICAgICAgICAgIDE2LjUxXG5TaU5vICAgICAgICAgICAgICAgICAgICAgICAwLjY1ICAgICAgICAgICAgICAgICAgICAgICAwLjU4XG5TaVNpICAgICAgICAgICAgICAgICAgICAgICA2LjA5ICAgICAgICAgICAgICAgICAgICAgICA2LjA5XG4gICAgIGBbTHV6IGVsw6ljdHJpY2EgZW4gY2FzYV1gTm8gYFtMdXogZWzDqWN0cmljYSBlbiBjYXNhXWBTaVxuTm9TaSAgICAgICAgICAgICAgICAgICAgIDUuMmUrMDEgICAgICAgICAgICAgICAgICAgICAgIDE5LjQ3XG5TaU5vICAgICAgICAgICAgICAgICAgICAgMy43ZS0wNyAgICAgICAgICAgICAgICAgICAgICAgIDAuMTNcblNpU2kgICAgICAgICAgICAgICAgICAgICAzLjBlKzAxICAgICAgICAgICAgICAgICAgICAgICA0Mi4wNVxuICAgICBgW0dydXBvIGZhbWlsaWFyIHNlIHJlY29ub2NlIG1hcHVjaGVdYE5vXG5Ob1NpICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMTYuNTFcblNpTm8gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC4zOVxuU2lTaSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA2LjA4XG4gICAgIGBbR3J1cG8gZmFtaWxpYXIgc2UgcmVjb25vY2UgbWFwdWNoZV1gU2kgYFtWaXZlIGVuIGNhbXBvP11gTm9cbk5vU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAxNi41MSAgICAgICAgICAgICAgICAxNi41MVxuU2lObyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjM5ICAgICAgICAgICAgICAgICAwLjQxXG5TaVNpICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDYuMDggICAgICAgICAgICAgICAgIDYuMDhcbiAgICAgYFtWaXZlIGVuIGNhbXBvP11gU2lcbk5vU2kgICAgICAgICAgICAgICAgMTYuNTFcblNpTm8gICAgICAgICAgICAgICAgIDAuMzlcblNpU2kgICAgICAgICAgICAgICAgIDYuMDhcblxuUmVzaWR1YWwgRGV2aWFuY2U6IDY2OCBcbkFJQzogNzY0IFxuIn0= -->
-<pre><code>Call:
-multinom(formula = HistoriaActividad2 ~ `[Placa dental]` + `[Cepillado]` + 
-    `[Pasta dental fluorada]` + `[Uso de mamadera DIURNA con azúcar]` + 
-    `[Uso de mamadera NOCTURNA con azúcar]` + `[Ingesta de bebidas carbonatadas con azúcar]` + 
-    `[Ingesta Jugos naturales]` + `[Ha asistido a control odg?]` + 
-    `[Ha asistido a control niño sano médico?]` + `[Huerta con alimentos en casa?]` + 
-    `[Agua potable en casa]` + `[Luz eléctrica en casa]` + `[Grupo familiar se reconoce mapuche]` + 
-    `[Vive en campo?]`, data = df)
-
-Coefficients:
-     (Intercept) `[Placa dental]`No `[Placa dental]`Si `[Cepillado]`No
-NoSi        0.17             -0.014              0.975            0.50
-SiNo       -1.36             -0.950             -0.272           -0.76
-SiSi       -0.08              0.037             -0.051           -0.26
-     `[Cepillado]`Si `[Pasta dental fluorada]`No `[Pasta dental fluorada]`Si
-NoSi            0.46                        0.59                        0.37
-SiNo           -0.46                        0.10                       -1.32
-SiSi            0.24                        0.19                       -0.21
-     `[Uso de mamadera DIURNA con azúcar]`No
-NoSi                                   0.087
-SiNo                                  -0.484
-SiSi                                  -0.278
-     `[Uso de mamadera DIURNA con azúcar]`Si
-NoSi                                    0.87
-SiNo                                   -0.74
-SiSi                                    0.26
-     `[Uso de mamadera NOCTURNA con azúcar]`No
-NoSi                                      0.77
-SiNo                                     -0.31
-SiSi                                      1.02
-     `[Uso de mamadera NOCTURNA con azúcar]`Si
-NoSi                                      0.19
-SiNo                                     -0.91
-SiSi                                     -1.03
-     `[Ingesta de bebidas carbonatadas con azúcar]`No
-NoSi                                             0.23
-SiNo                                            -0.74
-SiSi                                            -0.81
-     `[Ingesta de bebidas carbonatadas con azúcar]`Si
-NoSi                                             0.73
-SiNo                                            -0.49
-SiSi                                             0.80
-     `[Ingesta Jugos naturales]`No `[Ingesta Jugos naturales]`Si
-NoSi                         0.610                         0.350
-SiNo                        -0.478                        -0.744
-SiSi                        -0.038                         0.024
-     `[Ha asistido a control odg?]`No `[Ha asistido a control odg?]`Si
-NoSi                             0.55                             0.41
-SiNo                            -1.02                            -0.20
-SiSi                            -1.19                             1.17
-     `[Ha asistido a control niño sano médico?]`No
-NoSi                                          -7.7
-SiNo                                          -7.9
-SiSi                                         -13.1
-     `[Ha asistido a control niño sano médico?]`Si
-NoSi                                           8.7
-SiNo                                           6.6
-SiSi                                          13.0
-     `[Huerta con alimentos en casa?]`No `[Huerta con alimentos en casa?]`Si
-NoSi                                0.14                                0.82
-SiNo                               -0.98                               -0.24
-SiSi                               -0.53                                0.52
-     `[Agua potable en casa]`No `[Agua potable en casa]`Si
-NoSi                      0.798                      0.163
-SiNo                     -1.282                      0.060
-SiSi                     -0.047                      0.033
-     `[Luz eléctrica en casa]`No `[Luz eléctrica en casa]`Si
-NoSi                        15.5                     -14.492
-SiNo                        -1.3                       0.098
-SiSi                        15.2                     -15.239
-     `[Grupo familiar se reconoce mapuche]`No
-NoSi                                     0.28
-SiNo                                    -0.77
-SiSi                                    -0.23
-     `[Grupo familiar se reconoce mapuche]`Si `[Vive en campo?]`No
-NoSi                                     0.68                 0.77
-SiNo                                    -0.45                -0.92
-SiSi                                     0.21                -0.16
-     `[Vive en campo?]`Si
-NoSi                 0.19
-SiNo                -0.30
-SiSi                 0.14
-
-Std. Errors:
-     (Intercept) `[Placa dental]`No `[Placa dental]`Si `[Cepillado]`No
-NoSi        0.22              16.51              16.51           16.51
-SiNo        0.35               0.36               0.35            0.37
-SiSi        0.23               6.08               6.08            6.08
-     `[Cepillado]`Si `[Pasta dental fluorada]`No `[Pasta dental fluorada]`Si
-NoSi           16.51                       16.51                       16.51
-SiNo            0.36                        0.56                        0.52
-SiSi            6.08                        6.10                        6.10
-     `[Uso de mamadera DIURNA con azúcar]`No
-NoSi                                   16.51
-SiNo                                    0.62
-SiSi                                    6.09
-     `[Uso de mamadera DIURNA con azúcar]`Si
-NoSi                                   16.51
-SiNo                                    0.67
-SiSi                                    6.09
-     `[Uso de mamadera NOCTURNA con azúcar]`No
-NoSi                                     16.51
-SiNo                                      0.49
-SiSi                                      6.09
-     `[Uso de mamadera NOCTURNA con azúcar]`Si
-NoSi                                      16.5
-SiNo                                       0.5
-SiSi                                       6.1
-     `[Ingesta de bebidas carbonatadas con azúcar]`No
-NoSi                                            16.51
-SiNo                                             0.36
-SiSi                                             6.08
-     `[Ingesta de bebidas carbonatadas con azúcar]`Si
-NoSi                                            16.51
-SiNo                                             0.34
-SiSi                                             6.08
-     `[Ingesta Jugos naturales]`No `[Ingesta Jugos naturales]`Si
-NoSi                         16.51                         16.51
-SiNo                          0.43                          0.39
-SiSi                          6.09                          6.08
-     `[Ha asistido a control odg?]`No `[Ha asistido a control odg?]`Si
-NoSi                            16.51                            16.51
-SiNo                             0.47                             0.45
-SiSi                             6.10                             6.10
-     `[Ha asistido a control niño sano médico?]`No
-NoSi                                       2.1e+02
-SiNo                                       1.1e-06
-SiSi                                       1.3e+02
-     `[Ha asistido a control niño sano médico?]`Si
-NoSi                                        178.60
-SiNo                                          0.13
-SiSi                                        114.95
-     `[Huerta con alimentos en casa?]`No `[Huerta con alimentos en casa?]`Si
-NoSi                               16.51                               16.51
-SiNo                                0.41                                0.41
-SiSi                                6.08                                6.08
-     `[Agua potable en casa]`No `[Agua potable en casa]`Si
-NoSi                      16.51                      16.51
-SiNo                       0.65                       0.58
-SiSi                       6.09                       6.09
-     `[Luz eléctrica en casa]`No `[Luz eléctrica en casa]`Si
-NoSi                     5.2e+01                       19.47
-SiNo                     3.7e-07                        0.13
-SiSi                     3.0e+01                       42.05
-     `[Grupo familiar se reconoce mapuche]`No
-NoSi                                    16.51
-SiNo                                     0.39
-SiSi                                     6.08
-     `[Grupo familiar se reconoce mapuche]`Si `[Vive en campo?]`No
-NoSi                                    16.51                16.51
-SiNo                                     0.39                 0.41
-SiSi                                     6.08                 6.08
-     `[Vive en campo?]`Si
-NoSi                16.51
-SiNo                 0.39
-SiSi                 6.08
-
-Residual Deviance: 668 
-AIC: 764 </code></pre>
+<!-- rnb-output-begin eyJkYXRhIjoidGhlIGNvbmRpdGlvbiBoYXMgbGVuZ3RoID4gMSBhbmQgb25seSB0aGUgZmlyc3QgZWxlbWVudCB3aWxsIGJlIHVzZWRcbiJ9 -->
+<pre><code>the condition has length &gt; 1 and only the first element will be used</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG48dGFibGUgc3R5bGU9XCJ0ZXh0LWFsaWduOmNlbnRlclwiPjxjYXB0aW9uPjxzdHJvbmc+TXVsdGlub21pYWwgbG9naXN0aWMgcmVncmVzc2lvbiBtb2RlbCBvZiByaWNrIGZhY3RvcnMgZm9yIGhpc3RvcnkgYW5kIGFjdGl2aXR5IG9mIEVhcmx5IENoaWxkaG9vZCBDYXJpZXMuIFJlZmVyZW5jZSBsZXZlbDogbm8gaGlzdG9yeSBhbmQgbm8gYWN0aXZpdHk8XC9zdHJvbmc+PFwvY2FwdGlvbj5cbjx0cj48dGQgY29sc3Bhbj1cIjRcIiBzdHlsZT1cImJvcmRlci1ib3R0b206IDFweCBzb2xpZCBibGFja1wiPjxcL3RkPjxcL3RyPjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQgY29sc3Bhbj1cIjNcIj48ZW0+RGVwZW5kZW50IHZhcmlhYmxlOjxcL2VtPjxcL3RkPjxcL3RyPlxuPHRyPjx0ZD48XC90ZD48dGQgY29sc3Bhbj1cIjNcIiBzdHlsZT1cImJvcmRlci1ib3R0b206IDFweCBzb2xpZCBibGFja1wiPjxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD5Pbmx5IGFjdGl2aXR5PFwvdGQ+PHRkPk9ubHkgaGlzdG9yeTxcL3RkPjx0ZD5IaXN0b3J5IGFuZCBhY3Rpdml0eTxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD4oMSk8XC90ZD48dGQ+KDIpPFwvdGQ+PHRkPigzKTxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBjb2xzcGFuPVwiNFwiIHN0eWxlPVwiYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkIGJsYWNrXCI+PFwvdGQ+PFwvdHI+PHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPmBbUGxhY2EgZGVudGFsXWBObzxcL3RkPjx0ZD4wLjU4MDxcL3RkPjx0ZD4wLjQ1MDxcL3RkPjx0ZD4wLjQyMDxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD4oMS4zMDApPFwvdGQ+PHRkPigxLjQwMCk8XC90ZD48dGQ+KDEuMzAwKTxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD48XC90ZD48dGQ+PFwvdGQ+PHRkPjxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPmBbUGxhY2EgZGVudGFsXWBTaTxcL3RkPjx0ZD4xLjcwMDxcL3RkPjx0ZD4wLjkwMDxcL3RkPjx0ZD4wLjQyMDxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD4oMS4zMDApPFwvdGQ+PHRkPigxLjQwMCk8XC90ZD48dGQ+KDEuMzAwKTxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD48XC90ZD48dGQ+PFwvdGQ+PHRkPjxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPmBbQ2VwaWxsYWRvXWBObzxcL3RkPjx0ZD4xLjEwMDxcL3RkPjx0ZD4wLjU2MDxcL3RkPjx0ZD4wLjM0MDxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD4oMS4zMDApPFwvdGQ+PHRkPigxLjQwMCk8XC90ZD48dGQ+KDEuMzAwKTxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD48XC90ZD48dGQ+PFwvdGQ+PHRkPjxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPmBbQ2VwaWxsYWRvXWBTaTxcL3RkPjx0ZD4wLjkxMDxcL3RkPjx0ZD4wLjcxMDxcL3RkPjx0ZD4wLjUyMDxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD4oMS4zMDApPFwvdGQ+PHRkPigxLjQwMCk8XC90ZD48dGQ+KDEuMzAwKTxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD48XC90ZD48dGQ+PFwvdGQ+PHRkPjxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPmBbUGFzdGEgZGVudGFsIGZsdW9yYWRhXWBObzxcL3RkPjx0ZD4xLjEwMDxcL3RkPjx0ZD4xLjMwMDxcL3RkPjx0ZD4wLjQ5MDxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD4oMS42MDApPFwvdGQ+PHRkPigxLjgwMCk8XC90ZD48dGQ+KDEuODAwKTxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD48XC90ZD48dGQ+PFwvdGQ+PHRkPjxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPmBbUGFzdGEgZGVudGFsIGZsdW9yYWRhXWBTaTxcL3RkPjx0ZD4wLjk0MDxcL3RkPjx0ZD4wLjMxMDxcL3RkPjx0ZD4wLjM2MDxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD4oMS41MDApPFwvdGQ+PHRkPigxLjcwMCk8XC90ZD48dGQ+KDEuNzAwKTxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD48XC90ZD48dGQ+PFwvdGQ+PHRkPjxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPmBbVXNvIGRlIG1hbWFkZXJhIERJVVJOQSBjb24gYXrDumNhcl1gTm88XC90ZD48dGQ+MC43MjA8XC90ZD48dGQ+MC43MDA8XC90ZD48dGQ+MC4zNDA8XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+KDEuNDAwKTxcL3RkPjx0ZD4oMS44MDApPFwvdGQ+PHRkPigxLjUwMCk8XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+PFwvdGQ+PHRkPjxcL3RkPjx0ZD48XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj5gW1VzbyBkZSBtYW1hZGVyYSBESVVSTkEgY29uIGF6w7pjYXJdYFNpPFwvdGQ+PHRkPjEuNDAwPFwvdGQ+PHRkPjAuNTcwPFwvdGQ+PHRkPjAuNTIwPFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+PFwvdGQ+PHRkPigxLjQwMCk8XC90ZD48dGQ+KDEuOTAwKTxcL3RkPjx0ZD4oMS42MDApPFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+PFwvdGQ+PHRkPjxcL3RkPjx0ZD48XC90ZD48dGQ+PFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+YFtVc28gZGUgbWFtYWRlcmEgTk9DVFVSTkEgY29uIGF6w7pjYXJdYE5vPFwvdGQ+PHRkPjEuMjAwPFwvdGQ+PHRkPjAuODcwPFwvdGQ+PHRkPjEuMDAwPFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+PFwvdGQ+PHRkPigxLjQwMCk8XC90ZD48dGQ+KDEuNjAwKTxcL3RkPjx0ZD4oMS42MDApPFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+PFwvdGQ+PHRkPjxcL3RkPjx0ZD48XC90ZD48dGQ+PFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+YFtVc28gZGUgbWFtYWRlcmEgTk9DVFVSTkEgY29uIGF6w7pjYXJdYFNpPFwvdGQ+PHRkPjAuODMwPFwvdGQ+PHRkPjAuNDYwPFwvdGQ+PHRkPjAuMTcwPFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+PFwvdGQ+PHRkPigxLjMwMCk8XC90ZD48dGQ+KDEuNjAwKTxcL3RkPjx0ZD4oMS43MDApPFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+PFwvdGQ+PHRkPjxcL3RkPjx0ZD48XC90ZD48dGQ+PFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+YFtJbmdlc3RhIGRlIGJlYmlkYXMgY2FyYm9uYXRhZGFzIGNvbiBhesO6Y2FyXWBObzxcL3RkPjx0ZD4wLjc2MDxcL3RkPjx0ZD4wLjU2MDxcL3RkPjx0ZD4wLjE4MDxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD4oMS4zMDApPFwvdGQ+PHRkPigxLjQwMCk8XC90ZD48dGQ+KDEuNDAwKTxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD48XC90ZD48dGQ+PFwvdGQ+PHRkPjxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPmBbSW5nZXN0YSBkZSBiZWJpZGFzIGNhcmJvbmF0YWRhcyBjb24gYXrDumNhcl1gU2k8XC90ZD48dGQ+MS4zMDA8XC90ZD48dGQ+MC43MTA8XC90ZD48dGQ+MC45NjA8XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+KDEuMzAwKTxcL3RkPjx0ZD4oMS40MDApPFwvdGQ+PHRkPigxLjQwMCk8XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+PFwvdGQ+PHRkPjxcL3RkPjx0ZD48XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj5gW0luZ2VzdGEgSnVnb3MgbmF0dXJhbGVzXWBObzxcL3RkPjx0ZD4xLjEwMDxcL3RkPjx0ZD4wLjc0MDxcL3RkPjx0ZD4wLjQxMDxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD4oMS4zMDApPFwvdGQ+PHRkPigxLjUwMCk8XC90ZD48dGQ+KDEuNTAwKTxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD48XC90ZD48dGQ+PFwvdGQ+PHRkPjxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPmBbSW5nZXN0YSBKdWdvcyBuYXR1cmFsZXNdYFNpPFwvdGQ+PHRkPjAuODgwPFwvdGQ+PHRkPjAuNTQwPFwvdGQ+PHRkPjAuNDMwPFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+PFwvdGQ+PHRkPigxLjMwMCk8XC90ZD48dGQ+KDEuNTAwKTxcL3RkPjx0ZD4oMS40MDApPFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+PFwvdGQ+PHRkPjxcL3RkPjx0ZD48XC90ZD48dGQ+PFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+YFtIYSBhc2lzdGlkbyBhIGNvbnRyb2wgb2RnP11gTm88XC90ZD48dGQ+MS4xMDA8XC90ZD48dGQ+MC40MjA8XC90ZD48dGQ+MC4xMzA8XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+KDEuMzAwKTxcL3RkPjx0ZD4oMS42MDApPFwvdGQ+PHRkPigxLjgwMCk8XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+PFwvdGQ+PHRkPjxcL3RkPjx0ZD48XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj5gW0hhIGFzaXN0aWRvIGEgY29udHJvbCBvZGc/XWBTaTxcL3RkPjx0ZD4wLjk1MDxcL3RkPjx0ZD4wLjk1MDxcL3RkPjx0ZD4xLjQwMDxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD4oMS4zMDApPFwvdGQ+PHRkPigxLjYwMCk8XC90ZD48dGQ+KDEuNzAwKTxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD48XC90ZD48dGQ+PFwvdGQ+PHRkPjxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPmBbSGEgYXNpc3RpZG8gYSBjb250cm9sIG5pw7FvIHNhbm8gbcOpZGljbz9dYE5vPFwvdGQ+PHRkPjEuMDAwPFwvdGQ+PHRkPjAuMDAzPFwvdGQ+PHRkPjAuMDAwMDQ8XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+KDIuNDAwKTxcL3RkPjx0ZD4oMS4wMDApPFwvdGQ+PHRkPigxLjAwMCk8XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+PFwvdGQ+PHRkPjxcL3RkPjx0ZD48XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj5gW0hhIGFzaXN0aWRvIGEgY29udHJvbCBuacOxbyBzYW5vIG3DqWRpY28/XWBTaTxcL3RkPjx0ZD4wLjk5MDxcL3RkPjx0ZD4xMzguMDAwPHN1cD4qKio8XC9zdXA+PFwvdGQ+PHRkPjMsOTUzLjAwMDxzdXA+KioqPFwvc3VwPjxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD4oMi4yMDApPFwvdGQ+PHRkPigxLjIwMCk8XC90ZD48dGQ+KDEuMTAwKTxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD48XC90ZD48dGQ+PFwvdGQ+PHRkPjxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPmBbSHVlcnRhIGNvbiBhbGltZW50b3MgZW4gY2FzYT9dYE5vPFwvdGQ+PHRkPjAuNzUwPFwvdGQ+PHRkPjAuNDUwPFwvdGQ+PHRkPjAuMjYwPFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+PFwvdGQ+PHRkPigxLjMwMCk8XC90ZD48dGQ+KDEuNTAwKTxcL3RkPjx0ZD4oMS40MDApPFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+PFwvdGQ+PHRkPjxcL3RkPjx0ZD48XC90ZD48dGQ+PFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+YFtIdWVydGEgY29uIGFsaW1lbnRvcyBlbiBjYXNhP11gU2k8XC90ZD48dGQ+MS4zMDA8XC90ZD48dGQ+MC44OTA8XC90ZD48dGQ+MC42ODA8XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+KDEuMzAwKTxcL3RkPjx0ZD4oMS41MDApPFwvdGQ+PHRkPigxLjQwMCk8XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+PFwvdGQ+PHRkPjxcL3RkPjx0ZD48XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj5gW0FndWEgcG90YWJsZSBlbiBjYXNhXWBObzxcL3RkPjx0ZD4xLjUwMDxcL3RkPjx0ZD4wLjMzMDxcL3RkPjx0ZD4wLjQ2MDxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD4oMS40MDApPFwvdGQ+PHRkPigxLjkwMCk8XC90ZD48dGQ+KDEuNTAwKTxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD48XC90ZD48dGQ+PFwvdGQ+PHRkPjxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPmBbQWd1YSBwb3RhYmxlIGVuIGNhc2FdYFNpPFwvdGQ+PHRkPjAuNjUwPFwvdGQ+PHRkPjEuMjAwPFwvdGQ+PHRkPjAuMzkwPFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+PFwvdGQ+PHRkPigxLjQwMCk8XC90ZD48dGQ+KDEuODAwKTxcL3RkPjx0ZD4oMS40MDApPFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+PFwvdGQ+PHRkPjxcL3RkPjx0ZD48XC90ZD48dGQ+PFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+YFtHcnVwbyBmYW1pbGlhciBzZSByZWNvbm9jZSBtYXB1Y2hlXWBObzxcL3RkPjx0ZD4wLjgwMDxcL3RkPjx0ZD4wLjU0MDxcL3RkPjx0ZD4wLjMzMDxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD4oMS4zMDApPFwvdGQ+PHRkPigxLjUwMCk8XC90ZD48dGQ+KDEuMzAwKTxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD48XC90ZD48dGQ+PFwvdGQ+PHRkPjxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPmBbR3J1cG8gZmFtaWxpYXIgc2UgcmVjb25vY2UgbWFwdWNoZV1gU2k8XC90ZD48dGQ+MS4zMDA8XC90ZD48dGQ+MC43NTA8XC90ZD48dGQ+MC41MzA8XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+KDEuMzAwKTxcL3RkPjx0ZD4oMS41MDApPFwvdGQ+PHRkPigxLjMwMCk8XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+PFwvdGQ+PHRkPjxcL3RkPjx0ZD48XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj5gW1ZpdmUgZW4gY2FtcG8/XWBObzxcL3RkPjx0ZD4xLjQwMDxcL3RkPjx0ZD4wLjQ3MDxcL3RkPjx0ZD4wLjM2MDxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD4oMS4zMDApPFwvdGQ+PHRkPigxLjUwMCk8XC90ZD48dGQ+KDEuNDAwKTxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD48XC90ZD48dGQ+PFwvdGQ+PHRkPjxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPmBbVml2ZSBlbiBjYW1wbz9dYFNpPFwvdGQ+PHRkPjAuNzIwPFwvdGQ+PHRkPjAuODUwPFwvdGQ+PHRkPjAuNTAwPFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+PFwvdGQ+PHRkPigxLjMwMCk8XC90ZD48dGQ+KDEuNTAwKTxcL3RkPjx0ZD4oMS40MDApPFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+PFwvdGQ+PHRkPjxcL3RkPjx0ZD48XC90ZD48dGQ+PFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+Q29uc3RhbnQ8XC90ZD48dGQ+MS4yMDA8XC90ZD48dGQ+MC4yNjA8XC90ZD48dGQ+MC45MjA8XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+KDEuMjAwKTxcL3RkPjx0ZD4oMS40MDApPFwvdGQ+PHRkPigxLjMwMCk8XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+PFwvdGQ+PHRkPjxcL3RkPjx0ZD48XC90ZD48XC90cj5cbjx0cj48dGQgY29sc3Bhbj1cIjRcIiBzdHlsZT1cImJvcmRlci1ib3R0b206IDFweCBzb2xpZCBibGFja1wiPjxcL3RkPjxcL3RyPjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj5Ba2Fpa2UgSW5mLiBDcml0LjxcL3RkPjx0ZD43NjUuMDAwPFwvdGQ+PHRkPjc2NS4wMDA8XC90ZD48dGQ+NzY1LjAwMDxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBjb2xzcGFuPVwiNFwiIHN0eWxlPVwiYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkIGJsYWNrXCI+PFwvdGQ+PFwvdHI+PHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxlbT5Ob3RlOjxcL2VtPjxcL3RkPjx0ZCBjb2xzcGFuPVwiM1wiIHN0eWxlPVwidGV4dC1hbGlnbjpyaWdodFwiPjxzdXA+KjxcL3N1cD5wPDAuMTsgPHN1cD4qKjxcL3N1cD5wPDAuMDU7IDxzdXA+KioqPFwvc3VwPnA8MC4wMTxcL3RkPjxcL3RyPlxuPFwvdGFibGU+XG4ifQ== -->
+<pre><code>
+&lt;table style=&quot;text-align:center&quot;&gt;&lt;caption&gt;&lt;strong&gt;Multinomial logistic regression model of rick factors for history and activity of Early Childhood Caries. Reference level: no history and no activity&lt;/strong&gt;&lt;/caption&gt;
+&lt;tr&gt;&lt;td colspan=&quot;4&quot; style=&quot;border-bottom: 1px solid black&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;&lt;em&gt;Dependent variable:&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td colspan=&quot;3&quot; style=&quot;border-bottom: 1px solid black&quot;&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;Only activity&lt;/td&gt;&lt;td&gt;Only history&lt;/td&gt;&lt;td&gt;History and activity&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(1)&lt;/td&gt;&lt;td&gt;(2)&lt;/td&gt;&lt;td&gt;(3)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td colspan=&quot;4&quot; style=&quot;border-bottom: 1px solid black&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Placa dental]`No&lt;/td&gt;&lt;td&gt;0.580&lt;/td&gt;&lt;td&gt;0.450&lt;/td&gt;&lt;td&gt;0.420&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(1.300)&lt;/td&gt;&lt;td&gt;(1.400)&lt;/td&gt;&lt;td&gt;(1.300)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Placa dental]`Si&lt;/td&gt;&lt;td&gt;1.700&lt;/td&gt;&lt;td&gt;0.900&lt;/td&gt;&lt;td&gt;0.420&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(1.300)&lt;/td&gt;&lt;td&gt;(1.400)&lt;/td&gt;&lt;td&gt;(1.300)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Cepillado]`No&lt;/td&gt;&lt;td&gt;1.100&lt;/td&gt;&lt;td&gt;0.560&lt;/td&gt;&lt;td&gt;0.340&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(1.300)&lt;/td&gt;&lt;td&gt;(1.400)&lt;/td&gt;&lt;td&gt;(1.300)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Cepillado]`Si&lt;/td&gt;&lt;td&gt;0.910&lt;/td&gt;&lt;td&gt;0.710&lt;/td&gt;&lt;td&gt;0.520&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(1.300)&lt;/td&gt;&lt;td&gt;(1.400)&lt;/td&gt;&lt;td&gt;(1.300)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Pasta dental fluorada]`No&lt;/td&gt;&lt;td&gt;1.100&lt;/td&gt;&lt;td&gt;1.300&lt;/td&gt;&lt;td&gt;0.490&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(1.600)&lt;/td&gt;&lt;td&gt;(1.800)&lt;/td&gt;&lt;td&gt;(1.800)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Pasta dental fluorada]`Si&lt;/td&gt;&lt;td&gt;0.940&lt;/td&gt;&lt;td&gt;0.310&lt;/td&gt;&lt;td&gt;0.360&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(1.500)&lt;/td&gt;&lt;td&gt;(1.700)&lt;/td&gt;&lt;td&gt;(1.700)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Uso de mamadera DIURNA con azúcar]`No&lt;/td&gt;&lt;td&gt;0.720&lt;/td&gt;&lt;td&gt;0.700&lt;/td&gt;&lt;td&gt;0.340&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(1.400)&lt;/td&gt;&lt;td&gt;(1.800)&lt;/td&gt;&lt;td&gt;(1.500)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Uso de mamadera DIURNA con azúcar]`Si&lt;/td&gt;&lt;td&gt;1.400&lt;/td&gt;&lt;td&gt;0.570&lt;/td&gt;&lt;td&gt;0.520&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(1.400)&lt;/td&gt;&lt;td&gt;(1.900)&lt;/td&gt;&lt;td&gt;(1.600)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Uso de mamadera NOCTURNA con azúcar]`No&lt;/td&gt;&lt;td&gt;1.200&lt;/td&gt;&lt;td&gt;0.870&lt;/td&gt;&lt;td&gt;1.000&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(1.400)&lt;/td&gt;&lt;td&gt;(1.600)&lt;/td&gt;&lt;td&gt;(1.600)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Uso de mamadera NOCTURNA con azúcar]`Si&lt;/td&gt;&lt;td&gt;0.830&lt;/td&gt;&lt;td&gt;0.460&lt;/td&gt;&lt;td&gt;0.170&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(1.300)&lt;/td&gt;&lt;td&gt;(1.600)&lt;/td&gt;&lt;td&gt;(1.700)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Ingesta de bebidas carbonatadas con azúcar]`No&lt;/td&gt;&lt;td&gt;0.760&lt;/td&gt;&lt;td&gt;0.560&lt;/td&gt;&lt;td&gt;0.180&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(1.300)&lt;/td&gt;&lt;td&gt;(1.400)&lt;/td&gt;&lt;td&gt;(1.400)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Ingesta de bebidas carbonatadas con azúcar]`Si&lt;/td&gt;&lt;td&gt;1.300&lt;/td&gt;&lt;td&gt;0.710&lt;/td&gt;&lt;td&gt;0.960&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(1.300)&lt;/td&gt;&lt;td&gt;(1.400)&lt;/td&gt;&lt;td&gt;(1.400)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Ingesta Jugos naturales]`No&lt;/td&gt;&lt;td&gt;1.100&lt;/td&gt;&lt;td&gt;0.740&lt;/td&gt;&lt;td&gt;0.410&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(1.300)&lt;/td&gt;&lt;td&gt;(1.500)&lt;/td&gt;&lt;td&gt;(1.500)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Ingesta Jugos naturales]`Si&lt;/td&gt;&lt;td&gt;0.880&lt;/td&gt;&lt;td&gt;0.540&lt;/td&gt;&lt;td&gt;0.430&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(1.300)&lt;/td&gt;&lt;td&gt;(1.500)&lt;/td&gt;&lt;td&gt;(1.400)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Ha asistido a control odg?]`No&lt;/td&gt;&lt;td&gt;1.100&lt;/td&gt;&lt;td&gt;0.420&lt;/td&gt;&lt;td&gt;0.130&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(1.300)&lt;/td&gt;&lt;td&gt;(1.600)&lt;/td&gt;&lt;td&gt;(1.800)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Ha asistido a control odg?]`Si&lt;/td&gt;&lt;td&gt;0.950&lt;/td&gt;&lt;td&gt;0.950&lt;/td&gt;&lt;td&gt;1.400&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(1.300)&lt;/td&gt;&lt;td&gt;(1.600)&lt;/td&gt;&lt;td&gt;(1.700)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Ha asistido a control niño sano médico?]`No&lt;/td&gt;&lt;td&gt;1.000&lt;/td&gt;&lt;td&gt;0.003&lt;/td&gt;&lt;td&gt;0.00004&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(2.400)&lt;/td&gt;&lt;td&gt;(1.000)&lt;/td&gt;&lt;td&gt;(1.000)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Ha asistido a control niño sano médico?]`Si&lt;/td&gt;&lt;td&gt;0.990&lt;/td&gt;&lt;td&gt;138.000&lt;sup&gt;***&lt;/sup&gt;&lt;/td&gt;&lt;td&gt;3,953.000&lt;sup&gt;***&lt;/sup&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(2.200)&lt;/td&gt;&lt;td&gt;(1.200)&lt;/td&gt;&lt;td&gt;(1.100)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Huerta con alimentos en casa?]`No&lt;/td&gt;&lt;td&gt;0.750&lt;/td&gt;&lt;td&gt;0.450&lt;/td&gt;&lt;td&gt;0.260&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(1.300)&lt;/td&gt;&lt;td&gt;(1.500)&lt;/td&gt;&lt;td&gt;(1.400)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Huerta con alimentos en casa?]`Si&lt;/td&gt;&lt;td&gt;1.300&lt;/td&gt;&lt;td&gt;0.890&lt;/td&gt;&lt;td&gt;0.680&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(1.300)&lt;/td&gt;&lt;td&gt;(1.500)&lt;/td&gt;&lt;td&gt;(1.400)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Agua potable en casa]`No&lt;/td&gt;&lt;td&gt;1.500&lt;/td&gt;&lt;td&gt;0.330&lt;/td&gt;&lt;td&gt;0.460&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(1.400)&lt;/td&gt;&lt;td&gt;(1.900)&lt;/td&gt;&lt;td&gt;(1.500)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Agua potable en casa]`Si&lt;/td&gt;&lt;td&gt;0.650&lt;/td&gt;&lt;td&gt;1.200&lt;/td&gt;&lt;td&gt;0.390&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(1.400)&lt;/td&gt;&lt;td&gt;(1.800)&lt;/td&gt;&lt;td&gt;(1.400)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Grupo familiar se reconoce mapuche]`No&lt;/td&gt;&lt;td&gt;0.800&lt;/td&gt;&lt;td&gt;0.540&lt;/td&gt;&lt;td&gt;0.330&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(1.300)&lt;/td&gt;&lt;td&gt;(1.500)&lt;/td&gt;&lt;td&gt;(1.300)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Grupo familiar se reconoce mapuche]`Si&lt;/td&gt;&lt;td&gt;1.300&lt;/td&gt;&lt;td&gt;0.750&lt;/td&gt;&lt;td&gt;0.530&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(1.300)&lt;/td&gt;&lt;td&gt;(1.500)&lt;/td&gt;&lt;td&gt;(1.300)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Vive en campo?]`No&lt;/td&gt;&lt;td&gt;1.400&lt;/td&gt;&lt;td&gt;0.470&lt;/td&gt;&lt;td&gt;0.360&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(1.300)&lt;/td&gt;&lt;td&gt;(1.500)&lt;/td&gt;&lt;td&gt;(1.400)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Vive en campo?]`Si&lt;/td&gt;&lt;td&gt;0.720&lt;/td&gt;&lt;td&gt;0.850&lt;/td&gt;&lt;td&gt;0.500&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(1.300)&lt;/td&gt;&lt;td&gt;(1.500)&lt;/td&gt;&lt;td&gt;(1.400)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;Constant&lt;/td&gt;&lt;td&gt;1.200&lt;/td&gt;&lt;td&gt;0.260&lt;/td&gt;&lt;td&gt;0.920&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(1.200)&lt;/td&gt;&lt;td&gt;(1.400)&lt;/td&gt;&lt;td&gt;(1.300)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td colspan=&quot;4&quot; style=&quot;border-bottom: 1px solid black&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;Akaike Inf. Crit.&lt;/td&gt;&lt;td&gt;765.000&lt;/td&gt;&lt;td&gt;765.000&lt;/td&gt;&lt;td&gt;765.000&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td colspan=&quot;4&quot; style=&quot;border-bottom: 1px solid black&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;em&gt;Note:&lt;/em&gt;&lt;/td&gt;&lt;td colspan=&quot;3&quot; style=&quot;text-align:right&quot;&gt;&lt;sup&gt;*&lt;/sup&gt;p&lt;0.1; &lt;sup&gt;**&lt;/sup&gt;p&lt;0.05; &lt;sup&gt;***&lt;/sup&gt;p&lt;0.01&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+<p>Nice table</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3RhcmdhemVyKHRlc3QsXG4gICAgICAgICAgdHlwZSA9IFwiaHRtbFwiLFxuICAgICAgICAgIHRpdGxlID0gXCJNdWx0aW5vbWlhbCBsb2dpc3RpYyByZWdyZXNzaW9uIG1vZGVsIG9mIHJpY2sgZmFjdG9ycyBmb3IgaGlzdG9yeSBhbmQgYWN0aXZpdHkgb2YgRWFybHkgQ2hpbGRob29kIENhcmllcy5cIiwgXG4gICAgICAgICAgIyBkZXAudmFyLmNhcHRpb24gID0gXCJSZWZlcmVuY2UgbGV2ZWw6IG5vIGhpc3RvcnkgYW5kIG5vIGFjdGl2aXR5LiBPUiAoOTUlIElDKVwiLFxuICAgICAgICAgICMgY29sdW1uLmxhYmVscyA9IGMoXCJHb29kXCIsIFwiQmV0dGVyXCIpLFxuICAgICAgICAgIGRlcC52YXIubGFiZWxzID0gYyhcIk9ubHkgYWN0aXZpdHlcIixcIk9ubHkgaGlzdG9yeVwiLCBcIkhpc3RvcnkgYW5kIGFjdGl2aXR5XCIpLFxuICAgICAgICAgIGNpID0gVFJVRSxcbiAgICAgICAgICBhcHBseS5jb2VmID0gZXhwLFxuICAgICAgICAgIGFwcGx5LnNlICAgPSBleHAsIFxuICAgICAgICAgICMga2VlcC5zdGF0ID0gXCJ3YWxkXCIsIFxuICAgICAgICAgIG91dCA9IFwib3V0cHV0cy9tb2RlbHMteWVzLWNpLmh0bWxcIilcblxuYGBgIn0= -->
+<pre class="r"><code>stargazer(test,
+          type = &quot;html&quot;,
+          title = &quot;Multinomial logistic regression model of rick factors for history and activity of Early Childhood Caries.&quot;, 
+          # dep.var.caption  = &quot;Reference level: no history and no activity. OR (95% IC)&quot;,
+          # column.labels = c(&quot;Good&quot;, &quot;Better&quot;),
+          dep.var.labels = c(&quot;Only activity&quot;,&quot;Only history&quot;, &quot;History and activity&quot;),
+          ci = TRUE,
+          apply.coef = exp,
+          apply.se   = exp, 
+          # keep.stat = &quot;wald&quot;, 
+          out = &quot;outputs/models-yes-ci.html&quot;)
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoidGhlIGNvbmRpdGlvbiBoYXMgbGVuZ3RoID4gMSBhbmQgb25seSB0aGUgZmlyc3QgZWxlbWVudCB3aWxsIGJlIHVzZWRcbiJ9 -->
+<pre><code>the condition has length &gt; 1 and only the first element will be used</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG48dGFibGUgc3R5bGU9XCJ0ZXh0LWFsaWduOmNlbnRlclwiPjxjYXB0aW9uPjxzdHJvbmc+TXVsdGlub21pYWwgbG9naXN0aWMgcmVncmVzc2lvbiBtb2RlbCBvZiByaWNrIGZhY3RvcnMgZm9yIGhpc3RvcnkgYW5kIGFjdGl2aXR5IG9mIEVhcmx5IENoaWxkaG9vZCBDYXJpZXMuPFwvc3Ryb25nPjxcL2NhcHRpb24+XG48dHI+PHRkIGNvbHNwYW49XCI0XCIgc3R5bGU9XCJib3JkZXItYm90dG9tOiAxcHggc29saWQgYmxhY2tcIj48XC90ZD48XC90cj48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+PFwvdGQ+PHRkIGNvbHNwYW49XCIzXCI+PGVtPkRlcGVuZGVudCB2YXJpYWJsZTo8XC9lbT48XC90ZD48XC90cj5cbjx0cj48dGQ+PFwvdGQ+PHRkIGNvbHNwYW49XCIzXCIgc3R5bGU9XCJib3JkZXItYm90dG9tOiAxcHggc29saWQgYmxhY2tcIj48XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+T25seSBhY3Rpdml0eTxcL3RkPjx0ZD5Pbmx5IGhpc3Rvcnk8XC90ZD48dGQ+SGlzdG9yeSBhbmQgYWN0aXZpdHk8XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+KDEpPFwvdGQ+PHRkPigyKTxcL3RkPjx0ZD4oMyk8XC90ZD48XC90cj5cbjx0cj48dGQgY29sc3Bhbj1cIjRcIiBzdHlsZT1cImJvcmRlci1ib3R0b206IDFweCBzb2xpZCBibGFja1wiPjxcL3RkPjxcL3RyPjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj5gW1BsYWNhIGRlbnRhbF1gTm88XC90ZD48dGQ+MC41ODA8XC90ZD48dGQ+MC40NTA8XC90ZD48dGQ+MC40MjA8XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+KC0xLjkwMCwgMy4xMDApPFwvdGQ+PHRkPigtMi40MDAsIDMuMzAwKTxcL3RkPjx0ZD4oLTIuMjAwLCAzLjAwMCk8XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+PFwvdGQ+PHRkPjxcL3RkPjx0ZD48XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj5gW1BsYWNhIGRlbnRhbF1gU2k8XC90ZD48dGQ+MS43MDA8XC90ZD48dGQ+MC45MDA8XC90ZD48dGQ+MC40MjA8XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+KC0wLjgxMCwgNC4zMDApPFwvdGQ+PHRkPigtMS45MDAsIDMuNzAwKTxcL3RkPjx0ZD4oLTIuMTAwLCAzLjAwMCk8XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+PFwvdGQ+PHRkPjxcL3RkPjx0ZD48XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj5gW0NlcGlsbGFkb11gTm88XC90ZD48dGQ+MS4xMDA8XC90ZD48dGQ+MC41NjA8XC90ZD48dGQ+MC4zNDA8XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+KC0xLjQwMCwgMy41MDApPFwvdGQ+PHRkPigtMi4zMDAsIDMuNDAwKTxcL3RkPjx0ZD4oLTIuMzAwLCAzLjAwMCk8XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+PFwvdGQ+PHRkPjxcL3RkPjx0ZD48XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj5gW0NlcGlsbGFkb11gU2k8XC90ZD48dGQ+MC45MTA8XC90ZD48dGQ+MC43MTA8XC90ZD48dGQ+MC41MjA8XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+KC0xLjYwMCwgMy40MDApPFwvdGQ+PHRkPigtMi4xMDAsIDMuNTAwKTxcL3RkPjx0ZD4oLTIuMTAwLCAzLjEwMCk8XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+PFwvdGQ+PHRkPjxcL3RkPjx0ZD48XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj5gW1Bhc3RhIGRlbnRhbCBmbHVvcmFkYV1gTm88XC90ZD48dGQ+MS4xMDA8XC90ZD48dGQ+MS4zMDA8XC90ZD48dGQ+MC40OTA8XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+KC0yLjEwMCwgNC4yMDApPFwvdGQ+PHRkPigtMi4yMDAsIDQuNzAwKTxcL3RkPjx0ZD4oLTMuMDAwLCA0LjAwMCk8XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+PFwvdGQ+PHRkPjxcL3RkPjx0ZD48XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj5gW1Bhc3RhIGRlbnRhbCBmbHVvcmFkYV1gU2k8XC90ZD48dGQ+MC45NDA8XC90ZD48dGQ+MC4zMTA8XC90ZD48dGQ+MC4zNjA8XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+KC0yLjAwMCwgMy45MDApPFwvdGQ+PHRkPigtMy4wMDAsIDMuNjAwKTxcL3RkPjx0ZD4oLTIuOTAwLCAzLjcwMCk8XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+PFwvdGQ+PHRkPjxcL3RkPjx0ZD48XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj5gW1VzbyBkZSBtYW1hZGVyYSBESVVSTkEgY29uIGF6w7pjYXJdYE5vPFwvdGQ+PHRkPjAuNzIwPFwvdGQ+PHRkPjAuNzAwPFwvdGQ+PHRkPjAuMzQwPFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+PFwvdGQ+PHRkPigtMi4wMDAsIDMuNDAwKTxcL3RkPjx0ZD4oLTIuOTAwLCA0LjMwMCk8XC90ZD48dGQ+KC0yLjcwMCwgMy4zMDApPFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+PFwvdGQ+PHRkPjxcL3RkPjx0ZD48XC90ZD48dGQ+PFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+YFtVc28gZGUgbWFtYWRlcmEgRElVUk5BIGNvbiBhesO6Y2FyXWBTaTxcL3RkPjx0ZD4xLjQwMDxcL3RkPjx0ZD4wLjU3MDxcL3RkPjx0ZD4wLjUyMDxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD4oLTEuNDAwLCA0LjIwMCk8XC90ZD48dGQ+KC0zLjIwMCwgNC40MDApPFwvdGQ+PHRkPigtMi41MDAsIDMuNjAwKTxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD48XC90ZD48dGQ+PFwvdGQ+PHRkPjxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPmBbVXNvIGRlIG1hbWFkZXJhIE5PQ1RVUk5BIGNvbiBhesO6Y2FyXWBObzxcL3RkPjx0ZD4xLjIwMDxcL3RkPjx0ZD4wLjg3MDxcL3RkPjx0ZD4xLjAwMDxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD4oLTEuNTAwLCAzLjkwMCk8XC90ZD48dGQ+KC0yLjMwMCwgNC4wMDApPFwvdGQ+PHRkPigtMi4xMDAsIDQuMTAwKTxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD48XC90ZD48dGQ+PFwvdGQ+PHRkPjxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPmBbVXNvIGRlIG1hbWFkZXJhIE5PQ1RVUk5BIGNvbiBhesO6Y2FyXWBTaTxcL3RkPjx0ZD4wLjgzMDxcL3RkPjx0ZD4wLjQ2MDxcL3RkPjx0ZD4wLjE3MDxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD4oLTEuODAwLCAzLjUwMCk8XC90ZD48dGQ+KC0yLjgwMCwgMy43MDApPFwvdGQ+PHRkPigtMy4xMDAsIDMuNDAwKTxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD48XC90ZD48dGQ+PFwvdGQ+PHRkPjxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPmBbSW5nZXN0YSBkZSBiZWJpZGFzIGNhcmJvbmF0YWRhcyBjb24gYXrDumNhcl1gTm88XC90ZD48dGQ+MC43NjA8XC90ZD48dGQ+MC41NjA8XC90ZD48dGQ+MC4xODA8XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+KC0xLjcwMCwgMy4yMDApPFwvdGQ+PHRkPigtMi4yMDAsIDMuNDAwKTxcL3RkPjx0ZD4oLTIuNjAwLCAyLjkwMCk8XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+PFwvdGQ+PHRkPjxcL3RkPjx0ZD48XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj5gW0luZ2VzdGEgZGUgYmViaWRhcyBjYXJib25hdGFkYXMgY29uIGF6w7pjYXJdYFNpPFwvdGQ+PHRkPjEuMzAwPFwvdGQ+PHRkPjAuNzEwPFwvdGQ+PHRkPjAuOTYwPFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+PFwvdGQ+PHRkPigtMS4yMDAsIDMuODAwKTxcL3RkPjx0ZD4oLTIuMDAwLCAzLjUwMCk8XC90ZD48dGQ+KC0xLjcwMCwgMy42MDApPFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+PFwvdGQ+PHRkPjxcL3RkPjx0ZD48XC90ZD48dGQ+PFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+YFtJbmdlc3RhIEp1Z29zIG5hdHVyYWxlc11gTm88XC90ZD48dGQ+MS4xMDA8XC90ZD48dGQ+MC43NDA8XC90ZD48dGQ+MC40MTA8XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+KC0xLjUwMCwgMy44MDApPFwvdGQ+PHRkPigtMi4zMDAsIDMuODAwKTxcL3RkPjx0ZD4oLTIuNTAwLCAzLjMwMCk8XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+PFwvdGQ+PHRkPjxcL3RkPjx0ZD48XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj5gW0luZ2VzdGEgSnVnb3MgbmF0dXJhbGVzXWBTaTxcL3RkPjx0ZD4wLjg4MDxcL3RkPjx0ZD4wLjU0MDxcL3RkPjx0ZD4wLjQzMDxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD4oLTEuNzAwLCAzLjQwMCk8XC90ZD48dGQ+KC0yLjMwMCwgMy40MDApPFwvdGQ+PHRkPigtMi4zMDAsIDMuMjAwKTxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD48XC90ZD48dGQ+PFwvdGQ+PHRkPjxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPmBbSGEgYXNpc3RpZG8gYSBjb250cm9sIG9kZz9dYE5vPFwvdGQ+PHRkPjEuMTAwPFwvdGQ+PHRkPjAuNDIwPFwvdGQ+PHRkPjAuMTMwPFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+PFwvdGQ+PHRkPigtMS41MDAsIDMuNjAwKTxcL3RkPjx0ZD4oLTIuNzAwLCAzLjYwMCk8XC90ZD48dGQ+KC0zLjQwMCwgMy42MDApPFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+PFwvdGQ+PHRkPjxcL3RkPjx0ZD48XC90ZD48dGQ+PFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+YFtIYSBhc2lzdGlkbyBhIGNvbnRyb2wgb2RnP11gU2k8XC90ZD48dGQ+MC45NTA8XC90ZD48dGQ+MC45NTA8XC90ZD48dGQ+MS40MDA8XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+KC0xLjYwMCwgMy40MDApPFwvdGQ+PHRkPigtMi4xMDAsIDQuMDAwKTxcL3RkPjx0ZD4oLTEuOTAwLCA0LjcwMCk8XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+PFwvdGQ+PHRkPjxcL3RkPjx0ZD48XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj5gW0hhIGFzaXN0aWRvIGEgY29udHJvbCBuacOxbyBzYW5vIG3DqWRpY28/XWBObzxcL3RkPjx0ZD4xLjAwMDxcL3RkPjx0ZD4wLjAwMzxcL3RkPjx0ZD4wLjAwMDA0PFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+PFwvdGQ+PHRkPigtMy44MDAsIDUuODAwKTxcL3RkPjx0ZD4oLTIuMDAwLCAyLjAwMCk8XC90ZD48dGQ+KC0yLjAwMCwgMi4wMDApPFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+PFwvdGQ+PHRkPjxcL3RkPjx0ZD48XC90ZD48dGQ+PFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+YFtIYSBhc2lzdGlkbyBhIGNvbnRyb2wgbmnDsW8gc2FubyBtw6lkaWNvP11gU2k8XC90ZD48dGQ+MC45OTA8XC90ZD48dGQ+MTM4LjAwMDxzdXA+KioqPFwvc3VwPjxcL3RkPjx0ZD4zLDk1My4wMDA8c3VwPioqKjxcL3N1cD48XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+KC0zLjMwMCwgNS4yMDApPFwvdGQ+PHRkPigxMzYuMDAwLCAxNDEuMDAwKTxcL3RkPjx0ZD4oMyw5NTAuMDAwLCAzLDk1NS4wMDApPFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+PFwvdGQ+PHRkPjxcL3RkPjx0ZD48XC90ZD48dGQ+PFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+YFtIdWVydGEgY29uIGFsaW1lbnRvcyBlbiBjYXNhP11gTm88XC90ZD48dGQ+MC43NTA8XC90ZD48dGQ+MC40NTA8XC90ZD48dGQ+MC4yNjA8XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+KC0xLjgwMCwgMy4zMDApPFwvdGQ+PHRkPigtMi41MDAsIDMuNDAwKTxcL3RkPjx0ZD4oLTIuNDAwLCAyLjkwMCk8XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+PFwvdGQ+PHRkPjxcL3RkPjx0ZD48XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj5gW0h1ZXJ0YSBjb24gYWxpbWVudG9zIGVuIGNhc2E/XWBTaTxcL3RkPjx0ZD4xLjMwMDxcL3RkPjx0ZD4wLjg5MDxcL3RkPjx0ZD4wLjY4MDxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD4oLTEuMzAwLCAzLjkwMCk8XC90ZD48dGQ+KC0yLjEwMCwgMy45MDApPFwvdGQ+PHRkPigtMi4wMDAsIDMuNDAwKTxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD48XC90ZD48dGQ+PFwvdGQ+PHRkPjxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPmBbQWd1YSBwb3RhYmxlIGVuIGNhc2FdYE5vPFwvdGQ+PHRkPjEuNTAwPFwvdGQ+PHRkPjAuMzMwPFwvdGQ+PHRkPjAuNDYwPFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+PFwvdGQ+PHRkPigtMS4yMDAsIDQuMjAwKTxcL3RkPjx0ZD4oLTMuNDAwLCA0LjEwMCk8XC90ZD48dGQ+KC0yLjQwMCwgMy4zMDApPFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+PFwvdGQ+PHRkPjxcL3RkPjx0ZD48XC90ZD48dGQ+PFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+YFtBZ3VhIHBvdGFibGUgZW4gY2FzYV1gU2k8XC90ZD48dGQ+MC42NTA8XC90ZD48dGQ+MS4yMDA8XC90ZD48dGQ+MC4zOTA8XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+KC0yLjEwMCwgMy40MDApPFwvdGQ+PHRkPigtMi4zMDAsIDQuNzAwKTxcL3RkPjx0ZD4oLTIuNDAwLCAzLjIwMCk8XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+PFwvdGQ+PHRkPjxcL3RkPjx0ZD48XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj5gW0dydXBvIGZhbWlsaWFyIHNlIHJlY29ub2NlIG1hcHVjaGVdYE5vPFwvdGQ+PHRkPjAuODAwPFwvdGQ+PHRkPjAuNTQwPFwvdGQ+PHRkPjAuMzMwPFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+PFwvdGQ+PHRkPigtMS43MDAsIDMuMzAwKTxcL3RkPjx0ZD4oLTIuNDAwLCAzLjQwMCk8XC90ZD48dGQ+KC0yLjMwMCwgMy4wMDApPFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+PFwvdGQ+PHRkPjxcL3RkPjx0ZD48XC90ZD48dGQ+PFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+YFtHcnVwbyBmYW1pbGlhciBzZSByZWNvbm9jZSBtYXB1Y2hlXWBTaTxcL3RkPjx0ZD4xLjMwMDxcL3RkPjx0ZD4wLjc1MDxcL3RkPjx0ZD4wLjUzMDxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD4oLTEuMjAwLCAzLjgwMCk8XC90ZD48dGQ+KC0yLjEwMCwgMy42MDApPFwvdGQ+PHRkPigtMi4xMDAsIDMuMTAwKTxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD48XC90ZD48dGQ+PFwvdGQ+PHRkPjxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPmBbVml2ZSBlbiBjYW1wbz9dYE5vPFwvdGQ+PHRkPjEuNDAwPFwvdGQ+PHRkPjAuNDcwPFwvdGQ+PHRkPjAuMzYwPFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+PFwvdGQ+PHRkPigtMS4yMDAsIDQuMDAwKTxcL3RkPjx0ZD4oLTIuNTAwLCAzLjUwMCk8XC90ZD48dGQ+KC0yLjQwMCwgMy4xMDApPFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+PFwvdGQ+PHRkPjxcL3RkPjx0ZD48XC90ZD48dGQ+PFwvdGQ+PFwvdHI+XG48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+YFtWaXZlIGVuIGNhbXBvP11gU2k8XC90ZD48dGQ+MC43MjA8XC90ZD48dGQ+MC44NTA8XC90ZD48dGQ+MC41MDA8XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+KC0xLjkwMCwgMy4zMDApPFwvdGQ+PHRkPigtMi4xMDAsIDMuODAwKTxcL3RkPjx0ZD4oLTIuMjAwLCAzLjIwMCk8XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj48XC90ZD48dGQ+PFwvdGQ+PHRkPjxcL3RkPjx0ZD48XC90ZD48XC90cj5cbjx0cj48dGQgc3R5bGU9XCJ0ZXh0LWFsaWduOmxlZnRcIj5Db25zdGFudDxcL3RkPjx0ZD4xLjIwMDxcL3RkPjx0ZD4wLjI2MDxcL3RkPjx0ZD4wLjkyMDxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD4oLTEuMzAwLCAzLjYwMCk8XC90ZD48dGQ+KC0yLjUwMCwgMy4wMDApPFwvdGQ+PHRkPigtMS41MDAsIDMuNDAwKTxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPjxcL3RkPjx0ZD48XC90ZD48dGQ+PFwvdGQ+PHRkPjxcL3RkPjxcL3RyPlxuPHRyPjx0ZCBjb2xzcGFuPVwiNFwiIHN0eWxlPVwiYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkIGJsYWNrXCI+PFwvdGQ+PFwvdHI+PHRyPjx0ZCBzdHlsZT1cInRleHQtYWxpZ246bGVmdFwiPkFrYWlrZSBJbmYuIENyaXQuPFwvdGQ+PHRkPjc2NS4wMDA8XC90ZD48dGQ+NzY1LjAwMDxcL3RkPjx0ZD43NjUuMDAwPFwvdGQ+PFwvdHI+XG48dHI+PHRkIGNvbHNwYW49XCI0XCIgc3R5bGU9XCJib3JkZXItYm90dG9tOiAxcHggc29saWQgYmxhY2tcIj48XC90ZD48XC90cj48dHI+PHRkIHN0eWxlPVwidGV4dC1hbGlnbjpsZWZ0XCI+PGVtPk5vdGU6PFwvZW0+PFwvdGQ+PHRkIGNvbHNwYW49XCIzXCIgc3R5bGU9XCJ0ZXh0LWFsaWduOnJpZ2h0XCI+PHN1cD4qPFwvc3VwPnA8MC4xOyA8c3VwPioqPFwvc3VwPnA8MC4wNTsgPHN1cD4qKio8XC9zdXA+cDwwLjAxPFwvdGQ+PFwvdHI+XG48XC90YWJsZT5cbiJ9 -->
+<pre><code>
+&lt;table style=&quot;text-align:center&quot;&gt;&lt;caption&gt;&lt;strong&gt;Multinomial logistic regression model of rick factors for history and activity of Early Childhood Caries.&lt;/strong&gt;&lt;/caption&gt;
+&lt;tr&gt;&lt;td colspan=&quot;4&quot; style=&quot;border-bottom: 1px solid black&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;&lt;em&gt;Dependent variable:&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td colspan=&quot;3&quot; style=&quot;border-bottom: 1px solid black&quot;&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;Only activity&lt;/td&gt;&lt;td&gt;Only history&lt;/td&gt;&lt;td&gt;History and activity&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(1)&lt;/td&gt;&lt;td&gt;(2)&lt;/td&gt;&lt;td&gt;(3)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td colspan=&quot;4&quot; style=&quot;border-bottom: 1px solid black&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Placa dental]`No&lt;/td&gt;&lt;td&gt;0.580&lt;/td&gt;&lt;td&gt;0.450&lt;/td&gt;&lt;td&gt;0.420&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(-1.900, 3.100)&lt;/td&gt;&lt;td&gt;(-2.400, 3.300)&lt;/td&gt;&lt;td&gt;(-2.200, 3.000)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Placa dental]`Si&lt;/td&gt;&lt;td&gt;1.700&lt;/td&gt;&lt;td&gt;0.900&lt;/td&gt;&lt;td&gt;0.420&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(-0.810, 4.300)&lt;/td&gt;&lt;td&gt;(-1.900, 3.700)&lt;/td&gt;&lt;td&gt;(-2.100, 3.000)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Cepillado]`No&lt;/td&gt;&lt;td&gt;1.100&lt;/td&gt;&lt;td&gt;0.560&lt;/td&gt;&lt;td&gt;0.340&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(-1.400, 3.500)&lt;/td&gt;&lt;td&gt;(-2.300, 3.400)&lt;/td&gt;&lt;td&gt;(-2.300, 3.000)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Cepillado]`Si&lt;/td&gt;&lt;td&gt;0.910&lt;/td&gt;&lt;td&gt;0.710&lt;/td&gt;&lt;td&gt;0.520&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(-1.600, 3.400)&lt;/td&gt;&lt;td&gt;(-2.100, 3.500)&lt;/td&gt;&lt;td&gt;(-2.100, 3.100)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Pasta dental fluorada]`No&lt;/td&gt;&lt;td&gt;1.100&lt;/td&gt;&lt;td&gt;1.300&lt;/td&gt;&lt;td&gt;0.490&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(-2.100, 4.200)&lt;/td&gt;&lt;td&gt;(-2.200, 4.700)&lt;/td&gt;&lt;td&gt;(-3.000, 4.000)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Pasta dental fluorada]`Si&lt;/td&gt;&lt;td&gt;0.940&lt;/td&gt;&lt;td&gt;0.310&lt;/td&gt;&lt;td&gt;0.360&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(-2.000, 3.900)&lt;/td&gt;&lt;td&gt;(-3.000, 3.600)&lt;/td&gt;&lt;td&gt;(-2.900, 3.700)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Uso de mamadera DIURNA con azúcar]`No&lt;/td&gt;&lt;td&gt;0.720&lt;/td&gt;&lt;td&gt;0.700&lt;/td&gt;&lt;td&gt;0.340&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(-2.000, 3.400)&lt;/td&gt;&lt;td&gt;(-2.900, 4.300)&lt;/td&gt;&lt;td&gt;(-2.700, 3.300)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Uso de mamadera DIURNA con azúcar]`Si&lt;/td&gt;&lt;td&gt;1.400&lt;/td&gt;&lt;td&gt;0.570&lt;/td&gt;&lt;td&gt;0.520&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(-1.400, 4.200)&lt;/td&gt;&lt;td&gt;(-3.200, 4.400)&lt;/td&gt;&lt;td&gt;(-2.500, 3.600)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Uso de mamadera NOCTURNA con azúcar]`No&lt;/td&gt;&lt;td&gt;1.200&lt;/td&gt;&lt;td&gt;0.870&lt;/td&gt;&lt;td&gt;1.000&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(-1.500, 3.900)&lt;/td&gt;&lt;td&gt;(-2.300, 4.000)&lt;/td&gt;&lt;td&gt;(-2.100, 4.100)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Uso de mamadera NOCTURNA con azúcar]`Si&lt;/td&gt;&lt;td&gt;0.830&lt;/td&gt;&lt;td&gt;0.460&lt;/td&gt;&lt;td&gt;0.170&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(-1.800, 3.500)&lt;/td&gt;&lt;td&gt;(-2.800, 3.700)&lt;/td&gt;&lt;td&gt;(-3.100, 3.400)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Ingesta de bebidas carbonatadas con azúcar]`No&lt;/td&gt;&lt;td&gt;0.760&lt;/td&gt;&lt;td&gt;0.560&lt;/td&gt;&lt;td&gt;0.180&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(-1.700, 3.200)&lt;/td&gt;&lt;td&gt;(-2.200, 3.400)&lt;/td&gt;&lt;td&gt;(-2.600, 2.900)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Ingesta de bebidas carbonatadas con azúcar]`Si&lt;/td&gt;&lt;td&gt;1.300&lt;/td&gt;&lt;td&gt;0.710&lt;/td&gt;&lt;td&gt;0.960&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(-1.200, 3.800)&lt;/td&gt;&lt;td&gt;(-2.000, 3.500)&lt;/td&gt;&lt;td&gt;(-1.700, 3.600)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Ingesta Jugos naturales]`No&lt;/td&gt;&lt;td&gt;1.100&lt;/td&gt;&lt;td&gt;0.740&lt;/td&gt;&lt;td&gt;0.410&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(-1.500, 3.800)&lt;/td&gt;&lt;td&gt;(-2.300, 3.800)&lt;/td&gt;&lt;td&gt;(-2.500, 3.300)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Ingesta Jugos naturales]`Si&lt;/td&gt;&lt;td&gt;0.880&lt;/td&gt;&lt;td&gt;0.540&lt;/td&gt;&lt;td&gt;0.430&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(-1.700, 3.400)&lt;/td&gt;&lt;td&gt;(-2.300, 3.400)&lt;/td&gt;&lt;td&gt;(-2.300, 3.200)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Ha asistido a control odg?]`No&lt;/td&gt;&lt;td&gt;1.100&lt;/td&gt;&lt;td&gt;0.420&lt;/td&gt;&lt;td&gt;0.130&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(-1.500, 3.600)&lt;/td&gt;&lt;td&gt;(-2.700, 3.600)&lt;/td&gt;&lt;td&gt;(-3.400, 3.600)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Ha asistido a control odg?]`Si&lt;/td&gt;&lt;td&gt;0.950&lt;/td&gt;&lt;td&gt;0.950&lt;/td&gt;&lt;td&gt;1.400&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(-1.600, 3.400)&lt;/td&gt;&lt;td&gt;(-2.100, 4.000)&lt;/td&gt;&lt;td&gt;(-1.900, 4.700)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Ha asistido a control niño sano médico?]`No&lt;/td&gt;&lt;td&gt;1.000&lt;/td&gt;&lt;td&gt;0.003&lt;/td&gt;&lt;td&gt;0.00004&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(-3.800, 5.800)&lt;/td&gt;&lt;td&gt;(-2.000, 2.000)&lt;/td&gt;&lt;td&gt;(-2.000, 2.000)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Ha asistido a control niño sano médico?]`Si&lt;/td&gt;&lt;td&gt;0.990&lt;/td&gt;&lt;td&gt;138.000&lt;sup&gt;***&lt;/sup&gt;&lt;/td&gt;&lt;td&gt;3,953.000&lt;sup&gt;***&lt;/sup&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(-3.300, 5.200)&lt;/td&gt;&lt;td&gt;(136.000, 141.000)&lt;/td&gt;&lt;td&gt;(3,950.000, 3,955.000)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Huerta con alimentos en casa?]`No&lt;/td&gt;&lt;td&gt;0.750&lt;/td&gt;&lt;td&gt;0.450&lt;/td&gt;&lt;td&gt;0.260&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(-1.800, 3.300)&lt;/td&gt;&lt;td&gt;(-2.500, 3.400)&lt;/td&gt;&lt;td&gt;(-2.400, 2.900)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Huerta con alimentos en casa?]`Si&lt;/td&gt;&lt;td&gt;1.300&lt;/td&gt;&lt;td&gt;0.890&lt;/td&gt;&lt;td&gt;0.680&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(-1.300, 3.900)&lt;/td&gt;&lt;td&gt;(-2.100, 3.900)&lt;/td&gt;&lt;td&gt;(-2.000, 3.400)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Agua potable en casa]`No&lt;/td&gt;&lt;td&gt;1.500&lt;/td&gt;&lt;td&gt;0.330&lt;/td&gt;&lt;td&gt;0.460&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(-1.200, 4.200)&lt;/td&gt;&lt;td&gt;(-3.400, 4.100)&lt;/td&gt;&lt;td&gt;(-2.400, 3.300)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Agua potable en casa]`Si&lt;/td&gt;&lt;td&gt;0.650&lt;/td&gt;&lt;td&gt;1.200&lt;/td&gt;&lt;td&gt;0.390&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(-2.100, 3.400)&lt;/td&gt;&lt;td&gt;(-2.300, 4.700)&lt;/td&gt;&lt;td&gt;(-2.400, 3.200)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Grupo familiar se reconoce mapuche]`No&lt;/td&gt;&lt;td&gt;0.800&lt;/td&gt;&lt;td&gt;0.540&lt;/td&gt;&lt;td&gt;0.330&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(-1.700, 3.300)&lt;/td&gt;&lt;td&gt;(-2.400, 3.400)&lt;/td&gt;&lt;td&gt;(-2.300, 3.000)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Grupo familiar se reconoce mapuche]`Si&lt;/td&gt;&lt;td&gt;1.300&lt;/td&gt;&lt;td&gt;0.750&lt;/td&gt;&lt;td&gt;0.530&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(-1.200, 3.800)&lt;/td&gt;&lt;td&gt;(-2.100, 3.600)&lt;/td&gt;&lt;td&gt;(-2.100, 3.100)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Vive en campo?]`No&lt;/td&gt;&lt;td&gt;1.400&lt;/td&gt;&lt;td&gt;0.470&lt;/td&gt;&lt;td&gt;0.360&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(-1.200, 4.000)&lt;/td&gt;&lt;td&gt;(-2.500, 3.500)&lt;/td&gt;&lt;td&gt;(-2.400, 3.100)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;`[Vive en campo?]`Si&lt;/td&gt;&lt;td&gt;0.720&lt;/td&gt;&lt;td&gt;0.850&lt;/td&gt;&lt;td&gt;0.500&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(-1.900, 3.300)&lt;/td&gt;&lt;td&gt;(-2.100, 3.800)&lt;/td&gt;&lt;td&gt;(-2.200, 3.200)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;Constant&lt;/td&gt;&lt;td&gt;1.200&lt;/td&gt;&lt;td&gt;0.260&lt;/td&gt;&lt;td&gt;0.920&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;(-1.300, 3.600)&lt;/td&gt;&lt;td&gt;(-2.500, 3.000)&lt;/td&gt;&lt;td&gt;(-1.500, 3.400)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td colspan=&quot;4&quot; style=&quot;border-bottom: 1px solid black&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;Akaike Inf. Crit.&lt;/td&gt;&lt;td&gt;765.000&lt;/td&gt;&lt;td&gt;765.000&lt;/td&gt;&lt;td&gt;765.000&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td colspan=&quot;4&quot; style=&quot;border-bottom: 1px solid black&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;text-align:left&quot;&gt;&lt;em&gt;Note:&lt;/em&gt;&lt;/td&gt;&lt;td colspan=&quot;3&quot; style=&quot;text-align:right&quot;&gt;&lt;sup&gt;*&lt;/sup&gt;p&lt;0.1; &lt;sup&gt;**&lt;/sup&gt;p&lt;0.05; &lt;sup&gt;***&lt;/sup&gt;p&lt;0.01&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>See</p>
+<p>coef.vector &lt;- exp(model$coef)</p>
+<p>stargazer(model,coef=list(coef.vector))</p>
 <p>Check ## Prediction</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuaGVhZChwcmVkaWN0KHRlc3QsIGRmLCB0eXBlID0gXCJwcm9iXCIpKVxuYGBgIn0= -->
 <pre class="r"><code>head(predict(test, df, type = &quot;prob&quot;))</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiICBOb05vICBOb1NpICBTaU5vIFNpU2lcbjEgMC4xNiAwLjA4MiAwLjA5NCAwLjY3XG4yIDAuMzAgMC4zNTEgMC4wNzYgMC4yN1xuMyAwLjI5IDAuMzMyIDAuMjUzIDAuMTNcbjQgMC4xMyAwLjM1MSAwLjA0MSAwLjQ4XG41IDAuMzAgMC4zNTEgMC4wNzYgMC4yN1xuNiAwLjI3IDAuMzU5IDAuMDM5IDAuMzNcbiJ9 -->
+<!-- rnb-output-begin eyJkYXRhIjoiICBOb05vICBOb1NpICBTaU5vIFNpU2lcbjEgMC4xNyAwLjA3MyAwLjA5MCAwLjY3XG4yIDAuMzAgMC4zNTEgMC4wNzYgMC4yN1xuMyAwLjI4IDAuMzI5IDAuMjU4IDAuMTNcbjQgMC4xMSAwLjMzOCAwLjAzMyAwLjUyXG41IDAuMzAgMC4zNTEgMC4wNzYgMC4yN1xuNiAwLjIyIDAuMzcwIDAuMDMzIDAuMzhcbiJ9 -->
 <pre><code>  NoNo  NoSi  SiNo SiSi
-1 0.16 0.082 0.094 0.67
+1 0.17 0.073 0.090 0.67
 2 0.30 0.351 0.076 0.27
-3 0.29 0.332 0.253 0.13
-4 0.13 0.351 0.041 0.48
+3 0.28 0.329 0.258 0.13
+4 0.11 0.338 0.033 0.52
 5 0.30 0.351 0.076 0.27
-6 0.27 0.359 0.039 0.33</code></pre>
+6 0.22 0.370 0.033 0.38</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
@@ -602,79 +772,81 @@ AIC: 764 </code></pre>
 <pre class="r"><code>z &lt;- summary(test)$coefficients/summary(test)$standard.errors
 z</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiICAgICAoSW50ZXJjZXB0KSBgW1BsYWNhIGRlbnRhbF1gTm8gYFtQbGFjYSBkZW50YWxdYFNpIGBbQ2VwaWxsYWRvXWBOb1xuTm9TaSAgICAgICAgMC43NiAgICAgICAgICAgLTAuMDAwODcgICAgICAgICAgICAgMC4wNTkwICAgICAgICAgICAwLjAzMFxuU2lObyAgICAgICAtMy44NCAgICAgICAgICAgLTIuNjA5NzggICAgICAgICAgICAtMC43NjY5ICAgICAgICAgIC0yLjA4NlxuU2lTaSAgICAgICAtMC4zNSAgICAgICAgICAgIDAuMDA2MDEgICAgICAgICAgICAtMC4wMDgzICAgICAgICAgIC0wLjA0MlxuICAgICBgW0NlcGlsbGFkb11gU2kgYFtQYXN0YSBkZW50YWwgZmx1b3JhZGFdYE5vIGBbUGFzdGEgZGVudGFsIGZsdW9yYWRhXWBTaVxuTm9TaSAgICAgICAgICAgMC4wMjggICAgICAgICAgICAgICAgICAgICAgIDAuMDM2ICAgICAgICAgICAgICAgICAgICAgICAwLjAyMlxuU2lObyAgICAgICAgICAtMS4yODAgICAgICAgICAgICAgICAgICAgICAgIDAuMTg0ICAgICAgICAgICAgICAgICAgICAgIC0yLjU3MFxuU2lTaSAgICAgICAgICAgMC4wNDAgICAgICAgICAgICAgICAgICAgICAgIDAuMDMyICAgICAgICAgICAgICAgICAgICAgIC0wLjAzNFxuICAgICBgW1VzbyBkZSBtYW1hZGVyYSBESVVSTkEgY29uIGF6w7pjYXJdYE5vXG5Ob1NpICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuMDA1M1xuU2lObyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC0wLjc3NjNcblNpU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAtMC4wNDU3XG4gICAgIGBbVXNvIGRlIG1hbWFkZXJhIERJVVJOQSBjb24gYXrDumNhcl1gU2lcbk5vU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuMDUzXG5TaU5vICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC0xLjA5OFxuU2lTaSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC4wNDNcbiAgICAgYFtVc28gZGUgbWFtYWRlcmEgTk9DVFVSTkEgY29uIGF6w7pjYXJdYE5vXG5Ob1NpICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuMDQ2XG5TaU5vICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLTAuNjQ0XG5TaVNpICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuMTY3XG4gICAgIGBbVXNvIGRlIG1hbWFkZXJhIE5PQ1RVUk5BIGNvbiBhesO6Y2FyXWBTaVxuTm9TaSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjAxMlxuU2lObyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC0xLjgyNFxuU2lTaSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC0wLjE3MFxuICAgICBgW0luZ2VzdGEgZGUgYmViaWRhcyBjYXJib25hdGFkYXMgY29uIGF6w7pjYXJdYE5vXG5Ob1NpICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjAxNFxuU2lObyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAtMi4wNTdcblNpU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLTAuMTM0XG4gICAgIGBbSW5nZXN0YSBkZSBiZWJpZGFzIGNhcmJvbmF0YWRhcyBjb24gYXrDumNhcl1gU2lcbk5vU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuMDQ0XG5TaU5vICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC0xLjQ0MFxuU2lTaSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC4xMzFcbiAgICAgYFtJbmdlc3RhIEp1Z29zIG5hdHVyYWxlc11gTm8gYFtJbmdlc3RhIEp1Z29zIG5hdHVyYWxlc11gU2lcbk5vU2kgICAgICAgICAgICAgICAgICAgICAgICAwLjAzNzAgICAgICAgICAgICAgICAgICAgICAgICAwLjAyMTJcblNpTm8gICAgICAgICAgICAgICAgICAgICAgIC0xLjEwODMgICAgICAgICAgICAgICAgICAgICAgIC0xLjkwMTFcblNpU2kgICAgICAgICAgICAgICAgICAgICAgIC0wLjAwNjIgICAgICAgICAgICAgICAgICAgICAgICAwLjAwMzlcbiAgICAgYFtIYSBhc2lzdGlkbyBhIGNvbnRyb2wgb2RnP11gTm8gYFtIYSBhc2lzdGlkbyBhIGNvbnRyb2wgb2RnP11gU2lcbk5vU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC4wMzMgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC4wMjVcblNpTm8gICAgICAgICAgICAgICAgICAgICAgICAgICAtMi4xODUgICAgICAgICAgICAgICAgICAgICAgICAgICAtMC40NDhcblNpU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAtMC4xOTUgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC4xOTNcbiAgICAgYFtIYSBhc2lzdGlkbyBhIGNvbnRyb2wgbmnDsW8gc2FubyBtw6lkaWNvP11gTm9cbk5vU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC0zLjZlLTAyXG5TaU5vICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAtNy4wZSswNlxuU2lTaSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLTEuMGUtMDFcbiAgICAgYFtIYSBhc2lzdGlkbyBhIGNvbnRyb2wgbmnDsW8gc2FubyBtw6lkaWNvP11gU2lcbk5vU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuMDQ5XG5TaU5vICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDUxLjg5M1xuU2lTaSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC4xMTNcbiAgICAgYFtIdWVydGEgY29uIGFsaW1lbnRvcyBlbiBjYXNhP11gTm8gYFtIdWVydGEgY29uIGFsaW1lbnRvcyBlbiBjYXNhP11gU2lcbk5vU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjAwODYgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC4wNTBcblNpTm8gICAgICAgICAgICAgICAgICAgICAgICAgICAgIC0yLjQyNjkgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAtMC41NzRcblNpU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC0wLjA4NzQgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC4wODVcbiAgICAgYFtBZ3VhIHBvdGFibGUgZW4gY2FzYV1gTm8gYFtBZ3VhIHBvdGFibGUgZW4gY2FzYV1gU2lcbk5vU2kgICAgICAgICAgICAgICAgICAgICAwLjA0ODMgICAgICAgICAgICAgICAgICAgICAwLjAwOTlcblNpTm8gICAgICAgICAgICAgICAgICAgIC0xLjk4NzQgICAgICAgICAgICAgICAgICAgICAwLjEwNDFcblNpU2kgICAgICAgICAgICAgICAgICAgIC0wLjAwNzcgICAgICAgICAgICAgICAgICAgICAwLjAwNTRcbiAgICAgYFtMdXogZWzDqWN0cmljYSBlbiBjYXNhXWBObyBgW0x1eiBlbMOpY3RyaWNhIGVuIGNhc2FdYFNpXG5Ob1NpICAgICAgICAgICAgICAgICAgICAgMi45ZS0wMSAgICAgICAgICAgICAgICAgICAgICAgLTAuNzRcblNpTm8gICAgICAgICAgICAgICAgICAgIC0zLjZlKzA2ICAgICAgICAgICAgICAgICAgICAgICAgMC43N1xuU2lTaSAgICAgICAgICAgICAgICAgICAgIDUuMWUtMDEgICAgICAgICAgICAgICAgICAgICAgIC0wLjM2XG4gICAgIGBbR3J1cG8gZmFtaWxpYXIgc2UgcmVjb25vY2UgbWFwdWNoZV1gTm9cbk5vU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjAxN1xuU2lObyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLTEuOTkzXG5TaVNpICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAtMC4wMzdcbiAgICAgYFtHcnVwbyBmYW1pbGlhciBzZSByZWNvbm9jZSBtYXB1Y2hlXWBTaSBgW1ZpdmUgZW4gY2FtcG8/XWBOb1xuTm9TaSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuMDQxICAgICAgICAgICAgICAgIDAuMDQ3XG5TaU5vICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAtMS4xNzMgICAgICAgICAgICAgICAtMi4yMjlcblNpU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjAzNSAgICAgICAgICAgICAgIC0wLjAyNlxuICAgICBgW1ZpdmUgZW4gY2FtcG8/XWBTaVxuTm9TaSAgICAgICAgICAgICAgICAwLjAxMVxuU2lObyAgICAgICAgICAgICAgIC0wLjc1OFxuU2lTaSAgICAgICAgICAgICAgICAwLjAyNFxuIn0= -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICAoSW50ZXJjZXB0KSBgW1BsYWNhIGRlbnRhbF1gTm8gYFtQbGFjYSBkZW50YWxdYFNpIGBbQ2VwaWxsYWRvXWBOb1xuTm9TaSAgICAgICAgMC43NiAgICAgICAgICAgICAgIC0yLjIgICAgICAgICAgICAgICAyLjEyICAgICAgICAgICAgMC40MVxuU2lObyAgICAgICAtMy44NCAgICAgICAgICAgICAgIC0yLjIgICAgICAgICAgICAgIC0wLjMxICAgICAgICAgICAtMS41N1xuU2lTaSAgICAgICAtMC4zNSAgICAgICAgICAgICAgIC0zLjEgICAgICAgICAgICAgIC0zLjIwICAgICAgICAgICAtMy42OVxuICAgICBgW0NlcGlsbGFkb11gU2kgYFtQYXN0YSBkZW50YWwgZmx1b3JhZGFdYE5vIGBbUGFzdGEgZGVudGFsIGZsdW9yYWRhXWBTaVxuTm9TaSAgICAgICAgICAgLTAuMzggICAgICAgICAgICAgICAgICAgICAgICAwLjE0ICAgICAgICAgICAgICAgICAgICAgICAtMC4xNVxuU2lObyAgICAgICAgICAgLTAuOTUgICAgICAgICAgICAgICAgICAgICAgICAwLjQ0ICAgICAgICAgICAgICAgICAgICAgICAtMi4yOFxuU2lTaSAgICAgICAgICAgLTIuMjQgICAgICAgICAgICAgICAgICAgICAgIC0xLjIyICAgICAgICAgICAgICAgICAgICAgICAtMS45NlxuICAgICBgW1VzbyBkZSBtYW1hZGVyYSBESVVSTkEgY29uIGF6w7pjYXJdYE5vXG5Ob1NpICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAtMS4wNVxuU2lObyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLTAuNThcblNpU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC0yLjU2XG4gICAgIGBbVXNvIGRlIG1hbWFkZXJhIERJVVJOQSBjb24gYXrDumNhcl1gU2lcbk5vU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjkzXG5TaU5vICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAtMC44NVxuU2lTaSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLTEuNDdcbiAgICAgYFtVc28gZGUgbWFtYWRlcmEgTk9DVFVSTkEgY29uIGF6w7pjYXJdYE5vXG5Ob1NpICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuNTk4XG5TaU5vICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLTAuMjg3XG5TaVNpICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuMDIxXG4gICAgIGBbVXNvIGRlIG1hbWFkZXJhIE5PQ1RVUk5BIGNvbiBhesO6Y2FyXWBTaVxuTm9TaSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAtMC42MlxuU2lObyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAtMS41OFxuU2lTaSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAtMy40N1xuICAgICBgW0luZ2VzdGEgZGUgYmViaWRhcyBjYXJib25hdGFkYXMgY29uIGF6w7pjYXJdYE5vXG5Ob1NpICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLTEuMlxuU2lObyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC0xLjZcblNpU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAtNC45XG4gICAgIGBbSW5nZXN0YSBkZSBiZWJpZGFzIGNhcmJvbmF0YWRhcyBjb24gYXrDumNhcl1gU2lcbk5vU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAxLjExXG5TaU5vICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAtMS4wMlxuU2lTaSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLTAuMTRcbiAgICAgYFtJbmdlc3RhIEp1Z29zIG5hdHVyYWxlc11gTm8gYFtJbmdlc3RhIEp1Z29zIG5hdHVyYWxlc11gU2lcbk5vU2kgICAgICAgICAgICAgICAgICAgICAgICAgIDAuNDYgICAgICAgICAgICAgICAgICAgICAgICAgLTAuNTJcblNpTm8gICAgICAgICAgICAgICAgICAgICAgICAgLTAuNzEgICAgICAgICAgICAgICAgICAgICAgICAgLTEuNThcblNpU2kgICAgICAgICAgICAgICAgICAgICAgICAgLTIuMzQgICAgICAgICAgICAgICAgICAgICAgICAgLTIuNTJcbiAgICAgYFtIYSBhc2lzdGlkbyBhIGNvbnRyb2wgb2RnP11gTm8gYFtIYSBhc2lzdGlkbyBhIGNvbnRyb2wgb2RnP11gU2lcbk5vU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuMjIgICAgICAgICAgICAgICAgICAgICAgICAgICAgLTAuMjJcblNpTm8gICAgICAgICAgICAgICAgICAgICAgICAgICAgLTEuODUgICAgICAgICAgICAgICAgICAgICAgICAgICAgLTAuMTFcblNpU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgLTMuNTYgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuNjNcbiAgICAgYFtIYSBhc2lzdGlkbyBhIGNvbnRyb2wgbmnDsW8gc2FubyBtw6lkaWNvP11gTm9cbk5vU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAxLjdlLTAyXG5TaU5vICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAtMi4yZSswNlxuU2lTaSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLTEuNGUrMDlcbiAgICAgYFtIYSBhc2lzdGlkbyBhIGNvbnRyb2wgbmnDsW8gc2FubyBtw6lkaWNvP11gU2lcbk5vU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLTAuMDE2XG5TaU5vICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDMzLjc2N1xuU2lTaSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA2MS40NDRcbiAgICAgYFtIdWVydGEgY29uIGFsaW1lbnRvcyBlbiBjYXNhP11gTm8gYFtIdWVydGEgY29uIGFsaW1lbnRvcyBlbiBjYXNhP11gU2lcbk5vU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC0xLjEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDEuMDJcblNpTm8gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC0yLjAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLTAuMjlcblNpU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC00LjUgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLTEuMjRcbiAgICAgYFtBZ3VhIHBvdGFibGUgZW4gY2FzYV1gTm8gYFtBZ3VhIHBvdGFibGUgZW4gY2FzYV1gU2lcbk5vU2kgICAgICAgICAgICAgICAgICAgICAgICAxLjMgICAgICAgICAgICAgICAgICAgICAgLTEuMjhcblNpTm8gICAgICAgICAgICAgICAgICAgICAgIC0xLjcgICAgICAgICAgICAgICAgICAgICAgIDAuMzJcblNpU2kgICAgICAgICAgICAgICAgICAgICAgIC0yLjAgICAgICAgICAgICAgICAgICAgICAgLTIuNzFcbiAgICAgYFtHcnVwbyBmYW1pbGlhciBzZSByZWNvbm9jZSBtYXB1Y2hlXWBOb1xuTm9TaSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC0wLjg5XG5TaU5vICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLTEuNjFcblNpU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAtMy43OFxuICAgICBgW0dydXBvIGZhbWlsaWFyIHNlIHJlY29ub2NlIG1hcHVjaGVdYFNpIGBbVml2ZSBlbiBjYW1wbz9dYE5vXG5Ob1NpICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuOTYgICAgICAgICAgICAgICAgICAxLjJcblNpTm8gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAtMC43NSAgICAgICAgICAgICAgICAgLTEuOFxuU2lTaSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC0yLjIxICAgICAgICAgICAgICAgICAtMy4yXG4gICAgIGBbVml2ZSBlbiBjYW1wbz9dYFNpXG5Ob1NpICAgICAgICAgICAgICAgICAtMS4yXG5TaU5vICAgICAgICAgICAgICAgICAtMC40XG5TaVNpICAgICAgICAgICAgICAgICAtMi4zXG4ifQ== -->
 <pre><code>     (Intercept) `[Placa dental]`No `[Placa dental]`Si `[Cepillado]`No
-NoSi        0.76           -0.00087             0.0590           0.030
-SiNo       -3.84           -2.60978            -0.7669          -2.086
-SiSi       -0.35            0.00601            -0.0083          -0.042
+NoSi        0.76               -2.2               2.12            0.41
+SiNo       -3.84               -2.2              -0.31           -1.57
+SiSi       -0.35               -3.1              -3.20           -3.69
      `[Cepillado]`Si `[Pasta dental fluorada]`No `[Pasta dental fluorada]`Si
-NoSi           0.028                       0.036                       0.022
-SiNo          -1.280                       0.184                      -2.570
-SiSi           0.040                       0.032                      -0.034
+NoSi           -0.38                        0.14                       -0.15
+SiNo           -0.95                        0.44                       -2.28
+SiSi           -2.24                       -1.22                       -1.96
      `[Uso de mamadera DIURNA con azúcar]`No
-NoSi                                  0.0053
-SiNo                                 -0.7763
-SiSi                                 -0.0457
+NoSi                                   -1.05
+SiNo                                   -0.58
+SiSi                                   -2.56
      `[Uso de mamadera DIURNA con azúcar]`Si
-NoSi                                   0.053
-SiNo                                  -1.098
-SiSi                                   0.043
+NoSi                                    0.93
+SiNo                                   -0.85
+SiSi                                   -1.47
      `[Uso de mamadera NOCTURNA con azúcar]`No
-NoSi                                     0.046
-SiNo                                    -0.644
-SiSi                                     0.167
+NoSi                                     0.598
+SiNo                                    -0.287
+SiSi                                     0.021
      `[Uso de mamadera NOCTURNA con azúcar]`Si
-NoSi                                     0.012
-SiNo                                    -1.824
-SiSi                                    -0.170
+NoSi                                     -0.62
+SiNo                                     -1.58
+SiSi                                     -3.47
      `[Ingesta de bebidas carbonatadas con azúcar]`No
-NoSi                                            0.014
-SiNo                                           -2.057
-SiSi                                           -0.134
+NoSi                                             -1.2
+SiNo                                             -1.6
+SiSi                                             -4.9
      `[Ingesta de bebidas carbonatadas con azúcar]`Si
-NoSi                                            0.044
-SiNo                                           -1.440
-SiSi                                            0.131
+NoSi                                             1.11
+SiNo                                            -1.02
+SiSi                                            -0.14
      `[Ingesta Jugos naturales]`No `[Ingesta Jugos naturales]`Si
-NoSi                        0.0370                        0.0212
-SiNo                       -1.1083                       -1.9011
-SiSi                       -0.0062                        0.0039
+NoSi                          0.46                         -0.52
+SiNo                         -0.71                         -1.58
+SiSi                         -2.34                         -2.52
      `[Ha asistido a control odg?]`No `[Ha asistido a control odg?]`Si
-NoSi                            0.033                            0.025
-SiNo                           -2.185                           -0.448
-SiSi                           -0.195                            0.193
+NoSi                             0.22                            -0.22
+SiNo                            -1.85                            -0.11
+SiSi                            -3.56                             0.63
      `[Ha asistido a control niño sano médico?]`No
-NoSi                                      -3.6e-02
-SiNo                                      -7.0e+06
-SiSi                                      -1.0e-01
+NoSi                                       1.7e-02
+SiNo                                      -2.2e+06
+SiSi                                      -1.4e+09
      `[Ha asistido a control niño sano médico?]`Si
-NoSi                                         0.049
-SiNo                                        51.893
-SiSi                                         0.113
+NoSi                                        -0.016
+SiNo                                        33.767
+SiSi                                        61.444
      `[Huerta con alimentos en casa?]`No `[Huerta con alimentos en casa?]`Si
-NoSi                              0.0086                               0.050
-SiNo                             -2.4269                              -0.574
-SiSi                             -0.0874                               0.085
+NoSi                                -1.1                                1.02
+SiNo                                -2.0                               -0.29
+SiSi                                -4.5                               -1.24
      `[Agua potable en casa]`No `[Agua potable en casa]`Si
-NoSi                     0.0483                     0.0099
-SiNo                    -1.9874                     0.1041
-SiSi                    -0.0077                     0.0054
-     `[Luz eléctrica en casa]`No `[Luz eléctrica en casa]`Si
-NoSi                     2.9e-01                       -0.74
-SiNo                    -3.6e+06                        0.77
-SiSi                     5.1e-01                       -0.36
+NoSi                        1.3                      -1.28
+SiNo                       -1.7                       0.32
+SiSi                       -2.0                      -2.71
      `[Grupo familiar se reconoce mapuche]`No
-NoSi                                    0.017
-SiNo                                   -1.993
-SiSi                                   -0.037
+NoSi                                    -0.89
+SiNo                                    -1.61
+SiSi                                    -3.78
      `[Grupo familiar se reconoce mapuche]`Si `[Vive en campo?]`No
-NoSi                                    0.041                0.047
-SiNo                                   -1.173               -2.229
-SiSi                                    0.035               -0.026
+NoSi                                     0.96                  1.2
+SiNo                                    -0.75                 -1.8
+SiSi                                    -2.21                 -3.2
      `[Vive en campo?]`Si
-NoSi                0.011
-SiNo               -0.758
-SiSi                0.024</code></pre>
+NoSi                 -1.2
+SiNo                 -0.4
+SiSi                 -2.3</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIEhFQURcbmBgYCJ9 -->
+<pre class="r"><code> HEAD</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiRXJyb3I6IG9iamVjdCAnSEVBRCcgbm90IGZvdW5kXG4ifQ== -->
+<pre><code>Error: object 'HEAD' not found</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
@@ -683,137 +855,16 @@ SiSi                0.024</code></pre>
 <h2>2 tailed p values</h2>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucCA8LSAoMSAtIHBub3JtKGFicyh6KSwgMCwgMSkpKjJcbnBcbmBgYCJ9 -->
-<pre class="r"><code>p &lt;- (1 - pnorm(abs(z), 0, 1))*2
-p</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiICAgICAoSW50ZXJjZXB0KSBgW1BsYWNhIGRlbnRhbF1gTm8gYFtQbGFjYSBkZW50YWxdYFNpIGBbQ2VwaWxsYWRvXWBOb1xuTm9TaSAgICAgMC40NDgyMCAgICAgICAgICAgICAwLjk5OTMgICAgICAgICAgICAgICAwLjk1ICAgICAgICAgICAwLjk3NlxuU2lObyAgICAgMC4wMDAxMiAgICAgICAgICAgICAwLjAwOTEgICAgICAgICAgICAgICAwLjQ0ICAgICAgICAgICAwLjAzN1xuU2lTaSAgICAgMC43MjkxMyAgICAgICAgICAgICAwLjk5NTIgICAgICAgICAgICAgICAwLjk5ICAgICAgICAgICAwLjk2NlxuICAgICBgW0NlcGlsbGFkb11gU2kgYFtQYXN0YSBkZW50YWwgZmx1b3JhZGFdYE5vIGBbUGFzdGEgZGVudGFsIGZsdW9yYWRhXWBTaVxuTm9TaSAgICAgICAgICAgIDAuOTggICAgICAgICAgICAgICAgICAgICAgICAwLjk3ICAgICAgICAgICAgICAgICAgICAgICAgMC45OFxuU2lObyAgICAgICAgICAgIDAuMjAgICAgICAgICAgICAgICAgICAgICAgICAwLjg1ICAgICAgICAgICAgICAgICAgICAgICAgMC4wMVxuU2lTaSAgICAgICAgICAgIDAuOTcgICAgICAgICAgICAgICAgICAgICAgICAwLjk3ICAgICAgICAgICAgICAgICAgICAgICAgMC45N1xuICAgICBgW1VzbyBkZSBtYW1hZGVyYSBESVVSTkEgY29uIGF6w7pjYXJdYE5vXG5Ob1NpICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMS4wMFxuU2lObyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuNDRcblNpU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjk2XG4gICAgIGBbVXNvIGRlIG1hbWFkZXJhIERJVVJOQSBjb24gYXrDumNhcl1gU2lcbk5vU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjk2XG5TaU5vICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC4yN1xuU2lTaSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuOTdcbiAgICAgYFtVc28gZGUgbWFtYWRlcmEgTk9DVFVSTkEgY29uIGF6w7pjYXJdYE5vXG5Ob1NpICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjk2XG5TaU5vICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjUyXG5TaVNpICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjg3XG4gICAgIGBbVXNvIGRlIG1hbWFkZXJhIE5PQ1RVUk5BIGNvbiBhesO6Y2FyXWBTaVxuTm9TaSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjk5MVxuU2lObyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjA2OFxuU2lTaSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjg2NVxuICAgICBgW0luZ2VzdGEgZGUgYmViaWRhcyBjYXJib25hdGFkYXMgY29uIGF6w7pjYXJdYE5vXG5Ob1NpICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC45OVxuU2lObyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuMDRcblNpU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjg5XG4gICAgIGBbSW5nZXN0YSBkZSBiZWJpZGFzIGNhcmJvbmF0YWRhcyBjb24gYXrDumNhcl1gU2lcbk5vU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjk2XG5TaU5vICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC4xNVxuU2lTaSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuOTBcbiAgICAgYFtJbmdlc3RhIEp1Z29zIG5hdHVyYWxlc11gTm8gYFtJbmdlc3RhIEp1Z29zIG5hdHVyYWxlc11gU2lcbk5vU2kgICAgICAgICAgICAgICAgICAgICAgICAgIDAuOTcgICAgICAgICAgICAgICAgICAgICAgICAgMC45ODNcblNpTm8gICAgICAgICAgICAgICAgICAgICAgICAgIDAuMjcgICAgICAgICAgICAgICAgICAgICAgICAgMC4wNTdcblNpU2kgICAgICAgICAgICAgICAgICAgICAgICAgIDEuMDAgICAgICAgICAgICAgICAgICAgICAgICAgMC45OTdcbiAgICAgYFtIYSBhc2lzdGlkbyBhIGNvbnRyb2wgb2RnP11gTm8gYFtIYSBhc2lzdGlkbyBhIGNvbnRyb2wgb2RnP11gU2lcbk5vU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC45NzMgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuOThcblNpTm8gICAgICAgICAgICAgICAgICAgICAgICAgICAgMC4wMjkgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuNjVcblNpU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC44NDYgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuODVcbiAgICAgYFtIYSBhc2lzdGlkbyBhIGNvbnRyb2wgbmnDsW8gc2FubyBtw6lkaWNvP11gTm9cbk5vU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjk3XG5TaU5vICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC4wMFxuU2lTaSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuOTJcbiAgICAgYFtIYSBhc2lzdGlkbyBhIGNvbnRyb2wgbmnDsW8gc2FubyBtw6lkaWNvP11gU2lcbk5vU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjk2XG5TaU5vICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC4wMFxuU2lTaSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuOTFcbiAgICAgYFtIdWVydGEgY29uIGFsaW1lbnRvcyBlbiBjYXNhP11gTm8gYFtIdWVydGEgY29uIGFsaW1lbnRvcyBlbiBjYXNhP11gU2lcbk5vU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC45OTMgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuOTZcblNpTm8gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC4wMTUgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuNTdcblNpU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC45MzAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuOTNcbiAgICAgYFtBZ3VhIHBvdGFibGUgZW4gY2FzYV1gTm8gYFtBZ3VhIHBvdGFibGUgZW4gY2FzYV1gU2lcbk5vU2kgICAgICAgICAgICAgICAgICAgICAgMC45NjEgICAgICAgICAgICAgICAgICAgICAgIDAuOTlcblNpTm8gICAgICAgICAgICAgICAgICAgICAgMC4wNDcgICAgICAgICAgICAgICAgICAgICAgIDAuOTJcblNpU2kgICAgICAgICAgICAgICAgICAgICAgMC45OTQgICAgICAgICAgICAgICAgICAgICAgIDEuMDBcbiAgICAgYFtMdXogZWzDqWN0cmljYSBlbiBjYXNhXWBObyBgW0x1eiBlbMOpY3RyaWNhIGVuIGNhc2FdYFNpXG5Ob1NpICAgICAgICAgICAgICAgICAgICAgICAgMC43NyAgICAgICAgICAgICAgICAgICAgICAgIDAuNDZcblNpTm8gICAgICAgICAgICAgICAgICAgICAgICAwLjAwICAgICAgICAgICAgICAgICAgICAgICAgMC40NFxuU2lTaSAgICAgICAgICAgICAgICAgICAgICAgIDAuNjEgICAgICAgICAgICAgICAgICAgICAgICAwLjcyXG4gICAgIGBbR3J1cG8gZmFtaWxpYXIgc2UgcmVjb25vY2UgbWFwdWNoZV1gTm9cbk5vU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjk4NlxuU2lObyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuMDQ2XG5TaVNpICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC45NzBcbiAgICAgYFtHcnVwbyBmYW1pbGlhciBzZSByZWNvbm9jZSBtYXB1Y2hlXWBTaSBgW1ZpdmUgZW4gY2FtcG8/XWBOb1xuTm9TaSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjk3ICAgICAgICAgICAgICAgIDAuOTYzXG5TaU5vICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuMjQgICAgICAgICAgICAgICAgMC4wMjZcblNpU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC45NyAgICAgICAgICAgICAgICAwLjk3OVxuICAgICBgW1ZpdmUgZW4gY2FtcG8/XWBTaVxuTm9TaSAgICAgICAgICAgICAgICAgMC45OVxuU2lObyAgICAgICAgICAgICAgICAgMC40NVxuU2lTaSAgICAgICAgICAgICAgICAgMC45OFxuIn0= -->
-<pre><code>     (Intercept) `[Placa dental]`No `[Placa dental]`Si `[Cepillado]`No
-NoSi     0.44820             0.9993               0.95           0.976
-SiNo     0.00012             0.0091               0.44           0.037
-SiSi     0.72913             0.9952               0.99           0.966
-     `[Cepillado]`Si `[Pasta dental fluorada]`No `[Pasta dental fluorada]`Si
-NoSi            0.98                        0.97                        0.98
-SiNo            0.20                        0.85                        0.01
-SiSi            0.97                        0.97                        0.97
-     `[Uso de mamadera DIURNA con azúcar]`No
-NoSi                                    1.00
-SiNo                                    0.44
-SiSi                                    0.96
-     `[Uso de mamadera DIURNA con azúcar]`Si
-NoSi                                    0.96
-SiNo                                    0.27
-SiSi                                    0.97
-     `[Uso de mamadera NOCTURNA con azúcar]`No
-NoSi                                      0.96
-SiNo                                      0.52
-SiSi                                      0.87
-     `[Uso de mamadera NOCTURNA con azúcar]`Si
-NoSi                                     0.991
-SiNo                                     0.068
-SiSi                                     0.865
-     `[Ingesta de bebidas carbonatadas con azúcar]`No
-NoSi                                             0.99
-SiNo                                             0.04
-SiSi                                             0.89
-     `[Ingesta de bebidas carbonatadas con azúcar]`Si
-NoSi                                             0.96
-SiNo                                             0.15
-SiSi                                             0.90
-     `[Ingesta Jugos naturales]`No `[Ingesta Jugos naturales]`Si
-NoSi                          0.97                         0.983
-SiNo                          0.27                         0.057
-SiSi                          1.00                         0.997
-     `[Ha asistido a control odg?]`No `[Ha asistido a control odg?]`Si
-NoSi                            0.973                             0.98
-SiNo                            0.029                             0.65
-SiSi                            0.846                             0.85
-     `[Ha asistido a control niño sano médico?]`No
-NoSi                                          0.97
-SiNo                                          0.00
-SiSi                                          0.92
-     `[Ha asistido a control niño sano médico?]`Si
-NoSi                                          0.96
-SiNo                                          0.00
-SiSi                                          0.91
-     `[Huerta con alimentos en casa?]`No `[Huerta con alimentos en casa?]`Si
-NoSi                               0.993                                0.96
-SiNo                               0.015                                0.57
-SiSi                               0.930                                0.93
-     `[Agua potable en casa]`No `[Agua potable en casa]`Si
-NoSi                      0.961                       0.99
-SiNo                      0.047                       0.92
-SiSi                      0.994                       1.00
-     `[Luz eléctrica en casa]`No `[Luz eléctrica en casa]`Si
-NoSi                        0.77                        0.46
-SiNo                        0.00                        0.44
-SiSi                        0.61                        0.72
-     `[Grupo familiar se reconoce mapuche]`No
-NoSi                                    0.986
-SiNo                                    0.046
-SiSi                                    0.970
-     `[Grupo familiar se reconoce mapuche]`Si `[Vive en campo?]`No
-NoSi                                     0.97                0.963
-SiNo                                     0.24                0.026
-SiSi                                     0.97                0.979
-     `[Vive en campo?]`Si
-NoSi                 0.99
-SiNo                 0.45
-SiSi                 0.98</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucm0oeilcbnJtKHApXG5gYGAifQ== -->
-<pre class="r"><code>rm(z)
-rm(p)</code></pre>
-<!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuaGVhZChmaXR0ZWQodGVzdCkpXG5gYGAifQ== -->
-<pre class="r"><code>head(fitted(test))</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiICBOb05vICBOb1NpICBTaU5vIFNpU2lcbjEgMC4xNiAwLjA4MiAwLjA5NCAwLjY3XG4yIDAuMzAgMC4zNTEgMC4wNzYgMC4yN1xuMyAwLjI5IDAuMzMyIDAuMjUzIDAuMTNcbjQgMC4xMyAwLjM1MSAwLjA0MSAwLjQ4XG41IDAuMzAgMC4zNTEgMC4wNzYgMC4yN1xuNiAwLjI3IDAuMzU5IDAuMDM5IDAuMzNcbiJ9 -->
-<pre><code>  NoNo  NoSi  SiNo SiSi
-1 0.16 0.082 0.094 0.67
-2 0.30 0.351 0.076 0.27
-3 0.29 0.332 0.253 0.13
-4 0.13 0.351 0.041 0.48
-5 0.30 0.351 0.076 0.27
-6 0.27 0.359 0.039 0.33</code></pre>
-<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYWRkbWFyZ2lucyh0YWJsZShkZiRwcmVkaWN0LCBkZiRIaXN0b3JpYUFjdGl2aWRhZDIpKVxuXG5gYGAifQ== -->
-<pre class="r"><code>addmargins(table(df$predict, df$HistoriaActividad2))
-</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgXG4gICAgICAgTm9ObyBOb1NpIFNpTm8gU2lTaSBTdW1cbiAgTm9ObyAgIDQzICAgMjMgICAgNyAgICA1ICA3OFxuICBOb1NpICAgNTEgICA2NCAgIDE0ICAgNDQgMTczXG4gIFNpTm8gICAgMSAgICAwICAgIDEgICAgMCAgIDJcbiAgU2lTaSAgICA2ICAgIDkgICAgMSAgIDIyICAzOFxuICBTdW0gICAxMDEgICA5NiAgIDIzICAgNzEgMjkxXG4ifQ== -->
-<pre><code>      
-       NoNo NoSi SiNo SiSi Sum
-  NoNo   43   23    7    5  78
-  NoSi   51   64   14   44 173
-  SiNo    1    0    1    0   2
-  SiSi    6    9    1   22  38
-  Sum   101   96   23   71 291</code></pre>
-<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY2hpc3EudGVzdCh0YWJsZShkZiRwcmVkaWN0LCBkZiRIaXN0b3JpYUFjdGl2aWRhZDIpKVxuXG5gYGAifQ== -->
-<pre class="r"><code>chisq.test(table(df$predict, df$HistoriaActividad2))
-</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiQ2hpLXNxdWFyZWQgYXBwcm94aW1hdGlvbiBtYXkgYmUgaW5jb3JyZWN0XG4ifQ== -->
-<pre><code>Chi-squared approximation may be incorrect</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG5cdFBlYXJzb24ncyBDaGktc3F1YXJlZCB0ZXN0XG5cbmRhdGE6ICB0YWJsZShkZiRwcmVkaWN0LCBkZiRIaXN0b3JpYUFjdGl2aWRhZDIpXG5YLXNxdWFyZWQgPSA1MCwgZGYgPSA5LCBwLXZhbHVlID0gNWUtMDhcbiJ9 -->
-<pre><code>
-    Pearson's Chi-squared test
-
-data:  table(df$predict, df$HistoriaActividad2)
-X-squared = 50, df = 9, p-value = 5e-08</code></pre>
-<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 </div>
@@ -821,28 +872,55 @@ X-squared = 50, df = 9, p-value = 5e-08</code></pre>
 <h2>Odds ratios</h2>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3RhcmdhemVyKE9SLCB0eXBlID0gXCJ0ZXh0XCIsIHRpdGxlPVwiT2RkcyByYXRpb1wiLCBkaWdpdHM9MSwgb3V0PVwib3V0cHV0cy9vZGRzcmF0aW8udHh0XCIpXG5cbmBgYCJ9 -->
-<pre class="r"><code>stargazer(OR, type = &quot;text&quot;, title=&quot;Odds ratio&quot;, digits=1, out=&quot;outputs/oddsratio.txt&quot;)
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3RhcmdhemVyKE9SLCB0eXBlID0gXCJ0ZXh0XCIsIHRpdGxlPVwiT2RkcyByYXRpb1wiLCBkaWdpdHM9MSwgb3V0PVwib3V0cHV0cy9vZGRzcmF0aW8udHh0XCIsIGZsaXA9VFJVRSlcblxuYGBgIn0= -->
+<pre class="r"><code>stargazer(OR, type = &quot;text&quot;, title=&quot;Odds ratio&quot;, digits=1, out=&quot;outputs/oddsratio.txt&quot;, flip=TRUE)
 </code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG5PZGRzIHJhdGlvXG49PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuICAgICAoSW50ZXJjZXB0KSBgW1BsYWNhIGRlbnRhbF1gTm8gYFtQbGFjYSBkZW50YWxdYFNpIGBbQ2VwaWxsYWRvXWBObyBgW0NlcGlsbGFkb11gU2kgYFtQYXN0YSBkZW50YWwgZmx1b3JhZGFdYE5vIGBbUGFzdGEgZGVudGFsIGZsdW9yYWRhXWBTaSBgW1VzbyBkZSBtYW1hZGVyYSBESVVSTkEgY29uIGF6w7pjYXJdYE5vIGBbVXNvIGRlIG1hbWFkZXJhIERJVVJOQSBjb24gYXrDumNhcl1gU2kgYFtVc28gZGUgbWFtYWRlcmEgTk9DVFVSTkEgY29uIGF6w7pjYXJdYE5vIGBbVXNvIGRlIG1hbWFkZXJhIE5PQ1RVUk5BIGNvbiBhesO6Y2FyXWBTaSBgW0luZ2VzdGEgZGUgYmViaWRhcyBjYXJib25hdGFkYXMgY29uIGF6w7pjYXJdYE5vIGBbSW5nZXN0YSBkZSBiZWJpZGFzIGNhcmJvbmF0YWRhcyBjb24gYXrDumNhcl1gU2kgYFtJbmdlc3RhIEp1Z29zIG5hdHVyYWxlc11gTm8gYFtJbmdlc3RhIEp1Z29zIG5hdHVyYWxlc11gU2kgYFtIYSBhc2lzdGlkbyBhIGNvbnRyb2wgb2RnP11gTm8gYFtIYSBhc2lzdGlkbyBhIGNvbnRyb2wgb2RnP11gU2kgYFtIYSBhc2lzdGlkbyBhIGNvbnRyb2wgbmnDsW8gc2FubyBtw6lkaWNvP11gTm8gYFtIYSBhc2lzdGlkbyBhIGNvbnRyb2wgbmnDsW8gc2FubyBtw6lkaWNvP11gU2kgYFtIdWVydGEgY29uIGFsaW1lbnRvcyBlbiBjYXNhP11gTm8gYFtIdWVydGEgY29uIGFsaW1lbnRvcyBlbiBjYXNhP11gU2kgYFtBZ3VhIHBvdGFibGUgZW4gY2FzYV1gTm8gYFtBZ3VhIHBvdGFibGUgZW4gY2FzYV1gU2kgYFtMdXogZWzDqWN0cmljYSBlbiBjYXNhXWBObyBgW0x1eiBlbMOpY3RyaWNhIGVuIGNhc2FdYFNpIGBbR3J1cG8gZmFtaWxpYXIgc2UgcmVjb25vY2UgbWFwdWNoZV1gTm8gYFtHcnVwbyBmYW1pbGlhciBzZSByZWNvbm9jZSBtYXB1Y2hlXWBTaSBgW1ZpdmUgZW4gY2FtcG8/XWBObyBgW1ZpdmUgZW4gY2FtcG8/XWBTaSAuMSBcbi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXG5Ob1NpICAgICAxLjIgICAgICAgICAgICAxLjAgICAgICAgICAgICAgICAgMi42ICAgICAgICAgICAgICAgMS43ICAgICAgICAgICAgIDEuNiAgICAgICAgICAgICAgICAgICAxLjggICAgICAgICAgICAgICAgICAgICAgICAgMS40ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDEuMSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAyLjQgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDIuMiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDEuMiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDEuMyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAyLjEgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMS44ICAgICAgICAgICAgICAgICAgICAgICAgICAgMS40ICAgICAgICAgICAgICAgICAgICAgICAgICAgIDEuNyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDEuNSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuMDAwICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDUsODMyLjAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAxLjIgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAyLjMgICAgICAgICAgICAgICAgICAgICAgICAgICAgMi4yICAgICAgICAgICAgICAgICAgICAgICAgMS4yICAgICAgICAgICAgICAgICAgICAgNSwxMzgsNzg2LjAgICAgICAgICAgICAgICAgICAgIDAuMDAwICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMS4zICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAyLjAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMi4yICAgICAgICAgICAgICAgICAgMS4yICAgICAgICAgIDAuOFxuU2lObyAgICAgMC4zICAgICAgICAgICAgMC40ICAgICAgICAgICAgICAgIDAuOCAgICAgICAgICAgICAgIDAuNSAgICAgICAgICAgICAwLjYgICAgICAgICAgICAgICAgICAgMS4xICAgICAgICAgICAgICAgICAgICAgICAgIDAuMyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjYgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC41ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjcgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjQgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjUgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC42ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuNiAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuNSAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjQgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjggICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjAwMCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgNzU4LjAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC40ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC44ICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuMyAgICAgICAgICAgICAgICAgICAgICAgIDEuMSAgICAgICAgICAgICAgICAgICAgICAgICAwLjMgICAgICAgICAgICAgICAgICAgICAgICAgMS4xICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuNSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC42ICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuNCAgICAgICAgICAgICAgICAgIDAuNyAgICAgICAgICAgMCBcblNpU2kgICAgIDAuOSAgICAgICAgICAgIDEuMCAgICAgICAgICAgICAgICAxLjAgICAgICAgICAgICAgICAwLjggICAgICAgICAgICAgMS4zICAgICAgICAgICAgICAgICAgIDEuMiAgICAgICAgICAgICAgICAgICAgICAgICAwLjggICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC44ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDEuMyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMi44ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC40ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC40ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDIuMiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAxLjAgICAgICAgICAgICAgICAgICAgICAgICAgICAxLjAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC4zICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMy4yICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC4wMDAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA0NjAsOTg0LjAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuNiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDEuNyAgICAgICAgICAgICAgICAgICAgICAgICAgICAxLjAgICAgICAgICAgICAgICAgICAgICAgICAxLjAgICAgICAgICAgICAgICAgICAgICA0LDA5NCw4NDQuMCAgICAgICAgICAgICAgICAgICAgMC4wMDAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjggICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDEuMiAgICAgICAgICAgICAgICAgICAgICAgICAgICAwLjkgICAgICAgICAgICAgICAgICAxLjIgICAgICAgICAgIDAgXG4tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLVxuIn0= -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5PZGRzIHJhdGlvXG49PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTm9TaSBTaU5vICAgU2lTaSAgXG4tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXG4oSW50ZXJjZXB0KSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMS4yICAgMC4zICAgIDAuOSAgXG5gW1BsYWNhIGRlbnRhbF1gTm8gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC42ICAgMC40ICAgIDAuNCAgXG5gW1BsYWNhIGRlbnRhbF1gU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMS43ICAgMC45ICAgIDAuNCAgXG5gW0NlcGlsbGFkb11gTm8gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMS4xICAgMC42ICAgIDAuMyAgXG5gW0NlcGlsbGFkb11gU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC45ICAgMC43ICAgIDAuNSAgXG5gW1Bhc3RhIGRlbnRhbCBmbHVvcmFkYV1gTm8gICAgICAgICAgICAgICAgICAgICAgMS4xICAgMS4zICAgIDAuNSAgXG5gW1Bhc3RhIGRlbnRhbCBmbHVvcmFkYV1gU2kgICAgICAgICAgICAgICAgICAgICAgMC45ICAgMC4zICAgIDAuNCAgXG5gW1VzbyBkZSBtYW1hZGVyYSBESVVSTkEgY29uIGF6w7pjYXJdYE5vICAgICAgICAgIDAuNyAgIDAuNyAgICAwLjMgIFxuYFtVc28gZGUgbWFtYWRlcmEgRElVUk5BIGNvbiBhesO6Y2FyXWBTaSAgICAgICAgICAxLjQgICAwLjYgICAgMC41ICBcbmBbVXNvIGRlIG1hbWFkZXJhIE5PQ1RVUk5BIGNvbiBhesO6Y2FyXWBObyAgICAgICAgMS4yICAgMC45ICAgIDEuMCAgXG5gW1VzbyBkZSBtYW1hZGVyYSBOT0NUVVJOQSBjb24gYXrDumNhcl1gU2kgICAgICAgIDAuOCAgIDAuNSAgICAwLjIgIFxuYFtJbmdlc3RhIGRlIGJlYmlkYXMgY2FyYm9uYXRhZGFzIGNvbiBhesO6Y2FyXWBObyAwLjggICAwLjYgICAgMC4yICBcbmBbSW5nZXN0YSBkZSBiZWJpZGFzIGNhcmJvbmF0YWRhcyBjb24gYXrDumNhcl1gU2kgMS4zICAgMC43ICAgIDEuMCAgXG5gW0luZ2VzdGEgSnVnb3MgbmF0dXJhbGVzXWBObyAgICAgICAgICAgICAgICAgICAgMS4xICAgMC43ICAgIDAuNCAgXG5gW0luZ2VzdGEgSnVnb3MgbmF0dXJhbGVzXWBTaSAgICAgICAgICAgICAgICAgICAgMC45ICAgMC41ICAgIDAuNCAgXG5gW0hhIGFzaXN0aWRvIGEgY29udHJvbCBvZGc/XWBObyAgICAgICAgICAgICAgICAgMS4xICAgMC40ICAgIDAuMSAgXG5gW0hhIGFzaXN0aWRvIGEgY29udHJvbCBvZGc/XWBTaSAgICAgICAgICAgICAgICAgMC45ICAgMS4wICAgIDEuNCAgXG5gW0hhIGFzaXN0aWRvIGEgY29udHJvbCBuacOxbyBzYW5vIG3DqWRpY28/XWBObyAgICAxLjAgIDAuMDAzICAwLjAwMCBcbmBbSGEgYXNpc3RpZG8gYSBjb250cm9sIG5pw7FvIHNhbm8gbcOpZGljbz9dYFNpICAgIDEuMCAgMTM4LjAgMyw5NTMuMFxuYFtIdWVydGEgY29uIGFsaW1lbnRvcyBlbiBjYXNhP11gTm8gICAgICAgICAgICAgIDAuOCAgIDAuNSAgICAwLjMgIFxuYFtIdWVydGEgY29uIGFsaW1lbnRvcyBlbiBjYXNhP11gU2kgICAgICAgICAgICAgIDEuMyAgIDAuOSAgICAwLjcgIFxuYFtBZ3VhIHBvdGFibGUgZW4gY2FzYV1gTm8gICAgICAgICAgICAgICAgICAgICAgIDEuNSAgIDAuMyAgICAwLjUgIFxuYFtBZ3VhIHBvdGFibGUgZW4gY2FzYV1gU2kgICAgICAgICAgICAgICAgICAgICAgIDAuNyAgIDEuMiAgICAwLjQgIFxuYFtHcnVwbyBmYW1pbGlhciBzZSByZWNvbm9jZSBtYXB1Y2hlXWBObyAgICAgICAgIDAuOCAgIDAuNSAgICAwLjMgIFxuYFtHcnVwbyBmYW1pbGlhciBzZSByZWNvbm9jZSBtYXB1Y2hlXWBTaSAgICAgICAgIDEuMyAgIDAuNyAgICAwLjUgIFxuYFtWaXZlIGVuIGNhbXBvP11gTm8gICAgICAgICAgICAgICAgICAgICAgICAgICAgIDEuNCAgIDAuNSAgICAwLjQgIFxuYFtWaXZlIGVuIGNhbXBvP11gU2kgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuNyAgIDAuOSAgICAwLjUgIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuOCAgIDAuNCAgICAxLjAgIFxuLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLVxuIn0= -->
 <pre><code>
 Odds ratio
-====================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
-     (Intercept) `[Placa dental]`No `[Placa dental]`Si `[Cepillado]`No `[Cepillado]`Si `[Pasta dental fluorada]`No `[Pasta dental fluorada]`Si `[Uso de mamadera DIURNA con azúcar]`No `[Uso de mamadera DIURNA con azúcar]`Si `[Uso de mamadera NOCTURNA con azúcar]`No `[Uso de mamadera NOCTURNA con azúcar]`Si `[Ingesta de bebidas carbonatadas con azúcar]`No `[Ingesta de bebidas carbonatadas con azúcar]`Si `[Ingesta Jugos naturales]`No `[Ingesta Jugos naturales]`Si `[Ha asistido a control odg?]`No `[Ha asistido a control odg?]`Si `[Ha asistido a control niño sano médico?]`No `[Ha asistido a control niño sano médico?]`Si `[Huerta con alimentos en casa?]`No `[Huerta con alimentos en casa?]`Si `[Agua potable en casa]`No `[Agua potable en casa]`Si `[Luz eléctrica en casa]`No `[Luz eléctrica en casa]`Si `[Grupo familiar se reconoce mapuche]`No `[Grupo familiar se reconoce mapuche]`Si `[Vive en campo?]`No `[Vive en campo?]`Si .1 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-NoSi     1.2            1.0                2.6               1.7             1.6                   1.8                         1.4                               1.1                                     2.4                                      2.2                                       1.2                                          1.3                                              2.1                                     1.8                           1.4                            1.7                              1.5                                    0.000                                        5,832.0                                    1.2                                 2.3                            2.2                        1.2                     5,138,786.0                    0.000                              1.3                                      2.0                            2.2                  1.2          0.8
-SiNo     0.3            0.4                0.8               0.5             0.6                   1.1                         0.3                               0.6                                     0.5                                      0.7                                       0.4                                          0.5                                              0.6                                     0.6                           0.5                            0.4                              0.8                                    0.000                                         758.0                                     0.4                                 0.8                            0.3                        1.1                         0.3                         1.1                               0.5                                      0.6                            0.4                  0.7           0 
-SiSi     0.9            1.0                1.0               0.8             1.3                   1.2                         0.8                               0.8                                     1.3                                      2.8                                       0.4                                          0.4                                              2.2                                     1.0                           1.0                            0.3                              3.2                                    0.000                                       460,984.0                                   0.6                                 1.7                            1.0                        1.0                     4,094,844.0                    0.000                              0.8                                      1.2                            0.9                  1.2           0 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</code></pre>
+===================================================================
+                                                 NoSi SiNo   SiSi  
+-------------------------------------------------------------------
+(Intercept)                                      1.2   0.3    0.9  
+`[Placa dental]`No                               0.6   0.4    0.4  
+`[Placa dental]`Si                               1.7   0.9    0.4  
+`[Cepillado]`No                                  1.1   0.6    0.3  
+`[Cepillado]`Si                                  0.9   0.7    0.5  
+`[Pasta dental fluorada]`No                      1.1   1.3    0.5  
+`[Pasta dental fluorada]`Si                      0.9   0.3    0.4  
+`[Uso de mamadera DIURNA con azúcar]`No          0.7   0.7    0.3  
+`[Uso de mamadera DIURNA con azúcar]`Si          1.4   0.6    0.5  
+`[Uso de mamadera NOCTURNA con azúcar]`No        1.2   0.9    1.0  
+`[Uso de mamadera NOCTURNA con azúcar]`Si        0.8   0.5    0.2  
+`[Ingesta de bebidas carbonatadas con azúcar]`No 0.8   0.6    0.2  
+`[Ingesta de bebidas carbonatadas con azúcar]`Si 1.3   0.7    1.0  
+`[Ingesta Jugos naturales]`No                    1.1   0.7    0.4  
+`[Ingesta Jugos naturales]`Si                    0.9   0.5    0.4  
+`[Ha asistido a control odg?]`No                 1.1   0.4    0.1  
+`[Ha asistido a control odg?]`Si                 0.9   1.0    1.4  
+`[Ha asistido a control niño sano médico?]`No    1.0  0.003  0.000 
+`[Ha asistido a control niño sano médico?]`Si    1.0  138.0 3,953.0
+`[Huerta con alimentos en casa?]`No              0.8   0.5    0.3  
+`[Huerta con alimentos en casa?]`Si              1.3   0.9    0.7  
+`[Agua potable en casa]`No                       1.5   0.3    0.5  
+`[Agua potable en casa]`Si                       0.7   1.2    0.4  
+`[Grupo familiar se reconoce mapuche]`No         0.8   0.5    0.3  
+`[Grupo familiar se reconoce mapuche]`Si         1.3   0.7    0.5  
+`[Vive en campo?]`No                             1.4   0.5    0.4  
+`[Vive en campo?]`Si                             0.7   0.9    0.5  
+                                                 0.8   0.4    1.0  
+-------------------------------------------------------------------</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-chunk-end -->
 </div>
 </div>
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIlJpc2sgZmFjdG9ycyBmb3IgZWFybHkgY2hpbGRob29kIGNhcmllcyBhY3Rpdml0eSBhbmQgaGlzdG9yeSINCmF1dGhvcjogU2VyZ2lvIFVyaWJlDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQoNCiMgUGFja2FnZXMNCmBgYHtyIGV2YWw9RkFMU0V9DQpsaWJyYXJ5KHRpZHl2ZXJzZSkgIyBmb3IgZGF0YSB3cmFuZ2xpbmcsIGdyYXBocywgZXRjDQpsaWJyYXJ5KG5uZXQpICMgZm9yIG9yZGluYWwgbG9nIHJlZw0KbGlicmFyeSgic3RhcmdhemVyIikgIyBmb3IgdGFibGVzDQpgYGANCg0KIyBEYXRhc2V0DQpgYGB7ciBkYXRhZnJhbWV9DQpkZiA8LSByZWFkX2NzdigiZGF0YXNldC9oaXN0b3JpYWFjdGl2aWRhZC5jc3YiKQ0KYGBgDQpTZWxlY3Qgb25seSB0aGUgdmFyaWFibGVzIGZvciB0aGlzIGFuYWx5c2lzDQpgYGB7cn0NCmRmIDwtIGRmICU+JSANCiAgc2VsZWN0KC1zdGFydHNfd2l0aCgiTGVzaW9uZXMiKSkgJT4lIA0KICBzZWxlY3QoLXN0YXJ0c193aXRoKCJBY3RpdmlkYWQiKSkgIyBQb3IgYWxndW5hIHJhesOzbiBubyBwdWVkbyBvY3VwYXIgLWNvbDpjb2wNCmBgYA0KDQpgYGB7ciBjaGVjayBzdHJ1Y3R1cmV9DQpnbGltcHNlKGRmKQ0KZGltKGRmKQ0KYGBgDQoNCkNoZWNrIGhpc3Rvcnkgb2YgY2FyaWVzDQpgYGB7ciBUYWJsZSBIaXN0fQ0Kb3B0aW9ucyhkaWdpdHMgPSAyKQ0KdGFibGUoZGYkYmluSGlzdG9yaWEpDQpgYGANCkNoZWNrIGFjdGl2aXR5IG9mIGNhcmllcw0KYGBge3IgdGFibGUgQWN0fQ0KdGFibGUoZGYkYmluQWN0aXZpZGFkKQ0KDQpgYGANClRhYmxlIEhpc3RvcnkgeCBhY3Rpdml0eSBpbiAlDQpgYGB7ciB0YWJsZSBoaXN0IHggYWN0fQ0KYWRkbWFyZ2lucyhwcm9wLnRhYmxlKHRhYmxlKGRmJGJpbkhpc3RvcmlhLCBkZiRiaW5BY3RpdmlkYWQpKSoxMDApDQoNCmBgYA0KDQpQcmVwYXJlIGV2ZXJ5dGhpbmcgZm9yIHRoZSByZWdyZXNzaW9uDQpSZWxldmVsDQpgYGB7cn0NCmNsYXNzKGRmJEhpc3RvcmlhQWN0aXZpZGFkKQ0KZGYkSGlzdG9yaWFBY3RpdmlkYWQgPC0gIGFzLmZhY3RvcihkZiRIaXN0b3JpYUFjdGl2aWRhZCkNCmRmJEhpc3RvcmlhQWN0aXZpZGFkMiA8LSByZWxldmVsKGRmJEhpc3RvcmlhQWN0aXZpZGFkLCByZWYgPSAiTm9ObyIpDQpsZXZlbHMoZGYkSGlzdG9yaWFBY3RpdmlkYWQyKQ0KYGBgDQpDaGFuZ2UgYWxsIHRvIEZjdA0KDQpgYGB7cn0NCmRmW10gPC0gbGFwcGx5KCBkZiwgZmFjdG9yKQ0KDQpgYGANCg0KDQojIE1MUg0KYGBge3J9DQp0ZXN0IDwtIG11bHRpbm9tKCBIaXN0b3JpYUFjdGl2aWRhZDIgfiANCiAgICAgICAgICAgICAgICAgICAgYFtQbGFjYSBkZW50YWxdYCsgDQogICAgICAgICAgICAgICAgICAgIGBbQ2VwaWxsYWRvXWArIA0KICAgICAgICAgICAgICAgICAgICBgW1Bhc3RhIGRlbnRhbCBmbHVvcmFkYV1gCSsNCiAgICAgICAgICAgICAgICAgICAgYFtVc28gZGUgbWFtYWRlcmEgRElVUk5BIGNvbiBhesO6Y2FyXWAJKw0KICAgICAgICAgICAgICAgICAgICBgW1VzbyBkZSBtYW1hZGVyYSBOT0NUVVJOQSBjb24gYXrDumNhcl1gCSsNCiAgICAgICAgICAgICAgICAgICAgYFtJbmdlc3RhIGRlIGJlYmlkYXMgY2FyYm9uYXRhZGFzIGNvbiBhesO6Y2FyXWAJKw0KICAgICAgICAgICAgICAgICAgICBgW0luZ2VzdGEgSnVnb3MgbmF0dXJhbGVzXWAJKwkNCiAgICAgICAgICAgICAgICAgICAgYFtIYSBhc2lzdGlkbyBhIGNvbnRyb2wgb2RnP11gCSsNCiAgICAgICAgICAgICAgICAgICAgYFtIYSBhc2lzdGlkbyBhIGNvbnRyb2wgbmnDsW8gc2FubyBtw6lkaWNvP11gCSsNCiAgICAgICAgICAgICAgICAgICAgYFtIdWVydGEgY29uIGFsaW1lbnRvcyBlbiBjYXNhP11gCSsNCiAgICAgICAgICAgICAgICAgICAgYFtBZ3VhIHBvdGFibGUgZW4gY2FzYV1gCQkrDQogICAgICAgICAgICAgICAgICAgIGBbTHV6IGVsw6ljdHJpY2EgZW4gY2FzYV1gCQkrDQogICAgICAgICAgICAgICAgICAgIGBbR3J1cG8gZmFtaWxpYXIgc2UgcmVjb25vY2UgbWFwdWNoZV1gCSsNCiAgICAgICAgICAgICAgICAgICAgYFtWaXZlIGVuIGNhbXBvP11gICwNCiAgICAgICAgICAgICAgICAgIGRhdGEgPSBkZikNCmBgYA0KVmlldyBzdW1tYXJ5IG9mIHRoZSBtb2RlbA0KYGBge3J9DQpzdW1tYXJ5KHRlc3QpDQpgYGANCg0KDQpDaGVjaw0KIyMgUHJlZGljdGlvbg0KYGBge3IgcHJlZGljdGlvbn0NCmhlYWQocHJlZGljdCh0ZXN0LCBkZiwgdHlwZSA9ICJwcm9iIikpDQpgYGANCg0KIyMgeiB2YWx1ZXMNCg0KDQpgYGB7cn0NCnogPC0gc3VtbWFyeSh0ZXN0KSRjb2VmZmljaWVudHMvc3VtbWFyeSh0ZXN0KSRzdGFuZGFyZC5lcnJvcnMNCnoNCg0KYGBgDQojIyAyIHRhaWxlZCBwIHZhbHVlcw0KYGBge3J9DQpwIDwtICgxIC0gcG5vcm0oYWJzKHopLCAwLCAxKSkqMg0KcA0Kcm0oeikNCnJtKHApDQpgYGANCg0KYGBge3J9DQpoZWFkKGZpdHRlZCh0ZXN0KSkNCmBgYA0KDQoNCmBgYHtyfQ0KZGYkcHJlZGljdCA8LSBwcmVkaWN0KHRlc3QsIGRmKQ0KYWRkbWFyZ2lucyh0YWJsZShkZiRwcmVkaWN0LCBkZiRIaXN0b3JpYUFjdGl2aWRhZDIpKQ0KYGBgDQpgYGB7cn0NCmNoaXNxLnRlc3QodGFibGUoZGYkcHJlZGljdCwgZGYkSGlzdG9yaWFBY3RpdmlkYWQyKSkNCmBgYA0KDQoNCiMjIE9kZHMgcmF0aW9zDQoNCmBgYHtyfQ0KT1IgPC0gZXhwKGNiaW5kKE9kZHNfYW5kX09SPWNvZWYodGVzdCksIGNvbmZpbnQodGVzdCkpKQ0Kc3RhcmdhemVyKE9SLCB0eXBlID0gInRleHQiLCB0aXRsZT0iT2RkcyByYXRpbyIsIGRpZ2l0cz0xLCBvdXQ9Im91dHB1dHMvb2Rkc3JhdGlvLnR4dCIpDQpybShPUikNCmBgYA0KDQo=</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIlJpc2sgZmFjdG9ycyBmb3IgZWFybHkgY2hpbGRob29kIGNhcmllcyBhY3Rpdml0eSBhbmQgaGlzdG9yeSINCmF1dGhvcjogU2VyZ2lvIFVyaWJlDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQoNCiMgUGFja2FnZXMNCmBgYHtyIGV2YWw9RkFMU0V9DQpsaWJyYXJ5KHRpZHl2ZXJzZSkgIyBmb3IgZGF0YSB3cmFuZ2xpbmcsIGdyYXBocywgZXRjDQpsaWJyYXJ5KG5uZXQpICMgZm9yIG9yZGluYWwgbG9nIHJlZw0KPDw8PDw8PCBIRUFEDQpsaWJyYXJ5KCJzdGFyZ2F6ZXIiKSAjIGZvciB0YWJsZXMNCj09PT09PT0NCj4+Pj4+Pj4gM2IxOTI0Y2VmYTMxM2Y3ZDk2ZjYxNTY2YzM3NDQ2YzM5MWFmOWI3NQ0KYGBgDQoNCiMgRGF0YXNldA0KYGBge3IgZGF0YWZyYW1lfQ0KZGYgPC0gcmVhZF9jc3YoImRhdGFzZXQvaGlzdG9yaWFhY3RpdmlkYWQuY3N2IikNCmBgYA0KU2VsZWN0IG9ubHkgdGhlIHZhcmlhYmxlcyBmb3IgdGhpcyBhbmFseXNpcw0KYGBge3J9DQpkZiA8LSBkZiAlPiUgDQogIHNlbGVjdCgtc3RhcnRzX3dpdGgoIkxlc2lvbmVzIikpICU+JSANCiAgc2VsZWN0KC1zdGFydHNfd2l0aCgiQWN0aXZpZGFkIikpICMgUG9yIGFsZ3VuYSByYXrDs24gbm8gcHVlZG8gb2N1cGFyIC1jb2w6Y29sDQpgYGANCg0KYGBge3IgY2hlY2sgc3RydWN0dXJlfQ0KZGltKGRmKQ0Kc3VtbWFyeShkZikNCmBgYA0KDQpDaGVjayBoaXN0b3J5IG9mIGNhcmllcw0KYGBge3IgVGFibGUgSGlzdH0NCm9wdGlvbnMoZGlnaXRzID0gMikNCnRhYmxlKGRmJGJpbkhpc3RvcmlhKQ0KYGBgDQpDaGVjayBhY3Rpdml0eSBvZiBjYXJpZXMNCmBgYHtyIHRhYmxlIEFjdH0NCnRhYmxlKGRmJGJpbkFjdGl2aWRhZCkNCg0KYGBgDQpUYWJsZSBIaXN0b3J5IHggYWN0aXZpdHkgaW4gJQ0KYGBge3IgdGFibGUgaGlzdCB4IGFjdH0NCmFkZG1hcmdpbnMocHJvcC50YWJsZSh0YWJsZShkZiRiaW5IaXN0b3JpYSwgZGYkYmluQWN0aXZpZGFkKSkqMTAwKQ0KDQpgYGANCg0KUHJlcGFyZSBldmVyeXRoaW5nIGZvciB0aGUgcmVncmVzc2lvbg0KUmVsZXZlbA0KYGBge3J9DQpjbGFzcyhkZiRIaXN0b3JpYUFjdGl2aWRhZCkNCmRmJEhpc3RvcmlhQWN0aXZpZGFkIDwtICBhcy5mYWN0b3IoZGYkSGlzdG9yaWFBY3RpdmlkYWQpDQpkZiRIaXN0b3JpYUFjdGl2aWRhZDIgPC0gcmVsZXZlbChkZiRIaXN0b3JpYUFjdGl2aWRhZCwgcmVmID0gIk5vTm8iKQ0KbGV2ZWxzKGRmJEhpc3RvcmlhQWN0aXZpZGFkMikNCmBgYA0KQ2hhbmdlIGFsbCB0byBGY3QNCg0KYGBge3J9DQpkZltdIDwtIGxhcHBseSggZGYsIGZhY3RvcikNCg0KYGBgDQoNCg0KIyBNTFINCmBgYHtyfQ0KdGVzdCA8LSBtdWx0aW5vbSggSGlzdG9yaWFBY3RpdmlkYWQyIH4gDQogICAgICAgICAgICAgICAgICAgIGBbUGxhY2EgZGVudGFsXWArIA0KICAgICAgICAgICAgICAgICAgICBgW0NlcGlsbGFkb11gKyANCiAgICAgICAgICAgICAgICAgICAgYFtQYXN0YSBkZW50YWwgZmx1b3JhZGFdYAkrDQogICAgICAgICAgICAgICAgICAgIGBbVXNvIGRlIG1hbWFkZXJhIERJVVJOQSBjb24gYXrDumNhcl1gCSsNCiAgICAgICAgICAgICAgICAgICAgYFtVc28gZGUgbWFtYWRlcmEgTk9DVFVSTkEgY29uIGF6w7pjYXJdYAkrDQogICAgICAgICAgICAgICAgICAgIGBbSW5nZXN0YSBkZSBiZWJpZGFzIGNhcmJvbmF0YWRhcyBjb24gYXrDumNhcl1gCSsNCiAgICAgICAgICAgICAgICAgICAgYFtJbmdlc3RhIEp1Z29zIG5hdHVyYWxlc11gCSsJDQogICAgICAgICAgICAgICAgICAgIGBbSGEgYXNpc3RpZG8gYSBjb250cm9sIG9kZz9dYAkrDQogICAgICAgICAgICAgICAgICAgIGBbSGEgYXNpc3RpZG8gYSBjb250cm9sIG5pw7FvIHNhbm8gbcOpZGljbz9dYAkrDQogICAgICAgICAgICAgICAgICAgIGBbSHVlcnRhIGNvbiBhbGltZW50b3MgZW4gY2FzYT9dYAkrDQogICAgICAgICAgICAgICAgICAgIGBbQWd1YSBwb3RhYmxlIGVuIGNhc2FdYAkJKw0KICAgICAgICAgICAgICAgICAgICBgW0dydXBvIGZhbWlsaWFyIHNlIHJlY29ub2NlIG1hcHVjaGVdYAkrDQogICAgICAgICAgICAgICAgICAgIGBbVml2ZSBlbiBjYW1wbz9dYCAsDQogICAgICAgICAgICAgICAgICBkYXRhID0gZGYpDQpgYGANClZpZXcgc3VtbWFyeSBvZiB0aGUgbW9kZWwNCmBgYHtyfQ0Kc3VtbWFyeSh0ZXN0KQ0KDQoNCg0KDQoNCg0KYGBgDQpOaWNlIHRhYmxlDQpgYGB7cn0NCnN0YXJnYXplcih0ZXN0LA0KICAgICAgICAgIHR5cGUgPSAiaHRtbCIsDQogICAgICAgICAgdGl0bGUgPSAiTXVsdGlub21pYWwgbG9naXN0aWMgcmVncmVzc2lvbiBtb2RlbCBvZiByaWNrIGZhY3RvcnMgZm9yIGhpc3RvcnkgYW5kIGFjdGl2aXR5IG9mIEVhcmx5IENoaWxkaG9vZCBDYXJpZXMuIiwgDQogICAgICAgICAgIyBkZXAudmFyLmNhcHRpb24gID0gIlJlZmVyZW5jZSBsZXZlbDogbm8gaGlzdG9yeSBhbmQgbm8gYWN0aXZpdHkuIE9SICg5NSUgSUMpIiwNCiAgICAgICAgICAjIGNvbHVtbi5sYWJlbHMgPSBjKCJHb29kIiwgIkJldHRlciIpLA0KICAgICAgICAgIGRlcC52YXIubGFiZWxzID0gYygiT25seSBhY3Rpdml0eSIsIk9ubHkgaGlzdG9yeSIsICJIaXN0b3J5IGFuZCBhY3Rpdml0eSIpLA0KICAgICAgICAgIGNpID0gVFJVRSwNCiAgICAgICAgICBhcHBseS5jb2VmID0gZXhwLA0KICAgICAgICAgIGFwcGx5LnNlICAgPSBleHAsIA0KICAgICAgICAgICMga2VlcC5zdGF0ID0gIndhbGQiLCANCiAgICAgICAgICBvdXQgPSAib3V0cHV0cy9tb2RlbHMteWVzLWNpLmh0bWwiKQ0KDQpgYGANClNlZQ0KDQpjb2VmLnZlY3RvciA8LSBleHAobW9kZWwkY29lZikNCg0Kc3RhcmdhemVyKG1vZGVsLGNvZWY9bGlzdChjb2VmLnZlY3RvcikpDQoNCg0KDQpDaGVjaw0KIyMgUHJlZGljdGlvbg0KYGBge3IgcHJlZGljdGlvbn0NCmhlYWQocHJlZGljdCh0ZXN0LCBkZiwgdHlwZSA9ICJwcm9iIikpDQpgYGANCg0KIyMgeiB2YWx1ZXMNCg0KDQpgYGB7cn0NCnogPC0gc3VtbWFyeSh0ZXN0KSRjb2VmZmljaWVudHMvc3VtbWFyeSh0ZXN0KSRzdGFuZGFyZC5lcnJvcnMNCnoNCmBgYA0KIyMgMiB0YWlsZWQgcCB2YWx1ZXMNCmBgYHtyfQ0KcCA8LSAoMSAtIHBub3JtKGFicyh6KSwgMCwgMSkpKjINCnANCnJtKHopDQpybShwKQ0KYGBgDQoNCmBgYHtyfQ0KaGVhZChmaXR0ZWQodGVzdCkpDQpgYGANCg0KDQpgYGB7cn0NCmRmJHByZWRpY3QgPC0gcHJlZGljdCh0ZXN0LCBkZikNCmFkZG1hcmdpbnModGFibGUoZGYkcHJlZGljdCwgZGYkSGlzdG9yaWFBY3RpdmlkYWQyKSkNCmBgYA0KYGBge3J9DQpjaGlzcS50ZXN0KHRhYmxlKGRmJHByZWRpY3QsIGRmJEhpc3RvcmlhQWN0aXZpZGFkMikpDQpgYGANCg0KDQojIyBPZGRzIHJhdGlvcw0KDQoNCmBgYHtyfQ0KT1IgPC0gZXhwKGNiaW5kKE9kZHNfYW5kX09SPWNvZWYodGVzdCksIGNvbmZpbnQodGVzdCkpKQ0Kc3RhcmdhemVyKE9SLCB0eXBlID0gInRleHQiLCB0aXRsZT0iT2RkcyByYXRpbyIsIGRpZ2l0cz0xLCBvdXQ9Im91dHB1dHMvb2Rkc3JhdGlvLnR4dCIsIGZsaXA9VFJVRSkNCnJtKE9SKQ0KYGBgDQoNCmBgYHtyIG9kZHMgcmF0aW9zfQ0KDQptb2RlbCA8LSBnbG0oSGlzdG9yaWFBY3RpdmlkYWQyIH4gDQogICAgICAgICAgICAgICAgICAgIGBbUGxhY2EgZGVudGFsXWArIA0KICAgICAgICAgICAgICAgICAgICBgW0NlcGlsbGFkb11gKyANCiAgICAgICAgICAgICAgICAgICAgYFtQYXN0YSBkZW50YWwgZmx1b3JhZGFdYAkrDQogICAgICAgICAgICAgICAgICAgIGBbVXNvIGRlIG1hbWFkZXJhIERJVVJOQSBjb24gYXrDumNhcl1gCSsNCiAgICAgICAgICAgICAgICAgICAgYFtVc28gZGUgbWFtYWRlcmEgTk9DVFVSTkEgY29uIGF6w7pjYXJdYAkrDQogICAgICAgICAgICAgICAgICAgIGBbSW5nZXN0YSBkZSBiZWJpZGFzIGNhcmJvbmF0YWRhcyBjb24gYXrDumNhcl1gCSsNCiAgICAgICAgICAgICAgICAgICAgYFtJbmdlc3RhIEp1Z29zIG5hdHVyYWxlc11gCSsJDQogICAgICAgICAgICAgICAgICAgIGBbSGEgYXNpc3RpZG8gYSBjb250cm9sIG9kZz9dYAkrDQogICAgICAgICAgICAgICAgICAgIGBbSGEgYXNpc3RpZG8gYSBjb250cm9sIG5pw7FvIHNhbm8gbcOpZGljbz9dYAkrDQogICAgICAgICAgICAgICAgICAgIGBbSHVlcnRhIGNvbiBhbGltZW50b3MgZW4gY2FzYT9dYAkrDQogICAgICAgICAgICAgICAgICAgIGBbQWd1YSBwb3RhYmxlIGVuIGNhc2FdYAkJKw0KICAgICAgICAgICAgICAgICAgICBgW0dydXBvIGZhbWlsaWFyIHNlIHJlY29ub2NlIG1hcHVjaGVdYAkrDQogICAgICAgICAgICAgICAgICAgIGBbVml2ZSBlbiBjYW1wbz9dYCAsDQogICAgICAgICAgICAgICAgICBkYXRhID0gZGYsIGZhbWlseT1iaW5vbWlhbCgibG9naXQiKSkNCm9kZHJhdCA8LSBleHAoY29lZihtb2RlbCkpDQpybShvZGRyYXQpDQpgYGANCg==</div>
 
 
 
